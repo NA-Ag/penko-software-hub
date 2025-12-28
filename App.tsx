@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6">
             <a href="#products" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{t.navProjects}</a>
             <a href="#donate" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{t.navSupport}</a>
-            <a href="https://github.com/penkosoftware" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{t.navGitHub}</a>
+            <a href="https://github.com/NA-Ag/penko-software-hub" className="text-sm font-medium text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">{t.navGitHub}</a>
 
             {/* Language Selector */}
             <div className="relative">
