@@ -37,15 +37,15 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-tune',
     name: 'Penko Tune',
-    description: 'Privacy-first music platform with 0% artist fees. IPFS/WebTorrent distribution, crypto payments, 10-band EQ, and professional visualizers. A free alternative to Spotify.',
+    description: 'Privacy-first music platform with 0% artist fees. WebTorrent/IPFS distribution, crypto payments, 10-band EQ, and 8 professional visualizers. A free alternative to Spotify.',
     category: ProductCategory.MUSIC,
     iconName: 'Music',
-    repoUrl: 'https://github.com/penkosoftware/penko-tune',
-    liveUrl: 'https://tune.penko.software',
-    features: ['0% Platform Fees', 'IPFS Distribution', 'Crypto Payments', '10-Band Equalizer', 'Audio Visualizers', 'Offline Mode'],
+    repoUrl: 'https://github.com/NA-Ag/penko-tune',
+    liveUrl: 'https://tune.penkosoftware.org/',
+    features: ['0% Platform Fees', 'WebTorrent/IPFS', 'Crypto Payments', '10-Band Equalizer', '8 Visualizers', 'YouTube Streaming'],
     imageUrl: 'https://picsum.photos/id/5/800/600',
     status: 'alpha',
-    version: 'v1.0.0'
+    version: 'v0.1.0-alpha'
   },
 
   // Language Learning - ALPHA
