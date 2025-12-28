@@ -4,6 +4,7 @@ import ProductGrid from './components/ProductGrid';
 import DonationSection from './components/DonationSection';
 import { useApp } from './AppContext';
 import { Language, languageNames } from './translations';
+import penguinLogo from './penguin-logo.svg';
 
 // Simple Navigation Component
 const Navbar: React.FC = () => {
@@ -16,7 +17,7 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <img src="/penguin-logo.svg" alt="Penko Logo" className="w-10 h-10" />
+            <img src={penguinLogo} alt="Penko Logo" className="w-10 h-10" />
             <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">Penko<span className="text-indigo-600 dark:text-indigo-400">.soft</span></span>
           </div>
 
@@ -180,7 +181,7 @@ const Hero: React.FC = () => {
                     {/* Penko Logo Header */}
                     <div className="flex items-center gap-4 mb-8 animate-[slideInDown_0.6s_ease-out_0.2s_both]">
                       <img
-                        src="/penguin-logo.svg"
+                        src={penguinLogo}
                         alt="Penko Logo"
                         className="w-16 h-16 drop-shadow-lg"
                       />
@@ -332,7 +333,7 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="col-span-1 md:col-span-1">
              <div className="flex items-center gap-2 mb-4">
-                <img src="/penguin-logo.svg" alt="Penko Logo" className="w-8 h-8" />
+                <img src={penguinLogo} alt="Penko Logo" className="w-8 h-8" />
                 <span className="font-bold text-xl text-white">Penko.soft</span>
              </div>
              <p className="text-sm text-slate-400 dark:text-slate-500">
