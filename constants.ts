@@ -79,10 +79,10 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-note',
     name: 'Penko Note',
-    description: 'AI-powered note-taking with smart organization, tags, and search. Your thoughts, organized and accessible.',
+    description: 'Private note-taking with smart organization, tags, and search. Your thoughts, organized and accessible.',
     category: ProductCategory.OFFICE,
     iconName: 'StickyNote',
-    features: ['AI Organization', 'Rich Text', 'Tags & Search', 'Offline Mode', 'Cloud Sync', 'Markdown Support'],
+    features: ['Rich Text', 'Tags & Search', 'Offline Mode', 'Cloud Sync', 'Markdown Support'],
     imageUrl: 'https://picsum.photos/id/7/800/600',
     status: 'coming-soon'
   },
@@ -131,30 +131,30 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-pdf',
     name: 'Penko PDF',
-    description: 'AI-powered PDF manipulation tool for editing, merging, splitting, and converting PDFs. A free alternative to Adobe Acrobat.',
+    description: 'PDF manipulation tool for editing, merging, splitting, and converting PDFs. A free alternative to Adobe Acrobat.',
     category: ProductCategory.CREATIVE,
     iconName: 'FileType',
-    features: ['AI Features', 'PDF Editing', 'Merge & Split', 'Format Conversion', 'Offline Mode', 'Batch Processing'],
+    features: ['PDF Editing', 'Merge & Split', 'Format Conversion', 'Offline Mode', 'Batch Processing'],
     imageUrl: 'https://picsum.photos/id/12/800/600',
     status: 'coming-soon'
   },
   {
     id: 'penko-vector',
     name: 'Penko Vector',
-    description: 'AI-powered vector graphics editor for creating logos, icons, and illustrations. A free alternative to Adobe Illustrator.',
+    description: 'Vector graphics editor for creating logos, icons, and illustrations. A free alternative to Adobe Illustrator.',
     category: ProductCategory.CREATIVE,
     iconName: 'PenTool',
-    features: ['AI Tools', 'Vector Editing', 'SVG Export', 'Path Tools', 'Layers', 'Offline Mode'],
+    features: ['Vector Editing', 'SVG Export', 'Path Tools', 'Layers', 'Offline Mode'],
     imageUrl: 'https://picsum.photos/id/13/800/600',
     status: 'coming-soon'
   },
   {
     id: 'penko-image',
     name: 'Penko Image',
-    description: 'AI-powered photo editing and image manipulation tool. A free alternative to Adobe Photoshop.',
+    description: 'Photo editing and image manipulation tool. A free alternative to Adobe Photoshop.',
     category: ProductCategory.CREATIVE,
     iconName: 'Image',
-    features: ['AI Editing', 'Layer Support', 'Filters & Effects', 'RAW Support', 'Batch Processing', 'Offline Mode'],
+    features: ['Layer Support', 'Filters & Effects', 'RAW Support', 'Batch Processing', 'Offline Mode'],
     imageUrl: 'https://picsum.photos/id/14/800/600',
     status: 'coming-soon'
   },
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
     description: 'Digital design and cutting tool for creating patterns and designs for cutting machines.',
     category: ProductCategory.CREATIVE,
     iconName: 'Scissors',
-    features: ['AI Design', 'Pattern Creation', 'Export Formats', 'Machine Support', 'Templates', 'Offline Mode'],
+    features: ['Pattern Creation', 'Export Formats', 'Machine Support', 'Templates', 'Offline Mode'],
     imageUrl: 'https://picsum.photos/id/15/800/600',
     status: 'coming-soon'
   },
@@ -235,41 +235,6 @@ export const PRODUCTS: Product[] = [
     features: ['Personal Analysis', 'Goal Planning', 'Progress Tracking', 'Professional Guidance', 'Privacy-First', 'Mobile App'],
     imageUrl: 'https://picsum.photos/id/22/800/600',
     status: 'coming-soon'
-  }
-];
-
-export const PRICING_TIERS: PricingTier[] = [
-  {
-    id: 'tier-free',
-    name: 'Free Forever',
-    price: '$0',
-    description: 'All Penko Software projects are free, open-source, and always will be. No catches, no subscriptions, no ads.',
-    features: [
-      'All Projects Included',
-      'Full Feature Access',
-      'Offline Capable PWAs',
-      'GPL3 Open Source',
-      'No Tracking or Ads',
-      'Commercial Use Allowed'
-    ],
-    cta: 'Browse Projects',
-    highlighted: true
-  },
-  {
-    id: 'tier-supporter',
-    name: 'Optional Support',
-    price: 'Your Choice',
-    description: 'Love our mission? Support development with an optional donation. Every contribution helps us build more free tools for everyone.',
-    features: [
-      'Support Free Software',
-      'Help Build New Projects',
-      'Sustain Development',
-      'Community Recognition',
-      'Feel Good Inside',
-      '100% Optional'
-    ],
-    cta: 'Donate',
-    highlighted: false
   }
 ];
 
