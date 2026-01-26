@@ -85,7 +85,6 @@ penko-software-hub/
 ├── components/          # React components
 │   ├── ProductGrid.tsx     # Main product showcase
 │   ├── DonationSection.tsx # Donation options
-│   └── PricingTable.tsx    # Pricing information
 ├── App.tsx             # Main application component
 ├── AppContext.tsx      # Global state management (theme, language)
 ├── constants.ts        # Product data and configuration
@@ -149,7 +148,6 @@ Currently showcased projects include:
 - `AppContext.tsx` - Provides global state for theme and language preferences
 - `ProductGrid.tsx` - Renders filterable product cards
 - `DonationSection.tsx` - Displays donation options
-- `PricingTable.tsx` - Shows pricing information (free forever)
 
 ### State Management
 

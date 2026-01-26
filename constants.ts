@@ -1,4 +1,4 @@
-import { Product, ProductCategory, PricingTier, DonationOption } from './types';
+import { Product, ProductCategory, DonationOption } from './types';
 
 export const PRODUCTS: Product[] = [
   // ===== ACTIVE PROJECTS =====

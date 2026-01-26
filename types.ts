@@ -23,16 +23,6 @@ export interface Product {
   isNew?: boolean; // Show "New" badge
 }
 
-export interface PricingTier {
-  id: string;
-  name: string;
-  price: string;
-  description: string;
-  features: string[];
-  cta: string;
-  highlighted?: boolean;
-}
-
 export type DonationType = 'crypto' | 'link';
 
 export interface DonationOption {
