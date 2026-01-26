@@ -1,6 +1,6 @@
 export enum ProductCategory {
   OFFICE = 'Office Suite',
-  LANGUAGE = 'Language Learning',
+  LANGUAGE = 'Learning',
   MUSIC = 'Music Platform',
   CREATIVE = 'Creative Tools',
   ENTERPRISE = 'Enterprise Suite',
@@ -20,6 +20,7 @@ export interface Product {
   imageUrl: string;
   status?: 'live' | 'alpha' | 'beta' | 'coming-soon'; // Project status
   version?: string; // Current version
+  isNew?: boolean; // Show "New" badge
 }
 
 export interface PricingTier {

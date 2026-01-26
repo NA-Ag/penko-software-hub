@@ -3,7 +3,7 @@ import { Product, ProductCategory, PricingTier, DonationOption } from './types';
 export const PRODUCTS: Product[] = [
   // ===== ACTIVE PROJECTS =====
 
-  // Language Learning - ALPHA
+  // Learning - ALPHA
   {
     id: 'penko-adventure',
     name: 'Penko Adventure',
@@ -48,7 +48,7 @@ export const PRODUCTS: Product[] = [
     version: 'v0.1.0-alpha'
   },
 
-  // Language Learning - ALPHA
+  // Learning - ALPHA
   {
     id: 'penko-typing',
     name: 'Penko Typing',
@@ -61,6 +61,38 @@ export const PRODUCTS: Product[] = [
     imageUrl: 'https://picsum.photos/id/3/800/600',
     status: 'alpha',
     version: 'v1.0.0-alpha'
+  },
+
+  // Learning - BETA
+  {
+    id: 'penko-reader',
+    name: 'Penko Reader',
+    description: 'Accessibility-focused reading tool designed to help users focus, read faster, and improve comprehension. Uses RSVP (Rapid Serial Visual Presentation) to display text one word at a time. Particularly effective for users with ADHD or dyslexia.',
+    category: ProductCategory.LANGUAGE,
+    iconName: 'BookOpen',
+    repoUrl: 'https://github.com/NA-Ag/penko-reader',
+    liveUrl: 'https://reader.penkosoftware.org/',
+    features: ['RSVP Reading', 'Offline First', 'EPUB/PDF Support', 'OpenDyslexic Font', 'High Contrast', 'No Tracking'],
+    imageUrl: 'https://picsum.photos/id/24/800/600',
+    status: 'beta',
+    version: 'v2.0.7-Beta',
+    isNew: true
+  },
+
+  // Learning - ALPHA
+  {
+    id: 'penko-soroban',
+    name: 'Penko Soroban',
+    description: 'Digital Japanese abacus (Soroban) for mental math and calculation. Master the art of rapid calculation with this offline-first tool.',
+    category: ProductCategory.LANGUAGE,
+    iconName: 'Calculator',
+    repoUrl: 'https://github.com/NA-Ag/penko-soroban',
+    liveUrl: 'https://soroban.penkosoftware.org/',
+    features: ['Digital Soroban', 'Mental Math', 'Offline Mode', 'Touch Support', 'PWA', 'Tutorials'],
+    imageUrl: 'https://picsum.photos/id/25/800/600',
+    status: 'alpha',
+    version: 'v1.0.0-alpha',
+    isNew: true
   },
 
   // ===== COMING SOON PROJECTS =====
@@ -230,8 +262,6 @@ export const PRODUCTS: Product[] = [
     description: 'Personal transformation and wellness system with analysis, planning, and guidance for self-improvement. Powered by glowscope.app.',
     category: ProductCategory.WELLNESS,
     iconName: 'Sparkles',
-    repoUrl: 'https://github.com/NA-Ag/glowscope',
-    liveUrl: 'https://glowscope.app',
     features: ['Personal Analysis', 'Goal Planning', 'Progress Tracking', 'Professional Guidance', 'Privacy-First', 'Mobile App'],
     imageUrl: 'https://picsum.photos/id/22/800/600',
     status: 'coming-soon'

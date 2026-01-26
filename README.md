@@ -1,14 +1,15 @@
-# Penko Software Hub
+# Penko App Store
 
-Official landing page and project showcase for Penko Software - a collection of free, open-source Progressive Web Apps (PWAs) for office productivity, language learning, music, creativity, and more.
+The official installable App Store for Penko Software - a collection of free, open-source Progressive Web Apps (PWAs) for office productivity, learning, music, creativity, and more. Functions as a "mini app store" on your device.
 
 ## Overview
 
-Penko Software Hub is a modern, responsive web application that serves as the central hub for discovering and accessing all Penko Software projects. Built with React and TypeScript, it features a clean interface with multi-language support, dark mode, and comprehensive project information.
+Penko App Store is a modern, responsive Progressive Web App (PWA) that serves as the central hub for discovering, installing, and accessing all Penko Software projects. Built with React and TypeScript, it features a clean interface with multi-language support, dark mode, and works offline once installed.
 
 ## Features
 
-- **22 Projects Showcase** - Display of all Penko Software applications across 7 categories
+- **Installable App Store** - Works as a native app on your device to manage your Penko ecosystem
+- **24 Projects Showcase** - Display of all Penko Software applications across 7 categories
 - **Multi-Language Support** - Full internationalization with support for multiple languages
 - **Dark Mode** - Seamless light/dark theme switching with persistent preferences
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
@@ -29,7 +30,7 @@ Penko Software Hub is a modern, responsive web application that serves as the ce
 ## Project Categories
 
 1. **Office Suite** - Productivity applications (Writer, Calc, Note, Slide, etc.)
-2. **Language Learning** - Educational tools (Adventure, Typing)
+2. **Learning** - Educational tools (Adventure, Typing, Reader, Soroban)
 3. **Music Platform** - Music streaming and distribution (Tune)
 4. **Creative Tools** - Design and editing software (PDF, Vector, Image, Cut)
 5. **Enterprise Suite** - Business applications (DB, Campus, HCM, ERP)
@@ -135,6 +136,8 @@ Currently showcased projects include:
 - **Penko Writer** (Alpha) - Privacy-first word processor
 - **Penko Tune** (Alpha) - Music platform with 0% artist fees
 - **Penko Typing** (Alpha) - Retro arcade-style typing game
+- **Penko Reader** (Beta) - Accessibility-focused reading tool
+- **Penko Soroban** (Alpha) - Digital Japanese abacus for mental math
 
 ...and 18 more coming soon!
 
@@ -188,8 +191,8 @@ If you find this project useful, consider supporting Penko Software development:
 
 ## Links
 
-- **Website**: https://penko.software
-- **GitHub**: https://github.com/penkosoftware
+- **Website**: https://penkosoftware.org/
+- **GitHub**: https://github.com/NA-Ag/penko-software-hub
 - **Projects**: All projects are accessible through the hub interface
 
 ## Acknowledgments
@@ -197,7 +200,6 @@ If you find this project useful, consider supporting Penko Software development:
 - Built with [React](https://react.dev/)
 - Icons by [Lucide](https://lucide.dev/)
 - Powered by [Vite](https://vitejs.dev/)
-- Placeholder images from [Picsum](https://picsum.photos/)
 
 ---
 

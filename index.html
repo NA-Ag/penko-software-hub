@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0f172a" />
     <link rel="icon" type="image/svg+xml" href="/penguin-logo.svg" />
-    <title>Penko Software - Free, Open-Source PWAs</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Penko Software | Free, Open-Source Apps for Everyone</title>
+    <meta name="title" content="Penko Software | Free, Open-Source Apps for Everyone" />
+    <meta name="description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions. Just software for everyone." />
+    <meta name="keywords" content="open source, pwa, free software, privacy, offline first, language learning, office suite, web apps" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://penko.software/" />
+    <meta property="og:title" content="Penko Software | Free, Open-Source Apps for Everyone" />
+    <meta property="og:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
+    <meta property="og:image" content="https://penko.software/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://penko.software/" />
+    <meta property="twitter:title" content="Penko Software | Free, Open-Source Apps for Everyone" />
+    <meta property="twitter:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
+    <meta property="twitter:image" content="https://penko.software/og-image.png" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -104,6 +125,11 @@
           opacity: 0;
           transform: scale(2.5);
         }
+      }
+
+      @keyframes marquee {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
       }
     </style>
   <script type="importmap">

@@ -37,6 +37,8 @@ export interface Translation {
   descPenkoWriter: string;
   descPenkoTune: string;
   descPenkoTyping: string;
+  descPenkoReader: string;
+  descPenkoSoroban: string;
   descPenkoCalc: string;
   descPenkoNote: string;
   descPenkoSlide: string;
@@ -92,6 +94,12 @@ export interface Translation {
   statusAlpha: string;
   statusBeta: string;
   statusComingSoon: string;
+
+  // News Ticker
+  newsUpdate1: string;
+  newsUpdate2: string;
+  newsUpdate3: string;
+  newsUpdate4: string;
 }
 
 export const translations: Record<Language, Translation> = {
@@ -120,7 +128,7 @@ export const translations: Record<Language, Translation> = {
 
     // Categories
     categoryOffice: 'Office Suite',
-    categoryLanguage: 'Language Learning',
+    categoryLanguage: 'Learning',
     categoryMusic: 'Music Platform',
     categoryCreative: 'Creative Tools',
     categoryEnterprise: 'Enterprise Suite',
@@ -132,6 +140,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Privacy-first word processor with 100+ features. Real-time P2P collaboration, 26 templates, 13 languages. A free alternative to Microsoft Word and Google Docs.',
     descPenkoTune: 'Privacy-first music platform with 0% artist fees. IPFS/WebTorrent distribution, crypto payments, 10-band EQ, and professional visualizers. A free alternative to Spotify.',
     descPenkoTyping: 'Retro arcade-style typing game for learning non-Latin keyboard layouts. Master Korean Hangul, Russian Cyrillic, Japanese Kana, and more.',
+    descPenkoReader: 'Accessibility-focused reading tool designed to help users focus, read faster, and improve comprehension. Uses RSVP (Rapid Serial Visual Presentation) to display text one word at a time. Particularly effective for users with ADHD or dyslexia.',
+    descPenkoSoroban: 'Digital Japanese abacus (Soroban) for mental math and calculation. Master the art of rapid calculation with this offline-first tool.',
     descPenkoCalc: 'Spreadsheet application with 100+ functions, JavaScript cell support, and offline capability. A free alternative to Microsoft Excel and Google Sheets.',
     descPenkoNote: 'Rich note-taking app with smart organization, tags, and search. Your thoughts, organized and accessible.',
     descPenkoSlide: 'Create stunning presentations with beautiful templates and smooth transitions. A free alternative to PowerPoint and Google Slides.',
@@ -186,7 +196,13 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Live',
     statusAlpha: 'Alpha',
     statusBeta: 'Beta',
-    statusComingSoon: 'Coming Soon'
+    statusComingSoon: 'Coming Soon',
+
+    // News
+    newsUpdate1: 'Penko Reader Beta and Penko Soroban are now live! Try our new educational tools.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Now with Berlitz Method support and enhanced offline capabilities.',
+    newsUpdate3: 'Coming Soon: Major overhauls for Penko Tune, Penko Typing, and Penko Writer.',
+    newsUpdate4: 'Community Tip: PWAs allow free, open access. Check them out for your projects!'
   },
 
   es: {
@@ -207,7 +223,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'Abrir App',
     projectButtonComingSoon: 'Próximamente',
     categoryOffice: 'Suite de Oficina',
-    categoryLanguage: 'Aprendizaje de Idiomas',
+    categoryLanguage: 'Aprendizaje',
     categoryMusic: 'Plataforma de Música',
     categoryCreative: 'Herramientas Creativas',
     categoryEnterprise: 'Suite Empresarial',
@@ -217,6 +233,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Procesador de texto con privacidad primero y más de 100 funciones. Colaboración P2P en tiempo real, 26 plantillas, 13 idiomas. Una alternativa gratuita a Microsoft Word y Google Docs.',
     descPenkoTune: 'Plataforma de música con privacidad primero y 0% de tarifas para artistas. Distribución IPFS/WebTorrent, pagos en criptomonedas, ecualizador de 10 bandas y visualizadores profesionales. Una alternativa gratuita a Spotify.',
     descPenkoTyping: 'Juego de mecanografía estilo arcade retro para aprender distribuciones de teclado no latinas. Domina el Hangul coreano, el cirílico ruso, el Kana japonés y más.',
+    descPenkoReader: 'Herramienta de lectura enfocada en la accesibilidad para ayudar a concentrarse, leer más rápido y mejorar la comprensión. Utiliza RSVP para mostrar texto palabra por palabra. Especialmente eficaz para usuarios con TDAH o dislexia.',
+    descPenkoSoroban: 'Ábaco japonés digital (Soroban) para cálculo mental. Domina el arte del cálculo rápido con esta herramienta offline.',
     descPenkoCalc: 'Aplicación de hoja de cálculo con más de 100 funciones, soporte para celdas JavaScript y capacidad sin conexión. Una alternativa gratuita a Microsoft Excel y Google Sheets.',
     descPenkoNote: 'Aplicación de notas enriquecida con organización inteligente, etiquetas y búsqueda. Tus pensamientos, organizados y accesibles.',
     descPenkoSlide: 'Crea presentaciones impresionantes con hermosas plantillas y transiciones suaves. Una alternativa gratuita a PowerPoint y Google Slides.',
@@ -263,7 +281,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Activo',
     statusAlpha: 'Alfa',
     statusBeta: 'Beta',
-    statusComingSoon: 'Próximamente'
+    statusComingSoon: 'Próximamente',
+    newsUpdate1: '¡Penko Reader Beta y Penko Soroban ya están disponibles! Prueba nuestras nuevas herramientas educativas.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Ahora con soporte para el Método Berlitz y capacidades offline mejoradas.',
+    newsUpdate3: 'Próximamente: Grandes actualizaciones para Penko Tune, Penko Typing y Penko Writer.',
+    newsUpdate4: 'Consejo comunitario: Las PWAs permiten acceso libre y abierto. ¡Pruébalas en tus proyectos!'
   },
 
   ru: {
@@ -284,7 +306,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'Открыть',
     projectButtonComingSoon: 'Скоро',
     categoryOffice: 'Офисный Пакет',
-    categoryLanguage: 'Изучение Языков',
+    categoryLanguage: 'Обучение',
     categoryMusic: 'Музыкальная Платформа',
     categoryCreative: 'Творческие Инструменты',
     categoryEnterprise: 'Корпоративный Пакет',
@@ -294,6 +316,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Текстовый процессор с приоритетом конфиденциальности и более 100 функций. P2P-совместная работа в реальном времени, 26 шаблонов, 13 языков. Бесплатная альтернатива Microsoft Word и Google Docs.',
     descPenkoTune: 'Музыкальная платформа с приоритетом конфиденциальности и 0% комиссий для артистов. Распространение через IPFS/WebTorrent, криптоплатежи, 10-полосный эквалайзер и профессиональные визуализаторы. Бесплатная альтернатива Spotify.',
     descPenkoTyping: 'Игра по набору текста в стиле ретро-аркады для изучения нелатинских раскладок клавиатуры. Освойте корейский хангыль, русскую кириллицу, японскую кану и многое другое.',
+    descPenkoReader: 'Инструмент для чтения с упором на доступность, помогающий сосредоточиться и читать быстрее. Использует RSVP для отображения текста по одному слову. Особенно эффективно для пользователей с СДВГ или дислексией.',
+    descPenkoSoroban: 'Цифровой японский абак (Соробан) для ментальной арифметики. Освойте искусство быстрых вычислений с помощью этого автономного инструмента.',
     descPenkoCalc: 'Табличное приложение с более чем 100 функциями, поддержкой JavaScript-ячеек и автономной работой. Бесплатная альтернатива Microsoft Excel и Google Sheets.',
     descPenkoNote: 'Расширенное приложение для заметок с умной организацией, тегами и поиском. Ваши мысли, организованные и доступные.',
     descPenkoSlide: 'Создавайте потрясающие презентации с красивыми шаблонами и плавными переходами. Бесплатная альтернатива PowerPoint и Google Slides.',
@@ -340,7 +364,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Активно',
     statusAlpha: 'Альфа',
     statusBeta: 'Бета',
-    statusComingSoon: 'Скоро'
+    statusComingSoon: 'Скоро',
+    newsUpdate1: 'Penko Reader Beta и Penko Soroban уже доступны! Попробуйте наши новые образовательные инструменты.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Теперь с поддержкой метода Берлица и улучшенными офлайн-возможностями.',
+    newsUpdate3: 'Скоро: Крупные обновления для Penko Tune, Penko Typing и Penko Writer.',
+    newsUpdate4: 'Совет сообщества: PWA обеспечивают свободный и открытый доступ. Попробуйте их в своих проектах!'
   },
 
   uk: {
@@ -361,7 +389,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'Відкрити',
     projectButtonComingSoon: 'Незабаром',
     categoryOffice: 'Офісний Пакет',
-    categoryLanguage: 'Вивчення Мов',
+    categoryLanguage: 'Навчання',
     categoryMusic: 'Музична Платформа',
     categoryCreative: 'Творчі Інструменти',
     categoryEnterprise: 'Корпоративний Пакет',
@@ -371,6 +399,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Текстовий процесор з пріоритетом конфіденційності та понад 100 функцій. P2P-спільна робота в реальному часі, 26 шаблонів, 13 мов. Безкоштовна альтернатива Microsoft Word і Google Docs.',
     descPenkoTune: 'Музична платформа з пріоритетом конфіденційності та 0% комісій для артистів. Розповсюдження через IPFS/WebTorrent, криптоплатежі, 10-смуговий еквалайзер та професійні візуалізатори. Безкоштовна альтернатива Spotify.',
     descPenkoTyping: 'Гра з набору тексту в стилі ретро-аркади для вивчення нелатинських розкладок клавіатури. Опануйте корейський хангиль, російську кирилицю, японську кану та інше.',
+    descPenkoReader: 'Інструмент для читання з акцентом на доступність для покращення концентрації та швидкості. Використовує RSVP для відображення тексту по одному слову. Ефективний для користувачів із СДУГ або дислексією.',
+    descPenkoSoroban: 'Цифрова японська рахівниця (Соробан) для ментальної арифметики. Опануйте мистецтво швидких обчислень за допомогою цього автономного інструменту.',
     descPenkoCalc: 'Табличний додаток з понад 100 функцій, підтримкою JavaScript-комірок та автономною роботою. Безкоштовна альтернатива Microsoft Excel і Google Sheets.',
     descPenkoNote: 'Розширений додаток для нотаток з розумною організацією, тегами та пошуком. Ваші думки, організовані та доступні.',
     descPenkoSlide: 'Створюйте приголомшливі презентації з красивими шаблонами та плавними переходами. Безкоштовна альтернатива PowerPoint і Google Slides.',
@@ -417,7 +447,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Активно',
     statusAlpha: 'Альфа',
     statusBeta: 'Бета',
-    statusComingSoon: 'Незабаром'
+    statusComingSoon: 'Незабаром',
+    newsUpdate1: 'Penko Reader Beta та Penko Soroban вже доступні! Спробуйте наші нові освітні інструменти.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Тепер з підтримкою методу Берліца та покращеними офлайн-можливостями.',
+    newsUpdate3: 'Незабаром: Великі оновлення для Penko Tune, Penko Typing та Penko Writer.',
+    newsUpdate4: 'Порада спільноти: PWA забезпечують вільний та відкритий доступ. Спробуйте їх у своїх проєктах!'
   },
 
   fr: {
@@ -438,7 +472,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'Lancer l\'App',
     projectButtonComingSoon: 'Bientôt',
     categoryOffice: 'Suite Bureautique',
-    categoryLanguage: 'Apprentissage des Langues',
+    categoryLanguage: 'Apprentissage',
     categoryMusic: 'Plateforme Musicale',
     categoryCreative: 'Outils Créatifs',
     categoryEnterprise: 'Suite Entreprise',
@@ -448,6 +482,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Traitement de texte axé sur la confidentialité avec plus de 100 fonctionnalités. Collaboration P2P en temps réel, 26 modèles, 13 langues. Une alternative gratuite à Microsoft Word et Google Docs.',
     descPenkoTune: 'Plateforme musicale axée sur la confidentialité avec 0 % de frais pour les artistes. Distribution IPFS/WebTorrent, paiements crypto, égaliseur 10 bandes et visualiseurs professionnels. Une alternative gratuite à Spotify.',
     descPenkoTyping: 'Jeu de dactylographie de style arcade rétro pour apprendre les dispositions de clavier non latines. Maîtrisez le Hangul coréen, le cyrillique russe, les Kana japonais et plus encore.',
+    descPenkoReader: 'Outil de lecture axé sur l\'accessibilité pour aider à se concentrer et lire plus vite. Utilise RSVP pour afficher le texte mot par mot. Particulièrement efficace pour les utilisateurs avec TDAH ou dyslexie.',
+    descPenkoSoroban: 'Boulier japonais numérique (Soroban) pour le calcul mental. Maîtrisez l\'art du calcul rapide avec cet outil hors ligne.',
     descPenkoCalc: 'Application de feuille de calcul avec plus de 100 fonctions, support des cellules JavaScript et capacité hors ligne. Une alternative gratuite à Microsoft Excel et Google Sheets.',
     descPenkoNote: 'Application de notes enrichie avec organisation intelligente, balises et recherche. Vos pensées, organisées et accessibles.',
     descPenkoSlide: 'Créez des présentations époustouflantes avec de beaux modèles et des transitions fluides. Une alternative gratuite à PowerPoint et Google Slides.',
@@ -494,7 +530,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'En Ligne',
     statusAlpha: 'Alpha',
     statusBeta: 'Bêta',
-    statusComingSoon: 'Bientôt'
+    statusComingSoon: 'Bientôt',
+    newsUpdate1: 'Penko Reader Bêta et Penko Soroban sont maintenant disponibles ! Essayez nos nouveaux outils éducatifs.',
+    newsUpdate2: 'Penko Adventure v1.8.0 : Maintenant avec le support de la méthode Berlitz et des capacités hors ligne améliorées.',
+    newsUpdate3: 'Bientôt : Mises à jour majeures pour Penko Tune, Penko Typing et Penko Writer.',
+    newsUpdate4: 'Conseil communautaire : Les PWA offrent un accès libre. Essayez-les pour vos projets !'
   },
 
   de: {
@@ -515,7 +555,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'App Starten',
     projectButtonComingSoon: 'Demnächst',
     categoryOffice: 'Office-Suite',
-    categoryLanguage: 'Sprachenlernen',
+    categoryLanguage: 'Lernen',
     categoryMusic: 'Musikplattform',
     categoryCreative: 'Kreativwerkzeuge',
     categoryEnterprise: 'Unternehmenssuite',
@@ -525,6 +565,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Datenschutzorientierte Textverarbeitung mit über 100 Funktionen. Echtzeit-P2P-Zusammenarbeit, 26 Vorlagen, 13 Sprachen. Eine kostenlose Alternative zu Microsoft Word und Google Docs.',
     descPenkoTune: 'Datenschutzorientierte Musikplattform mit 0 % Künstlergebühren. IPFS/WebTorrent-Verteilung, Krypto-Zahlungen, 10-Band-EQ und professionelle Visualizer. Eine kostenlose Alternative zu Spotify.',
     descPenkoTyping: 'Retro-Arcade-Tippspiel zum Erlernen nicht-lateinischer Tastaturlayouts. Meistern Sie koreanisches Hangul, russisches Kyrillisch, japanische Kana und mehr.',
+    descPenkoReader: 'Auf Barrierefreiheit ausgerichtetes Lesewerkzeug zur Verbesserung von Fokus und Lesegeschwindigkeit. Verwendet RSVP zur Wort-für-Wort-Anzeige. Besonders effektiv bei ADHS oder Legasthenie.',
+    descPenkoSoroban: 'Digitaler japanischer Abakus (Soroban) für Kopfrechnen. Meistern Sie die Kunst des schnellen Rechnens mit diesem Offline-Tool.',
     descPenkoCalc: 'Tabellenkalkulation mit über 100 Funktionen, JavaScript-Zellenunterstützung und Offline-Funktion. Eine kostenlose Alternative zu Microsoft Excel und Google Sheets.',
     descPenkoNote: 'Umfangreiche Notiz-App mit intelligenter Organisation, Tags und Suche. Ihre Gedanken, organisiert und zugänglich.',
     descPenkoSlide: 'Erstellen Sie beeindruckende Präsentationen mit schönen Vorlagen und sanften Übergängen. Eine kostenlose Alternative zu PowerPoint und Google Slides.',
@@ -571,7 +613,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Live',
     statusAlpha: 'Alpha',
     statusBeta: 'Beta',
-    statusComingSoon: 'Demnächst'
+    statusComingSoon: 'Demnächst',
+    newsUpdate1: 'Penko Reader Beta und Penko Soroban sind jetzt verfügbar! Probieren Sie unsere neuen Bildungstools aus.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Jetzt mit Unterstützung der Berlitz-Methode und verbesserten Offline-Funktionen.',
+    newsUpdate3: 'Demnächst: Große Überarbeitungen für Penko Tune, Penko Typing und Penko Writer.',
+    newsUpdate4: 'Community-Tipp: PWAs ermöglichen freien Zugang. Probieren Sie sie für Ihre Projekte!'
   },
 
   it: {
@@ -592,7 +638,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonLaunch: 'Avvia App',
     projectButtonComingSoon: 'Prossimamente',
     categoryOffice: 'Suite per Ufficio',
-    categoryLanguage: 'Apprendimento Lingue',
+    categoryLanguage: 'Apprendimento',
     categoryMusic: 'Piattaforma Musicale',
     categoryCreative: 'Strumenti Creativi',
     categoryEnterprise: 'Suite Aziendale',
@@ -602,6 +648,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Elaboratore di testi orientato alla privacy con oltre 100 funzionalità. Collaborazione P2P in tempo reale, 26 modelli, 13 lingue. Un\'alternativa gratuita a Microsoft Word e Google Docs.',
     descPenkoTune: 'Piattaforma musicale orientata alla privacy con 0% di commissioni per gli artisti. Distribuzione IPFS/WebTorrent, pagamenti crypto, equalizzatore a 10 bande e visualizzatori professionali. Un\'alternativa gratuita a Spotify.',
     descPenkoTyping: 'Gioco di dattilografia in stile arcade retrò per imparare layout di tastiera non latini. Padroneggia l\'Hangul coreano, il cirillico russo, i Kana giapponesi e altro ancora.',
+    descPenkoReader: 'Strumento di lettura accessibile per migliorare concentrazione e velocità. Usa RSVP per mostrare il testo una parola alla volta. Particolarmente efficace per utenti con ADHD o dislessia.',
+    descPenkoSoroban: 'Abaco giapponese digitale (Soroban) per il calcolo mentale. Padroneggia l\'arte del calcolo rapido con questo strumento offline.',
     descPenkoCalc: 'Applicazione foglio di calcolo con oltre 100 funzioni, supporto celle JavaScript e capacità offline. Un\'alternativa gratuita a Microsoft Excel e Google Sheets.',
     descPenkoNote: 'Applicazione di appunti arricchita con organizzazione intelligente, tag e ricerca. I tuoi pensieri, organizzati e accessibili.',
     descPenkoSlide: 'Crea presentazioni straordinarie con bellissimi modelli e transizioni fluide. Un\'alternativa gratuita a PowerPoint e Google Slides.',
@@ -648,7 +696,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Live',
     statusAlpha: 'Alpha',
     statusBeta: 'Beta',
-    statusComingSoon: 'Prossimamente'
+    statusComingSoon: 'Prossimamente',
+    newsUpdate1: 'Penko Reader Beta e Penko Soroban sono ora disponibili! Prova i nostri nuovi strumenti educativi.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Ora con supporto al Metodo Berlitz e funzionalità offline migliorate.',
+    newsUpdate3: 'Prossimamente: Grandi aggiornamenti per Penko Tune, Penko Typing e Penko Writer.',
+    newsUpdate4: 'Consiglio della community: Le PWA offrono accesso libero. Provale per i tuoi progetti!'
   },
 
   pt: {
@@ -672,7 +724,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonComingSoon: 'Em Breve',
 
     categoryOffice: 'Suite de Escritório',
-    categoryLanguage: 'Aprendizado de Idiomas',
+    categoryLanguage: 'Aprendizado',
     categoryMusic: 'Plataforma Musical',
     categoryCreative: 'Ferramentas Criativas',
     categoryEnterprise: 'Suite Empresarial',
@@ -683,6 +735,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'Processador de texto com foco em privacidade e mais de 100 recursos. Colaboração P2P em tempo real, 26 modelos, 13 idiomas. Uma alternativa gratuita ao Microsoft Word e Google Docs.',
     descPenkoTune: 'Plataforma musical com foco em privacidade e 0% de taxas para artistas. Distribuição IPFS/WebTorrent, pagamentos cripto, equalizador de 10 bandas e visualizadores profissionais. Uma alternativa gratuita ao Spotify.',
     descPenkoTyping: 'Jogo de digitação estilo arcade retrô para aprender layouts de teclado não latinos. Domine Hangul coreano, cirílico russo, kana japonês e muito mais.',
+    descPenkoReader: 'Ferramenta de leitura focada em acessibilidade para ajudar no foco e velocidade. Usa RSVP para exibir texto palavra por palavra. Particularmente eficaz para usuários com TDAH ou dislexia.',
+    descPenkoSoroban: 'Ábaco japonês digital (Soroban) para cálculo mental. Domine a arte do cálculo rápido com esta ferramenta offline.',
     descPenkoCalc: 'Planilha completa com 500+ funções, tabelas dinâmicas e gráficos. Colaboração P2P em tempo real. Uma alternativa gratuita ao Excel e Google Sheets.',
     descPenkoNote: 'Aplicativo de notas rico com Markdown, blocos de código e sincronização P2P. Suporte offline completo. Uma alternativa gratuita ao Notion e Evernote.',
     descPenkoSlide: 'Software de apresentação com animações, transições e modo apresentador. Colaboração em tempo real. Uma alternativa gratuita ao PowerPoint e Google Slides.',
@@ -733,7 +787,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'Ao Vivo',
     statusAlpha: 'Alpha',
     statusBeta: 'Beta',
-    statusComingSoon: 'Em Breve'
+    statusComingSoon: 'Em Breve',
+    newsUpdate1: 'Penko Reader Beta e Penko Soroban já estão disponíveis! Experimente nossas novas ferramentas educacionais.',
+    newsUpdate2: 'Penko Adventure v1.8.0: Agora com suporte ao Método Berlitz e recursos offline aprimorados.',
+    newsUpdate3: 'Em breve: Grandes atualizações para Penko Tune, Penko Typing e Penko Writer.',
+    newsUpdate4: 'Dica da comunidade: PWAs permitem acesso livre. Experimente em seus projetos!'
   },
 
   zh: {
@@ -757,7 +815,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonComingSoon: '即将推出',
 
     categoryOffice: '办公套件',
-    categoryLanguage: '语言学习',
+    categoryLanguage: '学习',
     categoryMusic: '音乐平台',
     categoryCreative: '创意工具',
     categoryEnterprise: '企业套件',
@@ -768,6 +826,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: '隐私优先的文字处理器，拥有100多项功能。实时P2P协作，26个模板，13种语言。Microsoft Word和Google Docs的免费替代品。',
     descPenkoTune: '隐私优先的音乐平台，艺术家零手续费。IPFS/WebTorrent分发，加密货币支付，10段均衡器和专业可视化工具。Spotify的免费替代品。',
     descPenkoTyping: '复古街机风格打字游戏，学习非拉丁键盘布局。掌握韩语谚文、俄语西里尔文、日语假名等。',
+    descPenkoReader: '专注于无障碍的阅读工具，旨在帮助集中注意力和提高阅读速度。使用 RSVP 逐词显示文本。对多动症或阅读障碍用户特别有效。',
+    descPenkoSoroban: '用于心算和计算的数字日式算盘（Soroban）。使用此离线工具掌握快速计算的艺术。',
     descPenkoCalc: '完整的电子表格，拥有500多项功能、数据透视表和图表。实时P2P协作。Excel和Google Sheets的免费替代品。',
     descPenkoNote: '丰富的笔记应用，支持Markdown、代码块和P2P同步。完全离线支持。Notion和Evernote的免费替代品。',
     descPenkoSlide: '演示软件，具有动画、过渡和演示者模式。实时协作。PowerPoint和Google Slides的免费替代品。',
@@ -818,7 +878,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: '在线',
     statusAlpha: 'Alpha',
     statusBeta: 'Beta',
-    statusComingSoon: '即将推出'
+    statusComingSoon: '即将推出',
+    newsUpdate1: 'Penko Reader Beta 和 Penko Soroban 现已推出！尝试我们新的教育工具。',
+    newsUpdate2: 'Penko Adventure v1.8.0：现已支持 Berlitz 方法并增强了离线功能。',
+    newsUpdate3: '即将推出：Penko Tune、Penko Typing 和 Penko Writer 的重大更新。',
+    newsUpdate4: '社区建议：PWA 提供免费开放的访问。在您的项目中尝试一下！'
   },
 
   ja: {
@@ -842,7 +906,7 @@ export const translations: Record<Language, Translation> = {
     projectButtonComingSoon: '近日公開',
 
     categoryOffice: 'オフィススイート',
-    categoryLanguage: '語学学習',
+    categoryLanguage: '学習',
     categoryMusic: '音楽プラットフォーム',
     categoryCreative: 'クリエイティブツール',
     categoryEnterprise: 'エンタープライズスイート',
@@ -853,6 +917,8 @@ export const translations: Record<Language, Translation> = {
     descPenkoWriter: 'プライバシー重視のワードプロセッサで100以上の機能。リアルタイムP2P共同作業、26のテンプレート、13言語対応。Microsoft WordとGoogle Docsの無料代替品。',
     descPenkoTune: 'プライバシー重視の音楽プラットフォームでアーティスト手数料0%。IPFS/WebTorrent配信、暗号通貨決済、10バンドEQ、プロフェッショナル可視化。Spotifyの無料代替品。',
     descPenkoTyping: 'レトロアーケードスタイルのタイピングゲームで非ラテン文字キーボードを学習。韓国語ハングル、ロシア語キリル文字、日本語仮名などをマスター。',
+    descPenkoReader: '集中力と読書速度を向上させるアクセシビリティ重視の読書ツール。RSVPを使用してテキストを1語ずつ表示します。ADHDや失読症のユーザーに特に効果的です。',
+    descPenkoSoroban: '暗算と計算のためのデジタルそろばん。このオフラインツールで高速計算の技術を習得しましょう。',
     descPenkoCalc: '500以上の関数、ピボットテーブル、グラフを備えた完全なスプレッドシート。リアルタイムP2P共同作業。ExcelとGoogle Sheetsの無料代替品。',
     descPenkoNote: 'Markdown、コードブロック、P2P同期を備えた充実したノートアプリ。完全オフラインサポート。NotionとEvernoteの無料代替品。',
     descPenkoSlide: 'アニメーション、トランジション、プレゼンターモードを備えたプレゼンテーションソフトウェア。リアルタイム共同作業。PowerPointとGoogle Slidesの無料代替品。',
@@ -903,7 +969,11 @@ export const translations: Record<Language, Translation> = {
     statusLive: 'ライブ',
     statusAlpha: 'アルファ',
     statusBeta: 'ベータ',
-    statusComingSoon: '近日公開'
+    statusComingSoon: '近日公開',
+    newsUpdate1: 'Penko Reader ベータ版と Penko Soroban が利用可能になりました！新しい教育ツールをお試しください。',
+    newsUpdate2: 'Penko Adventure v1.8.0：ベルリッツ・メソッドのサポートとオフライン機能が強化されました。',
+    newsUpdate3: '近日公開：Penko Tune、Penko Typing、Penko Writer のメジャーアップデート。',
+    newsUpdate4: 'コミュニティからのヒント：PWAは無料でオープンなアクセスを可能にします。あなたのプロジェクトで試してみてください！'
   }
 };
 

@@ -13,6 +13,30 @@ const ProductGrid: React.FC = () => {
     ? PRODUCTS
     : PRODUCTS.filter(p => p.category === activeCategory);
 
+  // Sorting Logic: Newest -> Status (Live > Beta > Alpha) -> Version
+  const getStatusPriority = (status?: string) => {
+    switch (status) {
+      case 'live': return 4;
+      case 'beta': return 3;
+      case 'alpha': return 2;
+      case 'coming-soon': return 1;
+      default: return 0;
+    }
+  };
+
+  const sortedProducts = [...filteredProducts].sort((a, b) => {
+    // 1. Newest first
+    if (a.isNew && !b.isNew) return -1;
+    if (!a.isNew && b.isNew) return 1;
+
+    // 2. Status priority
+    const statusDiff = getStatusPriority(b.status) - getStatusPriority(a.status);
+    if (statusDiff !== 0) return statusDiff;
+
+    // 3. Version descending
+    return (b.version || '').localeCompare(a.version || '', undefined, { numeric: true, sensitivity: 'base' });
+  });
+
   // Map product IDs to translation keys
   const getDescriptionKey = (productId: string): keyof typeof t => {
     const keyMap: Record<string, keyof typeof t> = {
@@ -20,6 +44,8 @@ const ProductGrid: React.FC = () => {
       'penko-writer': 'descPenkoWriter',
       'penko-tune': 'descPenkoTune',
       'penko-typing': 'descPenkoTyping',
+      'penko-reader': 'descPenkoReader',
+      'penko-soroban': 'descPenkoSoroban',
       'penko-calc': 'descPenkoCalc',
       'penko-note': 'descPenkoNote',
       'penko-slide': 'descPenkoSlide',
@@ -102,13 +128,18 @@ const ProductGrid: React.FC = () => {
 
       {/* Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProducts.map(product => {
+        {sortedProducts.map(product => {
           // Dynamic Icon Rendering
           // @ts-ignore - Lucide icons accessed dynamically
           const IconComponent = Icons[product.iconName] || Icons.Box;
 
           return (
-            <div key={product.id} className="group bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-indigo-100 dark:hover:border-indigo-800 transition-all duration-300 flex flex-col">
+            <div key={product.id} className="group relative bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-indigo-100 dark:hover:border-indigo-800 transition-all duration-300 flex flex-col">
+              {product.isNew && (
+                <div className="absolute top-4 right-4 z-10 bg-red-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full shadow-lg animate-pulse">
+                  NEW
+                </div>
+              )}
               <div className="p-6 flex-1 flex flex-col">
                 <div className="mb-4">
                   <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-xl flex items-center justify-center mb-4 transition-colors">
