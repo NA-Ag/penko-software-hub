@@ -1,7 +1,9 @@
 {
   "name": "penko-software-hub",
   "private": true,
-  "version": "0.0.4",
+  "version": "0.0.5",
+  "description": "The official installable App Store for Penko Software",
+  "author": "Penko Software <contact@penkosoftware.org>",
   "type": "module",
   "main": "electron/main.js",
   "scripts": {
@@ -31,6 +33,7 @@
   "build": {
     "appId": "org.penkosoftware.hub",
     "productName": "Penko App Store",
+    "icon": "public/pwa-512x512.png",
     "directories": {
       "output": "release"
     },
