@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Sunset sky background -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141124" />
+      <stop offset="60%" stop-color="#2d1c3a" />
+      <stop offset="100%" stop-color="#4d2b47" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff3b30" stop-opacity="1" />
+      <stop offset="100%" stop-color="#ff3b30" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#skyGrad)" rx="80" />
+
+  <!-- Red Sun -->
+  <circle cx="256" cy="90" r="100" fill="#ff3b30" opacity="0.8" />
+  <circle cx="256" cy="90" r="140" fill="url(#sunGlow)" opacity="0.3" />
+
+  <!-- Mount Fuji silhouette behind mascot -->
+  <path d="M 60 512 L 200 150 Q 256 70 256 70 Q 256 70 312 150 L 452 512 Z" fill="#1b172a" />
+  <path d="M 226 110 Q 256 70 256 70 Q 256 70 286 110 L 296 140 L 276 130 L 256 150 L 236 130 L 216 140 Z" fill="#ffffff" />
+
+  <!-- Mascot (Scale=22) -->
+  <g>
+  <rect x="190" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="212" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="234" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="256" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="278" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="300" y="162" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="168" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="234" y="184" width="22" height="22" fill="#ef4444" stroke="#ef4444" stroke-width="0.1" />
+  <rect x="256" y="184" width="22" height="22" fill="#ef4444" stroke="#ef4444" stroke-width="0.1" />
+  <rect x="278" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="300" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="184" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="124" y="206" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="146" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="190" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="212" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="234" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="256" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="278" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="300" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="322" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="344" y="206" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="206" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="228" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="124" y="228" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="228" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="228" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="228" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="228" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="234" y="228" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="256" y="228" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="278" y="228" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="300" y="228" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="228" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="228" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="228" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="250" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="250" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="250" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="250" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="250" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="234" y="250" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="256" y="250" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="278" y="250" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="300" y="250" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="250" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="250" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="250" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="272" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="190" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="212" y="272" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="234" y="272" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="256" y="272" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="278" y="272" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="300" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="322" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="344" y="272" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="272" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="294" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="146" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="190" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="212" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="234" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="256" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="278" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="300" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="322" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="344" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="294" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="388" y="294" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="316" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="316" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="146" y="316" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="234" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="256" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="278" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="300" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="316" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="316" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="316" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="388" y="316" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="338" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="338" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="146" y="338" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="234" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="256" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="278" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="300" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="338" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="338" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="338" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="388" y="338" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="360" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="360" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="146" y="360" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="190" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="212" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="234" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="256" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="278" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="300" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="322" y="360" width="22" height="22" fill="#ffffff" stroke="#ffffff" stroke-width="0.1" />
+  <rect x="344" y="360" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="360" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="388" y="360" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="102" y="382" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="146" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="190" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="212" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="234" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="256" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="278" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="300" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="322" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="344" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="382" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="388" y="382" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="124" y="404" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="168" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="190" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="212" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="234" y="404" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="256" y="404" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="278" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="300" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="322" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="344" y="404" width="22" height="22" fill="#64748b" stroke="#64748b" stroke-width="0.1" />
+  <rect x="366" y="404" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="146" y="426" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="168" y="426" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="190" y="426" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="212" y="426" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="278" y="426" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="300" y="426" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="322" y="426" width="22" height="22" fill="#f97316" stroke="#f97316" stroke-width="0.1" />
+  <rect x="344" y="426" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="168" y="448" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="190" y="448" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="300" y="448" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+  <rect x="322" y="448" width="22" height="22" fill="#111111" stroke="#111111" stroke-width="0.1" />
+
+  </g>
+
+  <!-- Golden border -->
+  <rect width="512" height="512" fill="none" stroke="#fbbf24" stroke-width="4" stroke-opacity="0.3" rx="80" />
+</svg>

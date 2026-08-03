@@ -4,27 +4,28 @@ The official installable App Store for Penko Software - a collection of free, op
 
 ## Overview
 
-Penko App Store is a modern, responsive Progressive Web App (PWA) that serves as the central hub for discovering, installing, and accessing all Penko Software projects. Built with React and TypeScript, it features a clean interface with multi-language support, dark mode, and works offline once installed.
+Penko App Store is a modern, responsive Progressive Web App (PWA) that serves as the central station for discovering, installing, and accessing all Penko Software projects. Built with React and TypeScript, it features a clean interface with multi-language support, dark mode, and works offline once installed.
 
 ## Features
 
 - **Installable App Store** - Works as a native app on your device to manage your Penko ecosystem
-- **24 Projects Showcase** - Display of all Penko Software applications across 7 categories
+- **23 Projects Showcase** - Display of all Penko Software applications across 6 active categories
 - **Multi-Language Support** - Full internationalization with support for multiple languages
 - **Dark Mode** - Seamless light/dark theme switching with persistent preferences
 - **Responsive Design** - Optimized for desktop, tablet, and mobile devices
 - **Category Filtering** - Easy browsing by project category
 - **Project Status Badges** - Visual indicators for Live, Alpha, Beta, and Coming Soon projects
-- **Donation Integration** - Support options via PayPal, Ko-fi, Bitcoin, and Ethereum
+- **Steam Integration** - Support options via wishlisting our paid apps on Steam
 - **Privacy-First** - No tracking, no ads, no data collection
 
 ## Technology Stack
 
 - **Framework**: React 19.2.1
+- **Desktop Wrapper**: Electron 40.0.0 (packaged using electron-builder)
 - **Language**: TypeScript
 - **Build Tool**: Vite 6.2.0
 - **Icons**: Lucide React
-- **Styling**: Tailwind CSS (inline styles)
+- **Styling**: Tailwind CSS
 - **Type Safety**: TypeScript with strict mode
 
 ## Project Categories
@@ -35,7 +36,6 @@ Penko App Store is a modern, responsive Progressive Web App (PWA) that serves as
 4. **Creative Tools** - Design and editing software (PDF, Vector, Image, Cut)
 5. **Enterprise Suite** - Business applications (DB, Campus, HCM, ERP)
 6. **Privacy & Security** - Data protection tools (Private)
-7. **Health & Wellness** - Personal transformation (Glow)
 
 ## Getting Started
 
@@ -83,8 +83,10 @@ npm run preview
 ```
 penko-software-hub/
 ├── components/          # React components
-│   ├── ProductGrid.tsx     # Main product showcase
-│   ├── DonationSection.tsx # Donation options
+│   ├── ProductGrid.tsx     # Main product showcase console
+│   ├── DonationSection.tsx # Support console & Steam wishlist
+│   ├── PenkoIcon.tsx       # Mascot custom vector pixel art renderer
+│   ├── NewsTicker.tsx      # Scrolling updates banner
 ├── App.tsx             # Main application component
 ├── AppContext.tsx      # Global state management (theme, language)
 ├── constants.ts        # Product data and configuration
@@ -138,7 +140,7 @@ Currently showcased projects include:
 - **Penko Reader** (Beta) - Accessibility-focused reading tool
 - **Penko Soroban** (Alpha) - Digital Japanese abacus for mental math
 
-...and 18 more coming soon!
+and 17 more coming soon.
 
 ## Development
 
@@ -156,16 +158,6 @@ The application uses React Context (`AppContext`) for managing:
 - Language selection (persisted to localStorage)
 - Translations based on selected language
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
 ## License
 
 This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
@@ -180,12 +172,9 @@ This project is licensed under the GPL-3.0 License - see the LICENSE file for de
 
 ## Support
 
-If you find this project useful, consider supporting Penko Software development:
+If you find this project useful, consider supporting Penko Software development by wishlisting our paid apps:
 
-- **PayPal**: https://paypal.me/penkosoftware
-- **Ko-fi**: https://ko-fi.com/penkosoftware
-- **Bitcoin**: bc1q6p40harkyh0uxkcv5dpdvz5uygkuvqdv2j5skk
-- **Ethereum**: 0xb16004d26d6ae9370ef2b7a9ed9c6fb2fb56e3c5
+- **Penko Vox Japanese**: https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/
 
 ## Links
 
@@ -201,4 +190,4 @@ If you find this project useful, consider supporting Penko Software development:
 
 ---
 
-**Made with care by Penko Software** | Free Forever | GPL-3.0 Licensed
+**Penko Station** — Offline-First Productivity, Learning & Creativity | GPL-3.0 Licensed
