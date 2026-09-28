@@ -20,9 +20,9 @@ export default defineConfig(() => {
             globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
           },
           manifest: {
-            name: 'Penko App Store',
-            short_name: 'App Store',
-            description: 'The free, open-source app store for everyone. No ads, no tracking, no subscriptions. Just software.',
+            name: 'Penko Plaza',
+            short_name: 'Penko Plaza',
+            description: 'The home of Penko Software: free, open-source, privacy-first apps. No ads, no tracking, no subscriptions.',
             theme_color: '#0f172a',
             background_color: '#0f172a',
             display: 'standalone',

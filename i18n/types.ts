@@ -137,7 +137,6 @@ export interface Translation {
   widgetClientSide: string;
   productKeyFeatures: string;
   privacyOpenSource: string;
-  newsLabel: string;
   earlyAccessBadge: string;
   supportOtherTitle: string;
   supportStarTitle: string;
@@ -166,7 +165,13 @@ export interface Translation {
   skipToContent: string;
   themeToggle: string;
   navMenu: string;
-  tickerPause: string;
-  tickerPlay: string;
   badgeNew: string;
+
+  // Landing page sections
+  navRoadmap: string;
+  whatsNewTitle: string;
+  whatsNewVoxCta: string;
+  roadmapTitle: string;
+  roadmapSubtitle: string;
+  voxVsAdventure: string;
 }

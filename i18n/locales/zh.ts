@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: '应用套件',
+  navProjects: '应用',
   navSupport: '支持 Penko',
   navGitHub: 'GitHub',
 
@@ -15,7 +15,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: '互动演示',
-  widgetTabNote: '便签',
+  widgetTabNote: '写作',
   widgetTabRead: '阅读',
   widgetTabAbacus: '算盘',
   widgetTabType: '打字',
@@ -25,7 +25,7 @@ export const ui: Translation = {
   widgetTypeDesc: '在本地测试打字布局并计算速度。',
   widgetTypeSuccess: '挑战完成！',
   widgetTypeRetry: '重试',
-  widgetNoteDefault: '欢迎来到 Penko Station！这里的一切都在您的浏览器内本地运行。',
+  widgetNoteDefault: '欢迎来到 Penko Plaza！这里的一切都在您的浏览器内本地运行。',
   widgetTypePhrase: 'penko应用离线运行',
 
   exploreAppsTitle: '探索应用',
@@ -42,7 +42,7 @@ export const ui: Translation = {
   categoryPrivacy: '隐私与安全',
   categoryWellness: '健康与保健',
 
-  descPenkoAdventure: '基于RPG的语言学习，采用自适应故事讲述。三种叙事模式：标准（基于外观）、本地（离线ONNX）或云端（Gemini）。包含语音支持。',
+  descPenkoAdventure: '一款轻松有趣的 RPG 游戏，通过互动式 AI 故事练习语言。休闲、有趣地练习 12 种语言，并支持语音功能。',
   descPenkoWriter: '隐私优先的文字处理器，拥有100多项功能。实时P2P协作，26个模板，13种语言。Microsoft Word和Google Docs的免费替代品。',
   descPenkoTune: '隐私优先的音乐平台，艺术家零手续费。IPFS/WebTorrent分发，加密货币支付，10段均衡器和专业可视化工具。Spotify的免费替代品。',
   descPenkoTyping: '复古街机风格打字游戏，学习非拉丁键盘布局。掌握韩语谚文、俄语西里尔文、日语假名等。',
@@ -77,7 +77,7 @@ export const ui: Translation = {
   upcomingPaidStatus: '开发中',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: '离线 AI 日语沉浸式学习',
-  voxJapaneseDesc: '本地优先的 AI 日语沉浸式学习引擎。与私人 AI 导师一起进入 40 多个涵盖 JLPT N5 至 N1 的互动社交角色扮演场景。导师会倾听、回应并温和地纠正你，一切都在你的电脑上离线运行。无需云端，无需订阅。',
+  voxJapaneseDesc: '我们功能完整的日语学习应用。本地优先的 AI 沉浸引擎，提供 40 多个涵盖 JLPT N5 至 N1 的互动社交角色扮演场景，配备一位倾听、回应并温和纠正你的私人 AI 导师，一切都在你自己的电脑上离线运行。无需云端，无需订阅。',
   voxJapaneseFeature1: '40+ 角色扮演 · N5–N1',
   voxJapaneseFeature2: '100% 离线 AI 导师',
   voxJapaneseFeature3: '语音识别与语音合成',
@@ -108,7 +108,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese 现已在 Steam 开启抢先体验！',
   newsUpdate2: 'Penko Reader v2.0.13 带来全面的视觉改版。',
   newsUpdate3: 'Penko Adventure v1.8.0 现已进入公开测试。',
-  newsUpdate4: 'Penko Station 现已完全支持离线使用，并提供 16 种语言。',
+  newsUpdate4: 'Penko Plaza 现已完全支持离线使用，并提供 16 种语言。',
 
   // UI labels & support section
   navLanguage: '语言',
@@ -118,7 +118,6 @@ export const ui: Translation = {
   widgetClientSide: '100% 本地运行',
   productKeyFeatures: '主要功能',
   privacyOpenSource: '开源代码',
-  newsLabel: '新闻',
   earlyAccessBadge: '抢先体验',
   supportOtherTitle: '其他支持方式',
   supportStarTitle: '在 GitHub 上点亮星标',
@@ -145,9 +144,15 @@ export const ui: Translation = {
   skipToContent: '跳到主要内容',
   themeToggle: '切换深色模式',
   navMenu: '菜单',
-  tickerPause: '暂停新闻滚动',
-  tickerPlay: '继续新闻滚动',
   badgeNew: '新',
+
+  // Landing page sections
+  navRoadmap: '路线图',
+  whatsNewTitle: '最新动态',
+  whatsNewVoxCta: '了解更多',
+  roadmapTitle: '路线图上的应用',
+  roadmapSubtitle: '正在开发中的应用，一次专注打造一个，全程公开。欢迎在 GitHub 上关注进展。',
+  voxVsAdventure: '只是想轻松练习语言？Penko Adventure 完全免费，支持 12 种语言。Vox 则是我们专为深入学习日语打造的进阶应用。',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

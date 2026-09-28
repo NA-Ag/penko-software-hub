@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Bug, CheckCircle2, ExternalLink, Heart, Rocket, Sparkles, Star } from 'lucide-react';
+import { ArrowUpRight, Bug, CheckCircle2, ExternalLink, Gamepad2, Heart, Rocket, Sparkles, Star } from 'lucide-react';
 import { useApp } from '../AppContext';
 import { HUB_REPO_URL, VOX_STEAM_URL } from '../constants';
 // Imported (not "/path" strings) so Vite resolves them for both the website and the Electron file:// build
@@ -135,6 +135,12 @@ const DonationSection: React.FC = () => {
                   {t.supportPurchaseNote}
                 </p>
               </div>
+
+              {/* How Vox differs from the free Penko Adventure */}
+              <p className="mt-6 pt-5 border-t border-white/10 flex items-start gap-2 text-xs text-slate-400 leading-relaxed">
+                <Gamepad2 size={14} className="text-slate-400 shrink-0 mt-px" />
+                {t.voxVsAdventure}
+              </p>
             </div>
           </div>
         </article>

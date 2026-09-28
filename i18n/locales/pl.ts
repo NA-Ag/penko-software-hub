@@ -3,7 +3,7 @@ import type { Translation } from '../types';
 
 export const ui: Translation = {
   // Navbar
-  navProjects: 'Pakiety aplikacji',
+  navProjects: 'Aplikacje',
   navSupport: 'Wesprzyj Penko',
   navGitHub: 'GitHub',
 
@@ -17,7 +17,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: 'Interaktywne demo',
-  widgetTabNote: 'Notatka',
+  widgetTabNote: 'Tekst',
   widgetTabRead: 'Czytanie',
   widgetTabAbacus: 'Abakus',
   widgetTabType: 'Pisanie',
@@ -27,7 +27,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Testuje układ klawiatury i lokalnie oblicza szybkość pisania.',
   widgetTypeSuccess: 'Wyzwanie ukończone!',
   widgetTypeRetry: 'Spróbuj ponownie',
-  widgetNoteDefault: 'Witaj w Penko Station! Wszystko tutaj działa lokalnie w Twojej przeglądarce.',
+  widgetNoteDefault: 'Witaj w Penko Plaza! Wszystko tutaj działa lokalnie w Twojej przeglądarce.',
   widgetTypePhrase: 'penko działa offline',
 
   // Projects
@@ -47,7 +47,7 @@ export const ui: Translation = {
   categoryWellness: 'Zdrowie i dobre samopoczucie',
 
   // Project Descriptions
-  descPenkoAdventure: 'Nauka języków w formie RPG z adaptacyjną narracją. Trzy tryby fabularne: Standardowy (oparty na fasadzie), Lokalny (offline ONNX) lub Chmura (Gemini). Obsługa głosu w zestawie.',
+  descPenkoAdventure: 'Zabawne RPG do ćwiczenia języków poprzez interaktywne historie tworzone przez AI. Beztroska, przyjemna praktyka w 12 językach, z obsługą głosu.',
   descPenkoWriter: 'Edytor tekstu stawiający prywatność na pierwszym miejscu, z ponad 100 funkcjami. Współpraca P2P w czasie rzeczywistym, 26 szablonów, 13 języków. Darmowa alternatywa dla Microsoft Word i Google Docs.',
   descPenkoTune: 'Platforma muzyczna ze strumieniowaniem stawiającym prywatność na pierwszym miejscu i 0% prowizji dla artystów. Dostawa przez IPFS/WebTorrent, płatności kryptowalutami, 10-pasmowy korektor i profesjonalne wizualizacje. Darmowa alternatywa dla Spotify.',
   descPenkoTyping: 'Gra do nauki pisania w stylu retro-arcade, ucząca układów klawiatury spoza alfabetu łacińskiego. Opanuj koreański Hangul, rosyjską cyrylicę, japońską Kanę i wiele więcej.',
@@ -73,7 +73,7 @@ export const ui: Translation = {
   // Donations
   donationsTagline: '100% opcjonalne',
   donationsTitle: 'Wesprzyj Penko',
-  donationsDescription1: 'Wszystkie aplikacje w Penko Station są całkowicie darmowe, działają przede wszystkim offline i są otwartoźródłowe. Aby finansować ich dalszy rozwój, okresowo tworzymy i wydajemy wyspecjalizowane, płatne oprogramowanie.',
+  donationsDescription1: 'Wszystkie aplikacje w Penko Plaza są całkowicie darmowe, działają przede wszystkim offline i są otwartoźródłowe. Aby finansować ich dalszy rozwój, okresowo tworzymy i wydajemy wyspecjalizowane, płatne oprogramowanie.',
   donationsDescription2: 'Te płatne aplikacje to osobne, zaawansowane narzędzia. Ich zakup jest w 100% opcjonalny, ale bezpośrednio finansuje tworzenie naszego darmowego oprogramowania.',
   upcomingPaidTitle: 'Przyszłe płatne aplikacje',
   upcomingPaidDesc: 'Rozwijamy kolejne wyspecjalizowane aplikacje desktopowe, pomoce naukowe i narzędzia offline, które będą wydawane okresowo, aby wspierać Penko.',
@@ -83,7 +83,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'W trakcie tworzenia',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Immersja japońskiego z AI offline',
-  voxJapaneseDesc: 'Silnik immersji AI dla języka japońskiego, działający przede wszystkim lokalnie. Wejdź w ponad 40 interaktywnych scenek społecznych na poziomach JLPT od N5 do N1 z prywatnym korepetytorem AI, który słucha, mówi i delikatnie Cię poprawia – wszystko działa offline na Twoim własnym komputerze. Żadnej chmury, żadnych subskrypcji.',
+  voxJapaneseDesc: 'Nasza kompletna aplikacja do nauki języka japońskiego. Silnik immersji AI działający przede wszystkim lokalnie, z ponad 40 interaktywnymi scenkami społecznymi na poziomach JLPT od N5 do N1 oraz prywatnym korepetytorem AI, który słucha, mówi i delikatnie Cię poprawia – wszystko offline, na Twoim własnym komputerze. Żadnej chmury, żadnych subskrypcji.',
   voxJapaneseFeature1: '40+ scenek · N5–N1',
   voxJapaneseFeature2: 'Korepetytor AI w 100% offline',
   voxJapaneseFeature3: 'Mowa na wejściu i wyjściu',
@@ -119,7 +119,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese jest już dostępne we wczesnym dostępie na Steam!',
   newsUpdate2: 'Penko Reader v2.0.13 przynosi kompletną wizualną przebudowę.',
   newsUpdate3: 'Penko Adventure v1.8.0 jest teraz w publicznej becie.',
-  newsUpdate4: 'Penko Station działa teraz w pełni offline i mówi w 16 językach.',
+  newsUpdate4: 'Penko Plaza działa teraz w pełni offline i mówi w 16 językach.',
 
   // UI labels & support section
   navLanguage: 'Język',
@@ -129,7 +129,6 @@ export const ui: Translation = {
   widgetClientSide: '100% po stronie klienta',
   productKeyFeatures: 'Kluczowe funkcje',
   privacyOpenSource: 'Otwartoźródłowy kod',
-  newsLabel: 'Aktualności',
   earlyAccessBadge: 'Wczesny dostęp',
   supportOtherTitle: 'Inne sposoby, by pomóc',
   supportStarTitle: 'Daj nam gwiazdkę na GitHub',
@@ -156,9 +155,15 @@ export const ui: Translation = {
   skipToContent: 'Przejdź do treści',
   themeToggle: 'Przełącz tryb ciemny',
   navMenu: 'Menu',
-  tickerPause: 'Wstrzymaj aktualności',
-  tickerPlay: 'Wznów aktualności',
   badgeNew: 'Nowość',
+
+  // Landing page sections
+  navRoadmap: 'Plan rozwoju',
+  whatsNewTitle: 'Co nowego',
+  whatsNewVoxCta: 'Dowiedz się więcej',
+  roadmapTitle: 'W planach rozwoju',
+  roadmapSubtitle: 'Aplikacje w budowie, tworzone jedna po drugiej i w pełni jawnie. Śledź postępy na GitHub.',
+  voxVsAdventure: 'Chcesz po prostu ćwiczyć języki dla przyjemności? Penko Adventure jest darmowe i obejmuje 12 języków. Vox to nasza zaawansowana aplikacja do prawdziwej nauki japońskiego.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

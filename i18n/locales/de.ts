@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: 'App-Suites',
+  navProjects: 'Apps',
   navSupport: 'Penko Unterstützen',
   navGitHub: 'GitHub',
   heroTagline: 'Barrierefrei • Open Source • GPL3-Lizenz',
@@ -13,7 +13,7 @@ export const ui: Translation = {
   heroButtonSupport: 'Penko Unterstützen',
   // Widget Demos
   widgetTitle: 'Interaktive Demos',
-  widgetTabNote: 'Notiz',
+  widgetTabNote: 'Schreiben',
   widgetTabRead: 'Lesen',
   widgetTabAbacus: 'Abakus',
   widgetTabType: 'Tippen',
@@ -23,7 +23,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Testet das Tastaturlayout und berechnet die Geschwindigkeit lokal.',
   widgetTypeSuccess: 'Herausforderung abgeschlossen!',
   widgetTypeRetry: 'Erneut versuchen',
-  widgetNoteDefault: 'Willkommen bei Penko Station! Alles hier läuft lokal in Ihrem Browser.',
+  widgetNoteDefault: 'Willkommen bei Penko Plaza! Alles hier läuft lokal in Ihrem Browser.',
   widgetTypePhrase: 'penko apps laufen offline',
 
   exploreAppsTitle: 'Apps Erkunden',
@@ -38,7 +38,7 @@ export const ui: Translation = {
   categoryEnterprise: 'Unternehmenssuite',
   categoryPrivacy: 'Privatsphäre & Sicherheit',
   categoryWellness: 'Gesundheit & Wohlbefinden',
-  descPenkoAdventure: 'RPG-basiertes Sprachenlernen mit adaptivem Storytelling. Drei Erzählmodi: Standard (fassadenbasiert), Lokal (Offline-ONNX) oder Cloud (Gemini). Sprachunterstützung enthalten.',
+  descPenkoAdventure: 'Ein verspieltes RPG zum Üben von Sprachen durch interaktive, KI-gesteuerte Geschichten. Lockeres, unterhaltsames Üben in 12 Sprachen, mit Sprachunterstützung.',
   descPenkoWriter: 'Datenschutzorientierte Textverarbeitung mit über 100 Funktionen. Echtzeit-P2P-Zusammenarbeit, 26 Vorlagen, 13 Sprachen. Eine kostenlose Alternative zu Microsoft Word und Google Docs.',
   descPenkoTune: 'Datenschutzorientierte Musikplattform mit 0 % Künstlergebühren. IPFS/WebTorrent-Verteilung, Krypto-Zahlungen, 10-Band-EQ und professionelle Visualizer. Eine kostenlose Alternative zu Spotify.',
   descPenkoTyping: 'Retro-Arcade-Tippspiel zum Erlernen nicht-lateinischer Tastaturlayouts. Meistern Sie koreanisches Hangul, russisches Kyrillisch, japanische Kana und mehr.',
@@ -72,7 +72,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'In Entwicklung',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Offline-KI für Japanisch-Immersion',
-  voxJapaneseDesc: 'Eine lokal laufende KI-Immersions-Engine für Japanisch. Tauchen Sie in über 40 interaktive soziale Rollenspiele von JLPT N5 bis N1 ein, mit einem privaten KI-Tutor, der zuhört, spricht und sanft korrigiert, komplett offline auf Ihrem eigenen Computer. Keine Cloud, keine Abos.',
+  voxJapaneseDesc: 'Unsere vollständige App zum Japanischlernen. Eine lokal laufende KI-Immersions-Engine mit über 40 interaktiven sozialen Rollenspielen von JLPT N5 bis N1, und ein privater KI-Tutor, der Ihnen zuhört, mit Ihnen spricht und Sie sanft korrigiert, alles offline auf Ihrem eigenen Computer. Keine Cloud, keine Abos.',
   voxJapaneseFeature1: '40+ Rollenspiele · N5–N1',
   voxJapaneseFeature2: '100 % Offline-KI-Tutor',
   voxJapaneseFeature3: 'Spracheingabe & Sprachausgabe',
@@ -100,7 +100,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese ist jetzt im Early Access auf Steam erhältlich!',
   newsUpdate2: 'Penko Reader v2.0.13 erscheint mit einer kompletten visuellen Überarbeitung.',
   newsUpdate3: 'Penko Adventure v1.8.0 ist jetzt in der öffentlichen Beta.',
-  newsUpdate4: 'Penko Station funktioniert jetzt vollständig offline und spricht 16 Sprachen.',
+  newsUpdate4: 'Penko Plaza funktioniert jetzt vollständig offline und spricht 16 Sprachen.',
 
   // UI labels & support section
   navLanguage: 'Sprache',
@@ -110,7 +110,6 @@ export const ui: Translation = {
   widgetClientSide: '100 % clientseitig',
   productKeyFeatures: 'Hauptfunktionen',
   privacyOpenSource: 'Open-Source-Code',
-  newsLabel: 'News',
   earlyAccessBadge: 'Early Access',
   supportOtherTitle: 'Weitere Möglichkeiten zu helfen',
   supportStarTitle: 'Geben Sie uns einen Stern auf GitHub',
@@ -137,9 +136,15 @@ export const ui: Translation = {
   skipToContent: 'Zum Inhalt springen',
   themeToggle: 'Dunkelmodus umschalten',
   navMenu: 'Menü',
-  tickerPause: 'News pausieren',
-  tickerPlay: 'News fortsetzen',
   badgeNew: 'Neu',
+
+  // Landing page sections
+  navRoadmap: 'Roadmap',
+  whatsNewTitle: 'Neuigkeiten',
+  whatsNewVoxCta: 'Mehr erfahren',
+  roadmapTitle: 'Auf der Roadmap',
+  roadmapSubtitle: 'Apps in Entwicklung, eine nach der anderen und offen einsehbar entstanden. Verfolgen Sie den Fortschritt auf GitHub.',
+  voxVsAdventure: 'Möchten Sie einfach nur zum Spaß Sprachen üben? Penko Adventure ist kostenlos und deckt 12 Sprachen ab. Vox ist unsere ausführliche App, um Japanisch wirklich zu lernen.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

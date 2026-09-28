@@ -5,7 +5,8 @@ import ProductGrid from './components/ProductGrid';
 import DonationSection from './components/DonationSection';
 import PrivacySection from './components/PrivacySection';
 import Footer from './components/Footer';
-import NewsTicker from './components/NewsTicker';
+import WhatsNew from './components/WhatsNew';
+import Roadmap from './components/Roadmap';
 import { useApp } from './AppContext';
 
 export default function App() {
@@ -23,12 +24,13 @@ export default function App() {
       <Navbar />
       <main id="main" tabIndex={-1} className="focus:outline-none">
         <Hero />
+        <WhatsNew />
         <ProductGrid />
+        <Roadmap />
         <DonationSection />
         <PrivacySection />
       </main>
       <Footer />
-      <NewsTicker />
     </div>
   );
 }

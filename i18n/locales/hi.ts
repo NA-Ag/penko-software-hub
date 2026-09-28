@@ -3,7 +3,7 @@ import type { Translation } from '../types';
 
 export const ui: Translation = {
   // Navbar
-  navProjects: 'ऐप सुइट्स',
+  navProjects: 'ऐप्स',
   navSupport: 'Penko को सपोर्ट करें',
   navGitHub: 'GitHub',
 
@@ -17,7 +17,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: 'इंटरैक्टिव डेमो',
-  widgetTabNote: 'नोट',
+  widgetTabNote: 'लिखें',
   widgetTabRead: 'पढ़ें',
   widgetTabAbacus: 'अबेकस',
   widgetTabType: 'टाइप',
@@ -27,7 +27,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'टाइपिंग लेआउट और गति को स्थानीय रूप से मापता है।',
   widgetTypeSuccess: 'चुनौती पूरी हुई!',
   widgetTypeRetry: 'फिर से कोशिश करें',
-  widgetNoteDefault: 'Penko Station में आपका स्वागत है! यहाँ सब कुछ आपके ब्राउज़र के अंदर ही चलता है।',
+  widgetNoteDefault: 'Penko Plaza में आपका स्वागत है! यहाँ सब कुछ आपके ब्राउज़र के अंदर ही चलता है।',
   widgetTypePhrase: 'penko ऐप्स ऑफ़लाइन चलते हैं',
 
   // Projects
@@ -47,7 +47,7 @@ export const ui: Translation = {
   categoryWellness: 'स्वास्थ्य और वेलनेस',
 
   // Project Descriptions
-  descPenkoAdventure: 'अनुकूली कहानी कहने के साथ RPG-आधारित भाषा सीखना। तीन नैरेटिव मोड: स्टैंडर्ड (facade-आधारित), लोकल (ऑफ़लाइन ONNX), या क्लाउड (Gemini)। वॉइस सपोर्ट शामिल।',
+  descPenkoAdventure: 'इंटरैक्टिव, AI-आधारित कहानियों के ज़रिए भाषाएं सीखने के लिए एक मज़ेदार RPG। 12 भाषाओं में कैज़ुअल, मज़ेदार प्रैक्टिस, वॉइस सपोर्ट के साथ।',
   descPenkoWriter: 'प्राइवेसी-फर्स्ट वर्ड प्रोसेसर, 100+ फ़ीचर्स के साथ। रियल-टाइम P2P कोलैबोरेशन, 26 टेम्पलेट्स, 13 भाषाएँ। Microsoft Word और Google Docs का मुफ़्त विकल्प।',
   descPenkoTune: 'प्राइवेसी-फर्स्ट स्ट्रीमिंग और 0% आर्टिस्ट फीस वाला म्यूज़िक प्लेटफ़ॉर्म। IPFS/WebTorrent डिलीवरी, क्रिप्टो पेमेंट्स, 10-बैंड EQ, और प्रोफेशनल विज़ुअलाइज़र। Spotify का मुफ़्त विकल्प।',
   descPenkoTyping: 'नॉन-लैटिन कीबोर्ड लेआउट सीखने के लिए रेट्रो आर्केड-स्टाइल टाइपिंग गेम। कोरियाई हांगुल, रूसी सिरिलिक, जापानी काना और भी बहुत कुछ में महारत हासिल करें।',
@@ -73,7 +73,7 @@ export const ui: Translation = {
   // Donations
   donationsTagline: '100% वैकल्पिक',
   donationsTitle: 'Penko को सपोर्ट करें',
-  donationsDescription1: 'Penko Station के अंदर सभी ऐप्स पूरी तरह मुफ़्त, ऑफ़लाइन-फर्स्ट, और ओपन-सोर्स हैं। इनके निरंतर विकास को फंड करने के लिए, हम समय-समय पर विशेष पेड सॉफ़्टवेयर बनाते और रिलीज़ करते हैं।',
+  donationsDescription1: 'Penko Plaza के अंदर सभी ऐप्स पूरी तरह मुफ़्त, ऑफ़लाइन-फर्स्ट, और ओपन-सोर्स हैं। इनके निरंतर विकास को फंड करने के लिए, हम समय-समय पर विशेष पेड सॉफ़्टवेयर बनाते और रिलीज़ करते हैं।',
   donationsDescription2: 'ये पेड ऐप्स अलग, एडवांस्ड टूल्स हैं। इन्हें खरीदना 100% वैकल्पिक है, लेकिन यह सीधे हमारे मुफ़्त सॉफ़्टवेयर के निर्माण को फंड करता है।',
   upcomingPaidTitle: 'आने वाले पेड ऐप्स',
   upcomingPaidDesc: 'हम और विशेष डेस्कटॉप एप्लिकेशन, स्टडी हेल्पर, और ऑफ़लाइन टूल्स विकसित कर रहे हैं, जो Penko को सपोर्ट करने के लिए समय-समय पर रिलीज़ होंगे।',
@@ -83,7 +83,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'विकासाधीन',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'ऑफ़लाइन AI जापानी इमर्शन',
-  voxJapaneseDesc: 'जापानी भाषा के लिए एक लोकल-फर्स्ट AI इमर्शन इंजन। JLPT N5 से N1 तक के 40+ इंटरैक्टिव सोशल रोलप्ले में कदम रखें, एक प्राइवेट AI ट्यूटर के साथ जो सुनता है, बोलता है, और आपको धीरे से सुधारता है — यह सब आपके अपने कंप्यूटर पर ऑफ़लाइन चलता है। न कोई क्लाउड, न कोई सब्सक्रिप्शन।',
+  voxJapaneseDesc: 'जापानी सीखने के लिए हमारा पूर्ण ऐप। JLPT N5 से N1 तक 40+ इंटरैक्टिव सोशल रोलप्ले वाला एक लोकल-फर्स्ट AI इमर्शन इंजन, और एक प्राइवेट AI ट्यूटर जो सुनता है, बोलता है, और आपको धीरे से सुधारता है — यह सब आपके अपने कंप्यूटर पर पूरी तरह ऑफ़लाइन चलता है। न कोई क्लाउड, न कोई सब्सक्रिप्शन।',
   voxJapaneseFeature1: '40+ रोलप्ले · N5–N1',
   voxJapaneseFeature2: '100% ऑफ़लाइन AI ट्यूटर',
   voxJapaneseFeature3: 'स्पीच इनपुट और वॉइस आउटपुट',
@@ -119,7 +119,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese अब Steam पर अर्ली एक्सेस में उपलब्ध है!',
   newsUpdate2: 'Penko Reader v2.0.13 पूरी तरह नए विज़ुअल्स के साथ आ गया है।',
   newsUpdate3: 'Penko Adventure v1.8.0 अब पब्लिक बीटा में है।',
-  newsUpdate4: 'Penko Station अब पूरी तरह ऑफ़लाइन काम करता है और 16 भाषाओं में उपलब्ध है।',
+  newsUpdate4: 'Penko Plaza अब पूरी तरह ऑफ़लाइन काम करता है और 16 भाषाओं में उपलब्ध है।',
 
   // UI labels & support section
   navLanguage: 'भाषा',
@@ -129,7 +129,6 @@ export const ui: Translation = {
   widgetClientSide: '100% क्लाइंट-साइड',
   productKeyFeatures: 'मुख्य फ़ीचर्स',
   privacyOpenSource: 'ओपन सोर्स कोडबेस',
-  newsLabel: 'समाचार',
   earlyAccessBadge: 'अर्ली एक्सेस',
   supportOtherTitle: 'मदद करने के अन्य तरीके',
   supportStarTitle: 'GitHub पर स्टार दें',
@@ -156,9 +155,15 @@ export const ui: Translation = {
   skipToContent: 'सामग्री पर जाएं',
   themeToggle: 'डार्क मोड टॉगल करें',
   navMenu: 'मेनू',
-  tickerPause: 'समाचार रोकें',
-  tickerPlay: 'समाचार चलाएं',
   badgeNew: 'नया',
+
+  // Landing page sections
+  navRoadmap: 'रोडमैप',
+  whatsNewTitle: 'क्या नया है',
+  whatsNewVoxCta: 'और जानें',
+  roadmapTitle: 'रोडमैप पर',
+  roadmapSubtitle: 'ऐसे ऐप्स जिन पर काम चल रहा है, एक-एक करके और खुले तौर पर बनाए जा रहे हैं। GitHub पर फॉलो करें।',
+  voxVsAdventure: 'बस मज़े के लिए भाषाएं प्रैक्टिस करना चाहते हैं? Penko Adventure मुफ़्त है और 12 भाषाओं को कवर करता है। Vox हमारा गहन ऐप है, जो वाकई जापानी सीखने के लिए है।',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

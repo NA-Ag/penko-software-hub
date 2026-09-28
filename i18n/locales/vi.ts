@@ -3,7 +3,7 @@ import type { Translation } from '../types';
 
 export const ui: Translation = {
   // Navbar
-  navProjects: 'Bộ ứng dụng',
+  navProjects: 'Ứng dụng',
   navSupport: 'Ủng hộ Penko',
   navGitHub: 'GitHub',
 
@@ -17,7 +17,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: 'Bản demo tương tác',
-  widgetTabNote: 'Ghi chú',
+  widgetTabNote: 'Viết',
   widgetTabRead: 'Đọc',
   widgetTabAbacus: 'Bàn tính',
   widgetTabType: 'Gõ phím',
@@ -27,7 +27,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Kiểm tra bố cục bàn phím và tính tốc độ gõ ngay tại máy.',
   widgetTypeSuccess: 'Hoàn thành thử thách!',
   widgetTypeRetry: 'Thử lại',
-  widgetNoteDefault: 'Chào mừng đến với Penko Station! Mọi thứ ở đây đều chạy cục bộ ngay trong trình duyệt của bạn.',
+  widgetNoteDefault: 'Chào mừng đến với Penko Plaza! Mọi thứ ở đây đều chạy cục bộ ngay trong trình duyệt của bạn.',
   widgetTypePhrase: 'ứng dụng penko chạy offline',
 
   // Projects
@@ -47,7 +47,7 @@ export const ui: Translation = {
   categoryWellness: 'Sức khỏe & An lành',
 
   // Project Descriptions
-  descPenkoAdventure: 'Học ngôn ngữ theo phong cách RPG với cốt truyện thích ứng. Ba chế độ kể chuyện: Tiêu chuẩn (dựa trên kịch bản có sẵn), Cục bộ (ONNX ngoại tuyến), hoặc Đám mây (Gemini). Có hỗ trợ giọng nói.',
+  descPenkoAdventure: 'Một tựa game RPG vui nhộn giúp luyện ngôn ngữ qua những câu chuyện tương tác do AI dẫn dắt. Luyện tập nhẹ nhàng, thú vị với 12 ngôn ngữ, có hỗ trợ giọng nói.',
   descPenkoWriter: 'Trình xử lý văn bản ưu tiên quyền riêng tư với hơn 100 tính năng. Cộng tác P2P theo thời gian thực, 26 mẫu, 13 ngôn ngữ. Một lựa chọn thay thế miễn phí cho Microsoft Word và Google Docs.',
   descPenkoTune: 'Nền tảng âm nhạc với phát trực tuyến ưu tiên quyền riêng tư và 0% phí cho nghệ sĩ. Phân phối qua IPFS/WebTorrent, thanh toán bằng tiền mã hóa, EQ 10 dải tần và bộ hiển thị hình ảnh chuyên nghiệp. Một lựa chọn thay thế miễn phí cho Spotify.',
   descPenkoTyping: 'Trò chơi gõ phím phong cách arcade cổ điển để học các bố cục bàn phím không dùng chữ Latinh. Thành thạo Hangul Hàn Quốc, chữ Kirin Nga, Kana Nhật Bản và nhiều hơn nữa.',
@@ -73,7 +73,7 @@ export const ui: Translation = {
   // Donations
   donationsTagline: 'Hoàn toàn tùy chọn',
   donationsTitle: 'Ủng hộ Penko',
-  donationsDescription1: 'Tất cả ứng dụng trong Penko Station đều hoàn toàn miễn phí, ưu tiên ngoại tuyến và mã nguồn mở. Để tài trợ cho quá trình phát triển liên tục, chúng tôi định kỳ xây dựng và phát hành các phần mềm trả phí chuyên biệt.',
+  donationsDescription1: 'Tất cả ứng dụng trong Penko Plaza đều hoàn toàn miễn phí, ưu tiên ngoại tuyến và mã nguồn mở. Để tài trợ cho quá trình phát triển liên tục, chúng tôi định kỳ xây dựng và phát hành các phần mềm trả phí chuyên biệt.',
   donationsDescription2: 'Các ứng dụng trả phí này là những công cụ nâng cao, độc lập. Việc mua chúng hoàn toàn tùy chọn, nhưng sẽ trực tiếp tài trợ cho việc tạo ra phần mềm miễn phí của chúng tôi.',
   upcomingPaidTitle: 'Ứng dụng trả phí sắp tới',
   upcomingPaidDesc: 'Chúng tôi đang phát triển thêm các ứng dụng máy tính để bàn chuyên biệt, công cụ hỗ trợ học tập và công cụ ngoại tuyến, sẽ được phát hành định kỳ để hỗ trợ Penko.',
@@ -83,7 +83,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'Đang phát triển',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Hòa mình vào tiếng Nhật bằng AI ngoại tuyến',
-  voxJapaneseDesc: 'Một cỗ máy hòa mình vào tiếng Nhật bằng AI, ưu tiên chạy cục bộ. Bước vào hơn 40 tình huống nhập vai xã hội tương tác trải dài từ JLPT N5 đến N1, cùng một gia sư AI riêng tư biết lắng nghe, nói chuyện và nhẹ nhàng sửa lỗi cho bạn, tất cả đều chạy ngoại tuyến ngay trên máy tính của bạn. Không đám mây, không thuê bao.',
+  voxJapaneseDesc: 'Ứng dụng học tiếng Nhật toàn diện của chúng tôi. Một cỗ máy hòa mình vào tiếng Nhật bằng AI, ưu tiên chạy cục bộ, với hơn 40 tình huống nhập vai xã hội tương tác trải dài từ JLPT N5 đến N1, cùng một gia sư AI riêng tư biết lắng nghe, nói chuyện và nhẹ nhàng sửa lỗi cho bạn, tất cả đều chạy ngoại tuyến ngay trên máy tính của bạn. Không đám mây, không thuê bao.',
   voxJapaneseFeature1: '40+ tình huống nhập vai · N5–N1',
   voxJapaneseFeature2: 'Gia sư AI 100% ngoại tuyến',
   voxJapaneseFeature3: 'Nhận giọng nói & Phản hồi bằng giọng nói',
@@ -119,7 +119,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese hiện đã có mặt ở giai đoạn Early Access trên Steam!',
   newsUpdate2: 'Penko Reader v2.0.13 ra mắt với giao diện được đại tu hoàn toàn.',
   newsUpdate3: 'Penko Adventure v1.8.0 hiện đang trong giai đoạn beta công khai.',
-  newsUpdate4: 'Penko Station giờ đây hoạt động hoàn toàn ngoại tuyến và hỗ trợ 16 ngôn ngữ.',
+  newsUpdate4: 'Penko Plaza giờ đây hoạt động hoàn toàn ngoại tuyến và hỗ trợ 16 ngôn ngữ.',
 
   // UI labels & support section
   navLanguage: 'Ngôn ngữ',
@@ -129,7 +129,6 @@ export const ui: Translation = {
   widgetClientSide: '100% xử lý tại máy',
   productKeyFeatures: 'Tính năng nổi bật',
   privacyOpenSource: 'Mã nguồn mở',
-  newsLabel: 'Tin tức',
   earlyAccessBadge: 'Early Access',
   supportOtherTitle: 'Những cách khác để giúp đỡ',
   supportStarTitle: 'Gắn sao cho chúng tôi trên GitHub',
@@ -156,9 +155,15 @@ export const ui: Translation = {
   skipToContent: 'Chuyển đến nội dung chính',
   themeToggle: 'Chuyển đổi chế độ tối',
   navMenu: 'Menu',
-  tickerPause: 'Tạm dừng tin tức',
-  tickerPlay: 'Phát tin tức',
   badgeNew: 'Mới',
+
+  // Landing page sections
+  navRoadmap: 'Lộ trình',
+  whatsNewTitle: 'Có gì mới',
+  whatsNewVoxCta: 'Tìm hiểu thêm',
+  roadmapTitle: 'Trên lộ trình phát triển',
+  roadmapSubtitle: 'Các ứng dụng đang được phát triển, xây dựng từng cái một cách công khai. Theo dõi tiến trình trên GitHub.',
+  voxVsAdventure: 'Chỉ muốn luyện ngôn ngữ cho vui thôi? Penko Adventure miễn phí và hỗ trợ 12 ngôn ngữ. Vox là ứng dụng chuyên sâu của chúng tôi để thực sự học tiếng Nhật.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

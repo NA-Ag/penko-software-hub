@@ -41,15 +41,16 @@ const Navbar: React.FC = () => {
     <nav className="sticky top-0 z-40 w-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-700 transition-colors">
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         <div className="flex h-16 items-center justify-between">
-          <a href="#" aria-label="Penko Station" className="flex items-center gap-2.5 cursor-pointer group rounded-xl" {...handlers}>
+          <a href="#" aria-label="Penko Plaza" className="flex items-center gap-2.5 cursor-pointer group rounded-xl" {...handlers}>
             <div className="w-11 h-11 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700 p-0.5 shadow-sm transition-all duration-300 group-hover:scale-105">
               <PenkoIcon type="default" size={40} pose={pose} />
             </div>
-            <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">Penko <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500 dark:from-amber-400 dark:to-orange-400 font-extrabold">Station</span></span>
+            <span className="font-bold text-xl tracking-tight text-slate-900 dark:text-white">Penko <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-amber-500 dark:from-amber-400 dark:to-orange-400 font-extrabold">Plaza</span></span>
           </a>
 
           <div className="hidden md:flex items-center space-x-6">
             <a href="#products" className={navLinkClass}>{t.navProjects}</a>
+            <a href="#roadmap" className={navLinkClass}>{t.navRoadmap}</a>
             <a href="#donate" className={navLinkClass}>{t.navSupport}</a>
             <a href={HUB_REPO_URL} target="_blank" rel="noreferrer" className={navLinkClass}>{t.navGitHub}</a>
 
@@ -116,6 +117,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
           <div className="px-4 pt-2 pb-6 space-y-2">
             <a onClick={() => setIsOpen(false)} href="#products" className={mobileLinkClass}>{t.navProjects}</a>
+            <a onClick={() => setIsOpen(false)} href="#roadmap" className={mobileLinkClass}>{t.navRoadmap}</a>
             <a onClick={() => setIsOpen(false)} href="#donate" className={mobileLinkClass}>{t.navSupport}</a>
             <a onClick={() => setIsOpen(false)} href={HUB_REPO_URL} target="_blank" rel="noreferrer" className={mobileLinkClass}>{t.navGitHub}</a>
 

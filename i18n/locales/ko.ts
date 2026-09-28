@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: '앱 스위트',
+  navProjects: '앱',
   navSupport: 'Penko 후원하기',
   navGitHub: 'GitHub',
 
@@ -15,7 +15,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: '인터랙티브 데모',
-  widgetTabNote: '메모',
+  widgetTabNote: '쓰기',
   widgetTabRead: '읽기',
   widgetTabAbacus: '주판',
   widgetTabType: '타이핑',
@@ -25,7 +25,7 @@ export const ui: Translation = {
   widgetTypeDesc: '키보드 배열과 타이핑 속도를 로컬에서 테스트합니다.',
   widgetTypeSuccess: '챌린지 완료!',
   widgetTypeRetry: '다시 시도',
-  widgetNoteDefault: 'Penko Station에 오신 것을 환영합니다! 여기서는 모든 것이 브라우저 안에서 로컬로 실행됩니다.',
+  widgetNoteDefault: 'Penko Plaza에 오신 것을 환영합니다! 여기서는 모든 것이 브라우저 안에서 로컬로 실행됩니다.',
   widgetTypePhrase: 'penko 앱은 오프라인으로 동작해요',
 
   exploreAppsTitle: '앱 둘러보기',
@@ -42,7 +42,7 @@ export const ui: Translation = {
   categoryPrivacy: '개인정보 보호 및 보안',
   categoryWellness: '건강과 웰니스',
 
-  descPenkoAdventure: '적응형 스토리텔링을 갖춘 RPG 기반 언어 학습. 스탠다드(파사드 기반), 로컬(오프라인 ONNX), 클라우드(Gemini) 세 가지 내러티브 모드를 제공합니다. 음성 지원 포함.',
+  descPenkoAdventure: '인터랙티브한 AI 기반 스토리로 언어를 연습하는 유쾌한 RPG. 12개 언어를 가볍고 재미있게 연습할 수 있으며, 음성 지원도 제공합니다.',
   descPenkoWriter: '100개 이상의 기능을 갖춘 프라이버시 우선 워드 프로세서. 실시간 P2P 공동 작업, 템플릿 26종, 13개 언어 지원. Microsoft Word와 Google Docs의 무료 대안.',
   descPenkoTune: '프라이버시를 최우선으로 하며 아티스트 수수료가 0%인 음악 플랫폼. IPFS/WebTorrent 전송, 암호화폐 결제, 10밴드 EQ, 전문가급 비주얼라이저. Spotify의 무료 대안.',
   descPenkoTyping: '비라틴 키보드 배열을 배우는 레트로 아케이드 스타일 타이핑 게임. 한글, 러시아어 키릴 문자, 일본어 가나 등을 마스터하세요.',
@@ -67,7 +67,7 @@ export const ui: Translation = {
 
   donationsTagline: '100% 선택 사항',
   donationsTitle: 'Penko 후원하기',
-  donationsDescription1: 'Penko Station의 모든 앱은 완전히 무료이며, 오프라인 우선이고 오픈소스입니다. 지속적인 개발 자금을 마련하기 위해 저희는 주기적으로 전문 유료 소프트웨어를 만들어 출시합니다.',
+  donationsDescription1: 'Penko Plaza의 모든 앱은 완전히 무료이며, 오프라인 우선이고 오픈소스입니다. 지속적인 개발 자금을 마련하기 위해 저희는 주기적으로 전문 유료 소프트웨어를 만들어 출시합니다.',
   donationsDescription2: '이 유료 앱들은 별도의 고급 도구입니다. 구매는 100% 선택 사항이지만, 무료 소프트웨어 제작에 직접적인 도움이 됩니다.',
   upcomingPaidTitle: '출시 예정 유료 앱',
   upcomingPaidDesc: 'Penko를 지원하기 위해 주기적으로 출시될 전문 데스크톱 애플리케이션, 학습 도우미, 오프라인 도구를 개발하고 있습니다.',
@@ -77,7 +77,7 @@ export const ui: Translation = {
   upcomingPaidStatus: '개발 중',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: '오프라인 AI 일본어 몰입 학습',
-  voxJapaneseDesc: '일본어를 위한 로컬 우선 AI 몰입 학습 엔진. JLPT N5부터 N1까지, 40개 이상의 인터랙티브 소셜 롤플레이에 도전하세요. 듣고 말하고 부드럽게 교정해주는 전용 AI 튜터가 함께하며, 모든 과정이 클라우드 없이 내 컴퓨터에서 오프라인으로 실행됩니다. 클라우드도, 구독도 필요 없습니다.',
+  voxJapaneseDesc: '일본어 학습을 위한 완전한 앱입니다. 로컬 우선 AI 몰입 학습 엔진이 JLPT N5부터 N1까지 40개 이상의 인터랙티브 소셜 롤플레이를 제공하며, 듣고 말하고 부드럽게 교정해주는 전용 AI 튜터와 함께 모든 과정이 클라우드 없이 내 컴퓨터에서 오프라인으로 실행됩니다. 클라우드도, 구독도 필요 없습니다.',
   voxJapaneseFeature1: '롤플레이 40개 이상 · N5–N1',
   voxJapaneseFeature2: '100% 오프라인 AI 튜터',
   voxJapaneseFeature3: '음성 인식 및 음성 출력',
@@ -109,7 +109,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese가 Steam에서 얼리 액세스로 출시되었습니다!',
   newsUpdate2: 'Penko Reader v2.0.13이 전면 개편된 디자인으로 찾아왔습니다.',
   newsUpdate3: 'Penko Adventure v1.8.0이 퍼블릭 베타로 전환되었습니다.',
-  newsUpdate4: 'Penko Station이 완전 오프라인으로 작동하며 16개 언어를 지원합니다.',
+  newsUpdate4: 'Penko Plaza가 완전 오프라인으로 작동하며 16개 언어를 지원합니다.',
 
   // UI labels & support section
   navLanguage: '언어',
@@ -119,7 +119,6 @@ export const ui: Translation = {
   widgetClientSide: '100% 클라이언트 사이드',
   productKeyFeatures: '주요 기능',
   privacyOpenSource: '오픈소스 코드베이스',
-  newsLabel: '뉴스',
   earlyAccessBadge: '얼리 액세스',
   supportOtherTitle: '도움을 줄 수 있는 다른 방법',
   supportStarTitle: 'GitHub에서 별점 남기기',
@@ -146,9 +145,15 @@ export const ui: Translation = {
   skipToContent: '본문으로 건너뛰기',
   themeToggle: '다크 모드 전환',
   navMenu: '메뉴',
-  tickerPause: '뉴스 일시정지',
-  tickerPlay: '뉴스 재생',
   badgeNew: '신규',
+
+  // Landing page sections
+  navRoadmap: '로드맵',
+  whatsNewTitle: '새 소식',
+  whatsNewVoxCta: '자세히 보기',
+  roadmapTitle: '개발 중인 앱',
+  roadmapSubtitle: '하나씩, 공개적으로 만들어가는 개발 중인 앱들. GitHub에서 진행 상황을 확인해보세요.',
+  voxVsAdventure: '그냥 재미로 언어를 연습하고 싶으신가요? Penko Adventure는 무료이며 12개 언어를 지원합니다. Vox는 일본어를 제대로 배우기 위한 본격적인 앱입니다.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

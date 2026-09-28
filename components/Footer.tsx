@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 flex items-center justify-center border border-slate-200 dark:border-slate-700 p-0.5 shadow-sm">
                 <PenkoIcon type="default" size={32} pose="idle" />
               </div>
-              <span className="font-bold text-xl text-slate-900 dark:text-white">Penko Station</span>
+              <span className="font-bold text-xl text-slate-900 dark:text-white">Penko Plaza</span>
             </div>
             <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
               {t.footerDescription}
@@ -40,12 +40,12 @@ const Footer: React.FC = () => {
             <ul className="space-y-2 text-sm">
               <li><a href={GITHUB_URL} target="_blank" rel="noreferrer" className={linkClass}>GitHub</a></li>
               <li><a href={`${HUB_REPO_URL}/blob/main/LICENSE.md`} target="_blank" rel="noreferrer" className={linkClass}>{t.footerLicense}</a></li>
+              <li><a href="#roadmap" className={linkClass}>{t.navRoadmap}</a></li>
               <li><a href="#privacy" className={linkClass}>{t.footerPrivacy}</a></li>
             </ul>
           </div>
         </div>
-        {/* Extra bottom padding keeps the copyright clear of the fixed news ticker */}
-        <div className="mt-12 pt-8 pb-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
+        <div className="mt-12 pt-8 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
           © {new Date().getFullYear()} {t.footerRights}
         </div>
       </div>

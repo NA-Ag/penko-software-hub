@@ -4,9 +4,8 @@
 
 html {
   scroll-behavior: smooth;
-  /* Keep anchor targets and keyboard focus clear of the sticky navbar and fixed news ticker */
+  /* Keep anchor targets and keyboard focus clear of the sticky navbar */
   scroll-padding-top: 5rem;
-  scroll-padding-bottom: 3rem;
 }
 
 /* One consistent, high-contrast focus indicator for keyboard users */

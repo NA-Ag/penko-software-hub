@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: 'Пакети додатків',
+  navProjects: 'Додатки',
   navSupport: 'Підтримати Penko',
   navGitHub: 'GitHub',
   heroTagline: 'Доступне • Відкритий Код • Ліцензія GPL3',
@@ -13,7 +13,7 @@ export const ui: Translation = {
   heroButtonSupport: 'Підтримати Penko',
   // Widget Demos
   widgetTitle: 'Інтерактивні демо',
-  widgetTabNote: 'Нотатка',
+  widgetTabNote: 'Писати',
   widgetTabRead: 'Читати',
   widgetTabAbacus: 'Абак',
   widgetTabType: 'Друкувати',
@@ -23,7 +23,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Тестує розкладку клавіатури та вимірює швидкість локально.',
   widgetTypeSuccess: 'Випробування завершено!',
   widgetTypeRetry: 'Спробувати знову',
-  widgetNoteDefault: 'Ласкаво просимо до Penko Station! Все тут працює локально прямо у вашому браузері.',
+  widgetNoteDefault: 'Ласкаво просимо до Penko Plaza! Все тут працює локально прямо у вашому браузері.',
   widgetTypePhrase: 'додатки penko працюють офлайн',
 
   exploreAppsTitle: 'Огляд додатків',
@@ -38,7 +38,7 @@ export const ui: Translation = {
   categoryEnterprise: 'Корпоративний Пакет',
   categoryPrivacy: 'Конфіденційність та Безпека',
   categoryWellness: 'Здоров\'я та Благополуччя',
-  descPenkoAdventure: 'Вивчення мов на основі RPG з адаптивним оповіданням. Три режими оповідання: Стандартний (на основі фасаду), Локальний (офлайн ONNX) або Хмарний (Gemini). Голосова підтримка включена.',
+  descPenkoAdventure: 'Захоплива RPG для практики мов через інтерактивні історії, створені ШІ. Невимушена, весела практика 12 мовами з голосовою підтримкою.',
   descPenkoWriter: 'Текстовий процесор з пріоритетом конфіденційності та понад 100 функцій. P2P-спільна робота в реальному часі, 26 шаблонів, 13 мов. Безкоштовна альтернатива Microsoft Word і Google Docs.',
   descPenkoTune: 'Музична платформа з пріоритетом конфіденційності та 0% комісій для артистів. Розповсюдження через IPFS/WebTorrent, криптоплатежі, 10-смуговий еквалайзер та професійні візуалізатори. Безкоштовна альтернатива Spotify.',
   descPenkoTyping: 'Гра з набору тексту в стилі ретро-аркади для вивчення нелатинських розкладок клавіатури. Опануйте корейський хангиль, російську кирилицю, японську кану та інше.',
@@ -72,7 +72,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'В Розробці',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Занурення в японську з офлайн-ШІ',
-  voxJapaneseDesc: 'Локальний ШІ-рушій для занурення в японську мову. Понад 40 інтерактивних соціальних рольових сценаріїв від JLPT N5 до N1 з особистим ШІ-репетитором, який слухає, відповідає та м’яко виправляє помилки, повністю офлайн на вашому комп’ютері. Без хмари та підписок.',
+  voxJapaneseDesc: 'Наш повноцінний застосунок для вивчення японської мови. Локальний ШІ-рушій занурення з понад 40 інтерактивними соціальними рольовими сценаріями від JLPT N5 до N1 та особистим ШІ-репетитором, який слухає, говорить і м\'яко виправляє помилки — усе це працює офлайн на вашому комп\'ютері. Без хмари, без підписок.',
   voxJapaneseFeature1: '40+ сценаріїв · N5–N1',
   voxJapaneseFeature2: 'ШІ-репетитор 100% офлайн',
   voxJapaneseFeature3: 'Розпізнавання та синтез мовлення',
@@ -100,7 +100,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese вже доступний у ранньому доступі в Steam!',
   newsUpdate2: 'Penko Reader v2.0.13 вийшов із повністю оновленим дизайном.',
   newsUpdate3: 'Penko Adventure v1.8.0 тепер у відкритій беті.',
-  newsUpdate4: 'Penko Station тепер повністю працює офлайн і розмовляє 16 мовами.',
+  newsUpdate4: 'Penko Plaza тепер повністю працює офлайн і розмовляє 16 мовами.',
 
   // UI labels & support section
   navLanguage: 'Мова',
@@ -110,7 +110,6 @@ export const ui: Translation = {
   widgetClientSide: '100% на стороні клієнта',
   productKeyFeatures: 'Ключові можливості',
   privacyOpenSource: 'Відкритий вихідний код',
-  newsLabel: 'Новини',
   earlyAccessBadge: 'Ранній доступ',
   supportOtherTitle: 'Інші способи допомогти',
   supportStarTitle: 'Поставте зірку на GitHub',
@@ -137,9 +136,15 @@ export const ui: Translation = {
   skipToContent: 'Перейти до вмісту',
   themeToggle: 'Перемкнути темну тему',
   navMenu: 'Меню',
-  tickerPause: 'Призупинити новини',
-  tickerPlay: 'Відновити новини',
   badgeNew: 'Нове',
+
+  // Landing page sections
+  navRoadmap: 'Дорожня карта',
+  whatsNewTitle: 'Що нового',
+  whatsNewVoxCta: 'Дізнатися більше',
+  roadmapTitle: 'На дорожній карті',
+  roadmapSubtitle: 'Додатки в розробці — створюємо їх один за одним, відкрито. Стежте за прогресом на GitHub.',
+  voxVsAdventure: 'Просто хочете практикувати мови заради задоволення? Penko Adventure безкоштовний і охоплює 12 мов. Vox — наш поглиблений застосунок для справжнього вивчення японської.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

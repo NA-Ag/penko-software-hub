@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: 'Suite Aplikasi',
+  navProjects: 'Aplikasi',
   navSupport: 'Dukung Penko',
   navGitHub: 'GitHub',
   // Hero
@@ -15,7 +15,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: 'Demo Interaktif',
-  widgetTabNote: 'Catatan',
+  widgetTabNote: 'Tulis',
   widgetTabRead: 'Baca',
   widgetTabAbacus: 'Sempoa',
   widgetTabType: 'Ketik',
@@ -25,7 +25,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Menguji tata letak pengetikan dan menghitung kecepatan secara lokal.',
   widgetTypeSuccess: 'Tantangan Selesai!',
   widgetTypeRetry: 'Coba Lagi',
-  widgetNoteDefault: 'Selamat datang di Penko Station! Semua yang ada di sini berjalan secara lokal di browser kamu.',
+  widgetNoteDefault: 'Selamat datang di Penko Plaza! Semua yang ada di sini berjalan secara lokal di browser kamu.',
   widgetTypePhrase: 'aplikasi penko jalan offline',
   exploreAppsTitle: 'Jelajahi Aplikasi',
   exploreAppsSubtitle: 'Pilih kategori untuk melihat aplikasinya. Semuanya mengutamakan lokal, berfungsi offline, dan sepenuhnya gratis.',
@@ -39,7 +39,7 @@ export const ui: Translation = {
   categoryEnterprise: 'Suite Perusahaan',
   categoryPrivacy: 'Privasi & Keamanan',
   categoryWellness: 'Kesehatan & Kebugaran',
-  descPenkoAdventure: 'Pembelajaran bahasa berbasis RPG dengan cerita yang adaptif. Tiga mode narasi: Standard (berbasis facade), Local (ONNX offline), atau Cloud (Gemini). Dukungan suara termasuk.',
+  descPenkoAdventure: 'RPG santai untuk berlatih bahasa lewat cerita interaktif yang digerakkan AI. Latihan santai dan seru dalam 12 bahasa, dengan dukungan suara.',
   descPenkoWriter: 'Pengolah kata yang mengutamakan privasi dengan 100+ fitur. Kolaborasi P2P real-time, 26 templat, 13 bahasa. Alternatif gratis untuk Microsoft Word dan Google Docs.',
   descPenkoTune: 'Platform musik dengan streaming yang mengutamakan privasi dan 0% biaya untuk musisi. Pengiriman via IPFS/WebTorrent, pembayaran kripto, EQ 10-band, dan visualizer profesional. Alternatif gratis untuk Spotify.',
   descPenkoTyping: 'Game mengetik bergaya arcade retro untuk mempelajari tata letak keyboard non-Latin. Kuasai Hangul Korea, Sirilik Rusia, Kana Jepang, dan lainnya.',
@@ -63,7 +63,7 @@ export const ui: Translation = {
   descPenkoGlow: 'Sistem transformasi pribadi dan kesejahteraan dengan analisis, perencanaan, dan panduan untuk pengembangan diri. Didukung oleh glowscope.app.',
   donationsTagline: '100% Opsional',
   donationsTitle: 'Dukung Penko',
-  donationsDescription1: 'Semua aplikasi di dalam Penko Station sepenuhnya gratis, mengutamakan offline, dan open source. Untuk mendanai pengembangan berkelanjutannya, kami secara berkala membuat dan merilis perangkat lunak berbayar khusus.',
+  donationsDescription1: 'Semua aplikasi di dalam Penko Plaza sepenuhnya gratis, mengutamakan offline, dan open source. Untuk mendanai pengembangan berkelanjutannya, kami secara berkala membuat dan merilis perangkat lunak berbayar khusus.',
   donationsDescription2: 'Aplikasi berbayar ini adalah alat canggih yang terpisah. Membelinya 100% opsional, tetapi secara langsung mendanai pembuatan perangkat lunak gratis kami.',
   upcomingPaidTitle: 'Aplikasi Berbayar Mendatang',
   upcomingPaidDesc: 'Kami sedang mengembangkan lebih banyak aplikasi desktop khusus, alat bantu belajar, dan alat offline yang akan dirilis secara berkala untuk mendukung Penko.',
@@ -73,7 +73,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'Dalam Pengembangan',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Imersi Bahasa Jepang AI Offline',
-  voxJapaneseDesc: 'Mesin imersi AI yang mengutamakan lokal untuk bahasa Jepang. Masuki 40+ roleplay sosial interaktif mulai dari JLPT N5 hingga N1 bersama tutor AI privat yang mendengarkan, berbicara, dan mengoreksimu dengan lembut, semuanya berjalan offline di komputermu sendiri. Tanpa cloud, tanpa langganan.',
+  voxJapaneseDesc: 'Aplikasi lengkap kami untuk belajar bahasa Jepang. Mesin imersi AI yang mengutamakan lokal, dengan 40+ roleplay sosial interaktif mulai dari JLPT N5 hingga N1 bersama tutor AI privat yang mendengarkan, berbicara, dan mengoreksimu dengan lembut, semuanya berjalan offline di komputermu sendiri. Tanpa cloud, tanpa langganan.',
   voxJapaneseFeature1: '40+ Roleplay · N5–N1',
   voxJapaneseFeature2: 'Tutor AI 100% Offline',
   voxJapaneseFeature3: 'Input Suara & Output Suara',
@@ -101,7 +101,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese kini tersedia dalam Early Access di Steam!',
   newsUpdate2: 'Penko Reader v2.0.13 hadir dengan perombakan visual total.',
   newsUpdate3: 'Penko Adventure v1.8.0 kini memasuki beta publik.',
-  newsUpdate4: 'Penko Station kini berfungsi sepenuhnya offline dan tersedia dalam 16 bahasa.',
+  newsUpdate4: 'Penko Plaza kini berfungsi sepenuhnya offline dan tersedia dalam 16 bahasa.',
 
   // UI labels & support section
   navLanguage: 'Bahasa',
@@ -111,7 +111,6 @@ export const ui: Translation = {
   widgetClientSide: '100% di Perangkatmu',
   productKeyFeatures: 'Fitur Utama',
   privacyOpenSource: 'Kode Sumber Terbuka',
-  newsLabel: 'Berita',
   earlyAccessBadge: 'Early Access',
   supportOtherTitle: 'Cara lain untuk membantu',
   supportStarTitle: 'Beri kami bintang di GitHub',
@@ -138,9 +137,15 @@ export const ui: Translation = {
   skipToContent: 'Lewati ke konten',
   themeToggle: 'Alihkan mode gelap',
   navMenu: 'Menu',
-  tickerPause: 'Jeda berita',
-  tickerPlay: 'Putar berita',
   badgeNew: 'Baru',
+
+  // Landing page sections
+  navRoadmap: 'Roadmap',
+  whatsNewTitle: 'Yang Baru',
+  whatsNewVoxCta: 'Pelajari lebih lanjut',
+  roadmapTitle: 'Di Roadmap',
+  roadmapSubtitle: 'Aplikasi yang sedang dikembangkan, dibangun satu per satu secara terbuka. Ikuti perkembangannya di GitHub.',
+  voxVsAdventure: 'Hanya ingin berlatih bahasa untuk seru-seruan? Penko Adventure gratis dan mencakup 12 bahasa. Vox adalah aplikasi mendalam kami untuk benar-benar menguasai bahasa Jepang.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

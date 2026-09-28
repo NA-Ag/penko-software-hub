@@ -11,7 +11,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-adventure',
     name: 'Penko Adventure',
-    description: 'RPG-based language learning with AI-powered storytelling. Three AI modes: offline nano (250MB), local ONNX (800MB), or cloud Gemini. Voice support with Whisper and TTS.',
+    description: 'A playful RPG for practicing languages through interactive, AI-driven stories. Casual, fun practice across 12 languages, with voice support.',
     category: ProductCategory.LANGUAGE,
     iconName: 'Gamepad2',
     repoUrl: 'https://github.com/NA-Ag/penko-adventure',

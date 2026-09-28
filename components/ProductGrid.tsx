@@ -7,52 +7,13 @@ import { Translation } from '../i18n';
 import { PenkoIcon } from './PenkoIcon';
 import { getProductIcon } from './productIcons';
 import { getAppCostume, getDescriptionKey } from './productMeta';
+import { CATEGORY_COLORS, CATEGORY_COSTUMES, CATEGORY_LABEL_KEYS } from './categoryStyles';
 
 type Status = NonNullable<Product['status']>;
 
-// Wellness has no shipped apps yet, so it stays out of the category rail
-const CATEGORIES = Object.values(ProductCategory).filter(c => c !== ProductCategory.WELLNESS);
-
-const CATEGORY_LABEL_KEYS: Record<ProductCategory, keyof Translation> = {
-  [ProductCategory.OFFICE]: 'categoryOffice',
-  [ProductCategory.LANGUAGE]: 'categoryLanguage',
-  [ProductCategory.MUSIC]: 'categoryMusic',
-  [ProductCategory.CREATIVE]: 'categoryCreative',
-  [ProductCategory.ENTERPRISE]: 'categoryEnterprise',
-  [ProductCategory.PRIVACY]: 'categoryPrivacy',
-  [ProductCategory.WELLNESS]: 'categoryWellness',
-};
-
-// Penko costume shown on each category blade
-const CATEGORY_COSTUMES: Record<ProductCategory, string> = {
-  [ProductCategory.OFFICE]: 'parttime',    // apron/clipboard
-  [ProductCategory.LANGUAGE]: 'japanese',  // headband
-  [ProductCategory.MUSIC]: 'news',         // mic
-  [ProductCategory.CREATIVE]: 'custom',    // wand
-  [ProductCategory.ENTERPRISE]: 'business', // suit tie
-  [ProductCategory.PRIVACY]: 'diplomatic', // top hat + monocle
-  [ProductCategory.WELLNESS]: 'idle',
-};
-
-// Xbox 360 blade colors. Full class strings so Tailwind can see them at build time.
-type CategoryColor = {
-  bar: string;        // blade accent bar (active)
-  barHover: string;   // blade accent bar (hover)
-  text: string;       // colored label text
-  border: string;     // mascot tile border when active
-  bgLight: string;    // active blade tint
-  soft: string;       // selected app row / detail tile
-  chip: string;       // selected app icon chip
-};
-const CATEGORY_COLORS: Record<ProductCategory, CategoryColor> = {
-  [ProductCategory.OFFICE]: { bar: 'bg-emerald-500', barHover: 'group-hover:bg-emerald-500/40', text: 'text-emerald-600 dark:text-emerald-400', border: 'border-emerald-500', bgLight: 'bg-emerald-500/10', soft: 'bg-emerald-50 dark:bg-emerald-500/10 border-emerald-200 dark:border-emerald-500/25', chip: 'bg-emerald-100 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' },
-  [ProductCategory.LANGUAGE]: { bar: 'bg-red-500', barHover: 'group-hover:bg-red-500/40', text: 'text-red-600 dark:text-red-400', border: 'border-red-500', bgLight: 'bg-red-500/10', soft: 'bg-red-50 dark:bg-red-500/10 border-red-200 dark:border-red-500/25', chip: 'bg-red-100 dark:bg-red-500/15 text-red-600 dark:text-red-400' },
-  [ProductCategory.MUSIC]: { bar: 'bg-purple-500', barHover: 'group-hover:bg-purple-500/40', text: 'text-purple-600 dark:text-purple-400', border: 'border-purple-500', bgLight: 'bg-purple-500/10', soft: 'bg-purple-50 dark:bg-purple-500/10 border-purple-200 dark:border-purple-500/25', chip: 'bg-purple-100 dark:bg-purple-500/15 text-purple-600 dark:text-purple-400' },
-  [ProductCategory.CREATIVE]: { bar: 'bg-amber-500', barHover: 'group-hover:bg-amber-500/40', text: 'text-amber-600 dark:text-amber-400', border: 'border-amber-500', bgLight: 'bg-amber-500/10', soft: 'bg-amber-50 dark:bg-amber-500/10 border-amber-200 dark:border-amber-500/25', chip: 'bg-amber-100 dark:bg-amber-500/15 text-amber-600 dark:text-amber-400' },
-  [ProductCategory.ENTERPRISE]: { bar: 'bg-blue-500', barHover: 'group-hover:bg-blue-500/40', text: 'text-blue-600 dark:text-blue-400', border: 'border-blue-500', bgLight: 'bg-blue-500/10', soft: 'bg-blue-50 dark:bg-blue-500/10 border-blue-200 dark:border-blue-500/25', chip: 'bg-blue-100 dark:bg-blue-500/15 text-blue-600 dark:text-blue-400' },
-  [ProductCategory.PRIVACY]: { bar: 'bg-slate-500', barHover: 'group-hover:bg-slate-500/40', text: 'text-slate-600 dark:text-slate-300', border: 'border-slate-500', bgLight: 'bg-slate-500/10', soft: 'bg-slate-100 dark:bg-slate-500/10 border-slate-300 dark:border-slate-500/30', chip: 'bg-slate-200 dark:bg-slate-500/20 text-slate-700 dark:text-slate-300' },
-  [ProductCategory.WELLNESS]: { bar: 'bg-teal-500', barHover: 'group-hover:bg-teal-500/40', text: 'text-teal-600 dark:text-teal-400', border: 'border-teal-500', bgLight: 'bg-teal-500/10', soft: 'bg-teal-50 dark:bg-teal-500/10 border-teal-200 dark:border-teal-500/25', chip: 'bg-teal-100 dark:bg-teal-500/15 text-teal-600 dark:text-teal-400' },
-};
+// Explore shows what you can use today; unreleased apps live in the Roadmap section
+const SHIPPED = PRODUCTS.filter(p => p.status !== 'coming-soon');
+const CATEGORIES = Object.values(ProductCategory).filter(c => SHIPPED.some(p => p.category === c));
 
 const STATUS_PRIORITY: Record<Status, number> = { live: 4, beta: 3, alpha: 2, 'coming-soon': 1 };
 
@@ -73,7 +34,7 @@ const sortProducts = (products: Product[]) =>
   });
 
 const PRODUCTS_BY_CATEGORY = new Map<ProductCategory, Product[]>(
-  CATEGORIES.map(cat => [cat, sortProducts(PRODUCTS.filter(p => p.category === cat))])
+  CATEGORIES.map(cat => [cat, sortProducts(SHIPPED.filter(p => p.category === cat))])
 );
 
 const ProductGrid: React.FC = () => {
@@ -118,7 +79,7 @@ const ProductGrid: React.FC = () => {
       <div className="w-full bg-white dark:bg-[#0f1219]/90 rounded-3xl overflow-hidden border border-slate-200 dark:border-amber-500/20 shadow-xl backdrop-blur-sm transition-all">
 
         {/* Category blades: a readable row across the top, each with its costumed Penko */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 border-b border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/30">
+        <div className="grid grid-cols-1 sm:grid-cols-3 border-b border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-950/30">
           {CATEGORIES.map((cat, idx) => {
             const isActive = activeCategory === cat;
             const catColor = CATEGORY_COLORS[cat];
@@ -135,7 +96,7 @@ const ProductGrid: React.FC = () => {
                 onMouseEnter={() => setHoveredCategory(cat)}
                 onMouseLeave={() => setHoveredCategory(null)}
                 onClick={() => selectCategory(cat)}
-                className={`group relative flex items-center gap-3 px-3 sm:px-4 py-4 text-left transition-colors duration-300 border-slate-200 dark:border-slate-800 border-r border-b xl:border-b-0 last:border-r-0
+                className={`group relative flex items-center gap-3 px-3 sm:px-4 py-4 text-left transition-colors duration-300 border-slate-200 dark:border-slate-800 border-b last:border-b-0 sm:border-b-0 sm:border-r sm:last:border-r-0
                   ${isActive ? catColor.bgLight : 'hover:bg-slate-100/70 dark:hover:bg-slate-800/30'}`}
               >
                 {/* Accent bar in category color */}
@@ -161,7 +122,7 @@ const ProductGrid: React.FC = () => {
         </div>
 
         {/* Content Area: list of apps + app details */}
-        <div className="flex flex-col lg:flex-row lg:h-[560px]">
+        <div className="flex flex-col lg:flex-row lg:min-h-[440px]">
 
           <div className="w-full lg:w-80 border-b lg:border-b-0 lg:border-r border-slate-200 dark:border-slate-800 p-4 lg:overflow-y-auto flex flex-col gap-2 shrink-0 bg-slate-50/30 dark:bg-slate-900/10">
             {filteredProducts.map(p => {

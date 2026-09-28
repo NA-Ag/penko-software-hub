@@ -111,7 +111,7 @@ const SandboxWidget: React.FC = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-md font-bold text-slate-800 dark:text-white transition-colors">Penko Station</h3>
+              <h3 className="text-md font-bold text-slate-800 dark:text-white transition-colors">Penko Plaza</h3>
               <p className="text-xs uppercase font-bold tracking-widest text-slate-500 dark:text-slate-400 font-mono">{t.widgetTitle}</p>
             </div>
           </div>

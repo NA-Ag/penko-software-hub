@@ -1,6 +1,13 @@
-# Penko Station
+# Penko Plaza
 
-The official hub for Penko Software: a free, open-source app store for our Progressive Web Apps (PWAs) covering office, learning, music, and creative tools. Installable, works offline, and available as a desktop app.
+The home of Penko Software: one central place to discover and open our free, open-source apps for office, learning, music, and creativity, see what's new, and follow what's coming next. Installable, works offline, and available as a desktop app.
+
+The page is organized as:
+
+- **What's new** - Latest releases, led by our paid app Penko Vox Japanese
+- **Explore Apps** - The apps you can use today, by category
+- **Roadmap** - Apps in development, built one at a time and in the open
+- **Support** - How Penko is funded (optional paid apps on Steam) and other ways to help
 
 **Live site:** https://penkosoftware.org/
 
@@ -40,7 +47,7 @@ Open http://localhost:3000
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Start the dev server on port 3000 |
-| `npm test` | Run the translation and content checks |
+| `npm test` | Run the translation, content, and page interaction tests |
 | `npm run build` | Type-check and build the site into `dist/` |
 | `npm run preview` | Serve the production build locally |
 | `npm run electron:dev` | Run the desktop app against the dev server |
@@ -120,4 +127,4 @@ GPL-3.0. See [LICENSE.md](LICENSE.md).
 
 ---
 
-**Penko Station** — Offline-First Productivity, Learning & Creativity | GPL-3.0 Licensed
+**Penko Plaza** — Offline-First Productivity, Learning & Creativity | GPL-3.0 Licensed

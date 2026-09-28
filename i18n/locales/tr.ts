@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: 'Uygulama Paketleri',
+  navProjects: 'Uygulamalar',
   navSupport: 'Penko\'yu Destekleyin',
   navGitHub: 'GitHub',
   heroTagline: 'Erişilebilir • Açık Kaynak • GPL3 Lisanslı',
@@ -13,7 +13,7 @@ export const ui: Translation = {
   heroButtonSupport: 'Penko\'yu Destekleyin',
   // Widget Demos
   widgetTitle: 'Etkileşimli Demolar',
-  widgetTabNote: 'Not',
+  widgetTabNote: 'Yazı',
   widgetTabRead: 'Oku',
   widgetTabAbacus: 'Abaküs',
   widgetTabType: 'Yaz',
@@ -23,7 +23,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'Klavye düzenini test eder ve hızı yerel olarak hesaplar.',
   widgetTypeSuccess: 'Meydan Okuma Tamamlandı!',
   widgetTypeRetry: 'Tekrar Dene',
-  widgetNoteDefault: 'Penko Station\'a hoş geldiniz! Buradaki her şey tarayıcınızda yerel olarak çalışır.',
+  widgetNoteDefault: 'Penko Plaza\'ya hoş geldiniz! Buradaki her şey tarayıcınızda yerel olarak çalışır.',
   widgetTypePhrase: 'penko çevrimdışı çalışır',
 
   exploreAppsTitle: 'Uygulamaları Keşfedin',
@@ -38,7 +38,7 @@ export const ui: Translation = {
   categoryEnterprise: 'Kurumsal Paket',
   categoryPrivacy: 'Gizlilik ve Güvenlik',
   categoryWellness: 'Sağlık ve Esenlik',
-  descPenkoAdventure: 'Uyarlanabilir hikaye anlatımıyla RPG tabanlı dil öğrenimi. Üç anlatım modu: Standart (cephe tabanlı), Yerel (çevrimdışı ONNX) veya Bulut (Gemini). Ses desteği dahildir.',
+  descPenkoAdventure: 'Etkileşimli, yapay zeka destekli hikayelerle dil pratiği yapmak için eğlenceli bir RPG. 12 dilde rahat, keyifli pratik, ses desteğiyle birlikte.',
   descPenkoWriter: 'Gizliliği ön planda tutan, 100\'den fazla özelliğe sahip kelime işlemci. Gerçek zamanlı P2P iş birliği, 26 şablon, 13 dil. Microsoft Word ve Google Docs\'a ücretsiz bir alternatif.',
   descPenkoTune: 'Gizliliği ön planda tutan yayın akışı ve %0 sanatçı ücretiyle müzik platformu. IPFS/WebTorrent teslimatı, kripto ödemeler, 10 bantlı EQ ve profesyonel görselleştiriciler. Spotify\'a ücretsiz bir alternatif.',
   descPenkoTyping: 'Latin olmayan klavye düzenlerini öğrenmek için retro atari tarzı bir yazma oyunu. Korece Hangul, Rusça Kiril, Japonca Kana ve daha fazlasında ustalaşın.',
@@ -62,7 +62,7 @@ export const ui: Translation = {
   descPenkoGlow: 'Kişisel gelişim için analiz, planlama ve rehberler sunan kişisel dönüşüm ve esenlik sistemi. glowscope.app tarafından desteklenmektedir.',
   donationsTagline: '%100 İsteğe Bağlı',
   donationsTitle: 'Penko\'yu Destekleyin',
-  donationsDescription1: 'Penko Station içindeki tüm uygulamalar tamamen ücretsiz, çevrimdışı öncelikli ve açık kaynaklıdır. Devam eden geliştirmelerini finanse etmek için düzenli olarak özel ücretli yazılımlar geliştirip yayınlıyoruz.',
+  donationsDescription1: 'Penko Plaza içindeki tüm uygulamalar tamamen ücretsiz, çevrimdışı öncelikli ve açık kaynaklıdır. Devam eden geliştirmelerini finanse etmek için düzenli olarak özel ücretli yazılımlar geliştirip yayınlıyoruz.',
   donationsDescription2: 'Bu ücretli uygulamalar, ayrı ve gelişmiş araçlardır. Satın almak %100 isteğe bağlıdır ancak ücretsiz yazılımlarımızın oluşturulmasını doğrudan finanse eder.',
   upcomingPaidTitle: 'Gelecek Ücretli Uygulamalar',
   upcomingPaidDesc: 'Penko\'yu desteklemek için düzenli olarak yayınlanacak daha özel masaüstü uygulamaları, çalışma yardımcıları ve çevrimdışı araçlar geliştiriyoruz.',
@@ -72,7 +72,7 @@ export const ui: Translation = {
   upcomingPaidStatus: 'Geliştirme Aşamasında',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'Çevrimdışı Yapay Zeka ile Japonca Daldırma',
-  voxJapaneseDesc: 'Japonca için yerel öncelikli bir yapay zeka daldırma motoru. JLPT N5\'ten N1\'e kadar 40\'tan fazla etkileşimli sosyal rol yapma senaryosuna, sizi dinleyen, konuşan ve nazikçe düzelten özel bir yapay zeka öğretmeniyle adım atın; hepsi kendi bilgisayarınızda çevrimdışı çalışır. Bulut yok, abonelik yok.',
+  voxJapaneseDesc: 'Japonca öğrenmek için eksiksiz uygulamamız. JLPT N5\'ten N1\'e kadar 40\'tan fazla etkileşimli sosyal rol yapma senaryosuna sahip yerel öncelikli bir yapay zeka daldırma motoru ve sizi dinleyen, konuşan ve nazikçe düzelten özel bir yapay zeka öğretmeni; hepsi kendi bilgisayarınızda çevrimdışı çalışır. Bulut yok, abonelik yok.',
   voxJapaneseFeature1: '40+ Rol Yapma · N5–N1',
   voxJapaneseFeature2: '%100 Çevrimdışı Yapay Zeka Öğretmeni',
   voxJapaneseFeature3: 'Konuşma Girişi ve Ses Çıkışı',
@@ -100,7 +100,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese artık Steam\'de Erken Erişimde!',
   newsUpdate2: 'Penko Reader v2.0.13, baştan sona yenilenen görselleriyle geldi.',
   newsUpdate3: 'Penko Adventure v1.8.0 artık genel betada.',
-  newsUpdate4: 'Penko Station artık tamamen çevrimdışı çalışıyor ve 16 dil konuşuyor.',
+  newsUpdate4: 'Penko Plaza artık tamamen çevrimdışı çalışıyor ve 16 dil konuşuyor.',
 
   // UI labels & support section
   navLanguage: 'Dil',
@@ -110,7 +110,6 @@ export const ui: Translation = {
   widgetClientSide: '%100 İstemci Taraflı',
   productKeyFeatures: 'Öne Çıkan Özellikler',
   privacyOpenSource: 'Açık Kaynak Kod Tabanı',
-  newsLabel: 'Haberler',
   earlyAccessBadge: 'Erken Erişim',
   supportOtherTitle: 'Yardımcı olmanın diğer yolları',
   supportStarTitle: 'GitHub\'da bize yıldız verin',
@@ -137,9 +136,15 @@ export const ui: Translation = {
   skipToContent: 'İçeriğe geç',
   themeToggle: 'Karanlık modu değiştir',
   navMenu: 'Menü',
-  tickerPause: 'Haberleri duraklat',
-  tickerPlay: 'Haberleri oynat',
   badgeNew: 'Yeni',
+
+  // Landing page sections
+  navRoadmap: 'Yol Haritası',
+  whatsNewTitle: 'Yenilikler',
+  whatsNewVoxCta: 'Daha fazla bilgi',
+  roadmapTitle: 'Yol haritamızda',
+  roadmapSubtitle: 'Tek tek ve açık şekilde geliştirilen uygulamalar. GitHub\'da takip edin.',
+  voxVsAdventure: 'Sadece eğlenmek için dil pratiği mi yapmak istiyorsunuz? Penko Adventure ücretsizdir ve 12 dili kapsar. Vox ise gerçekten Japonca öğrenmek için kapsamlı uygulamamızdır.',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

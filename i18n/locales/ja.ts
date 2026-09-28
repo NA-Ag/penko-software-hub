@@ -2,7 +2,7 @@
 import type { Translation } from '../types';
 
 export const ui: Translation = {
-  navProjects: 'アプリスイート',
+  navProjects: 'アプリ',
   navSupport: 'Penkoをサポート',
   navGitHub: 'GitHub',
 
@@ -15,7 +15,7 @@ export const ui: Translation = {
 
   // Widget Demos
   widgetTitle: 'インタラクティブデモ',
-  widgetTabNote: 'メモ',
+  widgetTabNote: '執筆',
   widgetTabRead: '読込',
   widgetTabAbacus: 'そろばん',
   widgetTabType: 'タイピング',
@@ -25,7 +25,7 @@ export const ui: Translation = {
   widgetTypeDesc: 'ローカルでキーボード配列のテストとタイピング速度を測定します。',
   widgetTypeSuccess: 'チャレンジ完了！',
   widgetTypeRetry: 'もう一度試す',
-  widgetNoteDefault: 'Penko Stationへようこそ！ここではすべてがブラウザ内でローカルに実行されます。',
+  widgetNoteDefault: 'Penko Plazaへようこそ！ここではすべてがブラウザ内でローカルに実行されます。',
   widgetTypePhrase: 'penkoアプリはオフラインで動く',
 
   exploreAppsTitle: 'アプリを探索する',
@@ -42,7 +42,7 @@ export const ui: Translation = {
   categoryPrivacy: 'プライバシーとセキュリティ',
   categoryWellness: '健康とウェルネス',
 
-  descPenkoAdventure: '適応型ストーリーテリングを搭載したRPG形式の言語学習。3つのナラティブモード：スタンダード（ファサードベース）、ローカル（オフラインONNX）、またはクラウド（Gemini）。音声サポート付き。',
+  descPenkoAdventure: 'インタラクティブな AI 主導のストーリーで言語を練習する、遊び心のある RPG。12 言語にわたる、気軽で楽しい練習に音声サポート付き。',
   descPenkoWriter: 'プライバシー重視のワードプロセッサで100以上の機能。リアルタイムP2P共同作業、26のテンプレート、13言語対応。Microsoft WordとGoogle Docsの無料代替品。',
   descPenkoTune: 'プライバシー重視の音楽プラットフォームでアーティスト手数料0%。IPFS/WebTorrent配信、暗号通貨決済、10バンドEQ、プロフェッショナル可視化。Spotifyの無料代替品。',
   descPenkoTyping: 'レトロアーケードスタイルのタイピングゲームで非ラテン文字キーボードを学習。韓国語ハングル、ロシア語キリル文字、日本語仮名などをマスター。',
@@ -77,7 +77,7 @@ export const ui: Translation = {
   upcomingPaidStatus: '開発中',
   voxJapaneseTitle: 'Penko Vox Japanese',
   voxJapaneseTagline: 'オフライン AI 日本語イマージョン',
-  voxJapaneseDesc: 'ローカルファーストの AI 日本語イマージョンエンジン。JLPT N5〜N1 に対応した 40 以上のインタラクティブな会話ロールプレイに、あなた専用の AI チューターと挑戦できます。聞き取り、話し、やさしく添削。すべてあなたのパソコン上でオフライン動作します。クラウドもサブスクも不要です。',
+  voxJapaneseDesc: '日本語学習のための、私たちの完全なアプリです。ローカルファーストの AI イマージョンエンジンが、JLPT N5〜N1 に対応した 40 以上のインタラクティブな会話ロールプレイと、聞き取り、話し、やさしく添削してくれる専属の AI チューターを提供します。すべてあなたのパソコン上でオフライン動作。クラウドもサブスクも不要です。',
   voxJapaneseFeature1: '40 以上のロールプレイ · N5–N1',
   voxJapaneseFeature2: '100% オフライン AI チューター',
   voxJapaneseFeature3: '音声認識と音声合成',
@@ -108,7 +108,7 @@ export const ui: Translation = {
   newsUpdate1: 'Penko Vox Japanese が Steam で早期アクセス配信中！',
   newsUpdate2: 'Penko Reader v2.0.13 がビジュアルを全面刷新して登場。',
   newsUpdate3: 'Penko Adventure v1.8.0 がパブリックベータになりました。',
-  newsUpdate4: 'Penko Station が完全オフラインに対応し、16 言語で利用できるようになりました。',
+  newsUpdate4: 'Penko Plaza が完全オフラインに対応し、16 言語で利用できるようになりました。',
 
   // UI labels & support section
   navLanguage: '言語',
@@ -118,7 +118,6 @@ export const ui: Translation = {
   widgetClientSide: '100% クライアントサイド',
   productKeyFeatures: '主な機能',
   privacyOpenSource: 'オープンソースコード',
-  newsLabel: 'ニュース',
   earlyAccessBadge: '早期アクセス',
   supportOtherTitle: 'その他の応援方法',
   supportStarTitle: 'GitHub でスターを付ける',
@@ -145,9 +144,15 @@ export const ui: Translation = {
   skipToContent: 'コンテンツへスキップ',
   themeToggle: 'ダークモード切り替え',
   navMenu: 'メニュー',
-  tickerPause: 'ニュースを一時停止',
-  tickerPlay: 'ニュースを再開',
   badgeNew: '新着',
+
+  // Landing page sections
+  navRoadmap: 'ロードマップ',
+  whatsNewTitle: '新着情報',
+  whatsNewVoxCta: '詳しく見る',
+  roadmapTitle: '開発中のアプリ',
+  roadmapSubtitle: '一つずつ、オープンに開発しているアプリたち。進捗は GitHub でご覧いただけます。',
+  voxVsAdventure: 'ただ気軽に言語を練習したいだけなら、Penko Adventure が無料で 12 言語に対応しています。Vox は、本気で日本語を学ぶための本格アプリです。',
 };
 
 // Product feature labels, keyed by the English text in constants.ts
