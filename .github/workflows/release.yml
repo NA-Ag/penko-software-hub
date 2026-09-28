@@ -30,18 +30,10 @@ jobs:
         if: matrix.os == 'ubuntu-latest'
         run: |
           sudo apt-get update
-          sudo apt-get install -y libfuse2 build-essential libcairo2-dev libpango1.0-dev libjpeg-dev libgif-dev librsvg2-dev rpm
+          sudo apt-get install -y libfuse2
 
       - name: Install Dependencies
         run: npm install
-
-      - name: Remove Canvas (Windows)
-        if: matrix.os == 'windows-latest'
-        shell: pwsh
-        run: |
-          if (Test-Path node_modules/canvas) {
-            Remove-Item -Recurse -Force node_modules/canvas
-          }
 
       - name: Build Electron App
         env:

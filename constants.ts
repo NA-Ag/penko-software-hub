@@ -1,4 +1,8 @@
-import { Product, ProductCategory, DonationOption } from './types';
+import { Product, ProductCategory } from './types';
+
+export const GITHUB_URL = 'https://github.com/NA-Ag';
+export const HUB_REPO_URL = 'https://github.com/NA-Ag/penko-software-hub';
+export const VOX_STEAM_URL = 'https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/';
 
 export const PRODUCTS: Product[] = [
   // ===== ACTIVE PROJECTS =====
@@ -13,9 +17,8 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-adventure',
     liveUrl: 'https://adventure.penkosoftware.org/',
     features: ['12 Languages', 'AI Storytelling', 'Speech Recognition', 'Community Workshop', 'Offline Mode', 'Voice Synthesis'],
-    imageUrl: 'https://picsum.photos/id/6/800/600',
-    status: 'alpha',
-    version: 'v1.8.0'
+    status: 'beta',
+    version: 'v1.8.0-beta.1'
   },
 
   // Office Suite - ALPHA
@@ -28,7 +31,6 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-writer',
     liveUrl: 'https://writer.penkosoftware.org/',
     features: ['P2P Collaboration', 'Offline Mode', 'DOCX/PDF Export', 'Code Highlighting', 'LaTeX Equations', 'Markdown Mode'],
-    imageUrl: 'https://picsum.photos/id/1/800/600',
     status: 'alpha',
     version: 'v1.0.0-alpha.1'
   },
@@ -43,9 +45,8 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-tune',
     liveUrl: 'https://tune.penkosoftware.org/',
     features: ['0% Platform Fees', 'WebTorrent/IPFS', 'Crypto Payments', '10-Band Equalizer', '8 Visualizers', 'YouTube Streaming'],
-    imageUrl: 'https://picsum.photos/id/5/800/600',
     status: 'alpha',
-    version: 'v0.1.0-alpha'
+    version: 'v0.1.1'
   },
 
   // Learning - ALPHA
@@ -58,9 +59,8 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-typing',
     liveUrl: 'https://typing.penkosoftware.org/',
     features: ['14 Languages', 'Keyboard Layouts', 'Hand Position Guides', 'Leaderboards', 'Offline Mode', 'Touch Support'],
-    imageUrl: 'https://picsum.photos/id/3/800/600',
     status: 'alpha',
-    version: 'v1.0.0-alpha'
+    version: 'v0.1.0-alpha'
   },
 
   // Learning - BETA
@@ -73,9 +73,8 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-reader',
     liveUrl: 'https://reader.penkosoftware.org/',
     features: ['RSVP Reading', 'Offline First', 'EPUB/PDF Support', 'OpenDyslexic Font', 'High Contrast', 'No Tracking'],
-    imageUrl: 'https://picsum.photos/id/24/800/600',
     status: 'beta',
-    version: 'v2.0.7-Beta',
+    version: 'v2.0.13-beta',
     isNew: true
   },
 
@@ -89,10 +88,8 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-soroban',
     liveUrl: 'https://soroban.penkosoftware.org/',
     features: ['Digital Soroban', 'Mental Math', 'Offline Mode', 'Touch Support', 'PWA', 'Tutorials'],
-    imageUrl: 'https://picsum.photos/id/25/800/600',
     status: 'alpha',
-    version: 'v1.0.0-alpha',
-    isNew: true
+    version: 'v1.0.0'
   },
 
   // ===== COMING SOON PROJECTS =====
@@ -105,7 +102,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'Table',
     features: ['100+ Functions', 'JavaScript Cells', 'CSV Import/Export', 'Offline Mode', 'Charts & Graphs', 'Data Validation'],
-    imageUrl: 'https://picsum.photos/id/20/800/600',
     status: 'coming-soon'
   },
   {
@@ -115,7 +111,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'StickyNote',
     features: ['Rich Text', 'Tags & Search', 'Offline Mode', 'Cloud Sync', 'Markdown Support'],
-    imageUrl: 'https://picsum.photos/id/7/800/600',
     status: 'coming-soon'
   },
   {
@@ -125,7 +120,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'Presentation',
     features: ['Beautiful Templates', 'Presenter Mode', 'Multimedia Support', 'PDF Export', 'Offline Mode', 'Collaboration'],
-    imageUrl: 'https://picsum.photos/id/8/800/600',
     status: 'coming-soon'
   },
   {
@@ -135,7 +129,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'FolderLock',
     features: ['Secure Sharing', 'Access Controls', 'Version History', 'Audit Logs', 'Encryption', 'Offline Access'],
-    imageUrl: 'https://picsum.photos/id/9/800/600',
     status: 'coming-soon'
   },
   {
@@ -145,7 +138,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'BarChart3',
     features: ['Data Connectors', 'Interactive Dashboards', 'Custom Reports', 'Real-time Analytics', 'Export Options', 'Offline Mode'],
-    imageUrl: 'https://picsum.photos/id/10/800/600',
     status: 'coming-soon'
   },
   {
@@ -155,7 +147,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.OFFICE,
     iconName: 'BookOpen',
     features: ['Beautiful Layouts', 'SEO Optimized', 'Custom Domains', 'Analytics', 'Export Options', 'Collaboration'],
-    imageUrl: 'https://picsum.photos/id/11/800/600',
     status: 'coming-soon'
   },
 
@@ -167,7 +158,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.CREATIVE,
     iconName: 'FileType',
     features: ['PDF Editing', 'Merge & Split', 'Format Conversion', 'Offline Mode', 'Batch Processing'],
-    imageUrl: 'https://picsum.photos/id/12/800/600',
     status: 'coming-soon'
   },
   {
@@ -177,7 +167,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.CREATIVE,
     iconName: 'PenTool',
     features: ['Vector Editing', 'SVG Export', 'Path Tools', 'Layers', 'Offline Mode'],
-    imageUrl: 'https://picsum.photos/id/13/800/600',
     status: 'coming-soon'
   },
   {
@@ -187,7 +176,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.CREATIVE,
     iconName: 'Image',
     features: ['Layer Support', 'Filters & Effects', 'RAW Support', 'Batch Processing', 'Offline Mode'],
-    imageUrl: 'https://picsum.photos/id/14/800/600',
     status: 'coming-soon'
   },
   {
@@ -197,7 +185,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.CREATIVE,
     iconName: 'Scissors',
     features: ['Pattern Creation', 'Export Formats', 'Machine Support', 'Templates', 'Offline Mode'],
-    imageUrl: 'https://picsum.photos/id/15/800/600',
     status: 'coming-soon'
   },
 
@@ -209,7 +196,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.ENTERPRISE,
     iconName: 'Database',
     features: ['Multi-Database', 'Query Builder', 'Visual Tools', 'Session Management', 'Export Options', 'Desktop App'],
-    imageUrl: 'https://picsum.photos/id/16/800/600',
     status: 'coming-soon'
   },
   {
@@ -219,7 +205,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.ENTERPRISE,
     iconName: 'GraduationCap',
     features: ['Course Management', 'Assignments', 'Grading', 'Student Portal', 'Analytics', 'Self-Hosted'],
-    imageUrl: 'https://picsum.photos/id/17/800/600',
     status: 'coming-soon'
   },
   {
@@ -229,7 +214,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.ENTERPRISE,
     iconName: 'Users',
     features: ['HR Management', 'Payroll', 'Time Tracking', 'Performance Reviews', 'Self-Hosted', 'Privacy-First'],
-    imageUrl: 'https://picsum.photos/id/18/800/600',
     status: 'coming-soon'
   },
   {
@@ -239,7 +223,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.ENTERPRISE,
     iconName: 'Building2',
     features: ['Inventory', 'Finance', 'CRM', 'Supply Chain', 'Reporting', 'Self-Hosted'],
-    imageUrl: 'https://picsum.photos/id/19/800/600',
     status: 'coming-soon'
   },
 
@@ -251,7 +234,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.PRIVACY,
     iconName: 'Shield',
     features: ['Data Anonymization', 'Privacy Analysis', 'Secure Storage', 'Offline Mode', 'Open Source', 'No Tracking'],
-    imageUrl: 'https://picsum.photos/id/21/800/600',
     status: 'coming-soon'
   },
 
@@ -263,46 +245,6 @@ export const PRODUCTS: Product[] = [
     category: ProductCategory.WELLNESS,
     iconName: 'Sparkles',
     features: ['Personal Analysis', 'Goal Planning', 'Progress Tracking', 'Professional Guidance', 'Privacy-First', 'Mobile App'],
-    imageUrl: 'https://picsum.photos/id/22/800/600',
     status: 'coming-soon'
-  }
-];
-
-export const DONATION_OPTIONS: DonationOption[] = [
-  {
-    id: 'donate-paypal',
-    name: 'PayPal',
-    type: 'link',
-    value: 'https://paypal.me/penkosoftware',
-    iconName: 'CreditCard',
-    color: 'bg-blue-600',
-    description: 'Quick and secure donation via PayPal.'
-  },
-  {
-    id: 'donate-kofi',
-    name: 'Ko-fi',
-    type: 'link',
-    value: 'https://ko-fi.com/penkosoftware',
-    iconName: 'Coffee',
-    color: 'bg-pink-500',
-    description: 'Buy us a coffee to keep us coding.'
-  },
-  {
-    id: 'donate-btc',
-    name: 'Bitcoin',
-    type: 'crypto',
-    value: 'bc1q6p40harkyh0uxkcv5dpdvz5uygkuvqdv2j5skk',
-    iconName: 'Bitcoin',
-    color: 'bg-orange-500',
-    description: 'Send BTC to support open source.'
-  },
-  {
-    id: 'donate-eth',
-    name: 'Ethereum',
-    type: 'crypto',
-    value: '0xb16004d26d6ae9370ef2b7a9ed9c6fb2fb56e3c5',
-    iconName: 'Gem', // Using Gem for generic crypto asset feel
-    color: 'bg-indigo-500',
-    description: 'ETH and ERC-20 tokens accepted.'
   }
 ];

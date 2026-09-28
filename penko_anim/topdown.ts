@@ -8,7 +8,7 @@ import { PENKO_WALK_RIGHT } from './walk_right';
 // for the top-down visualizer. We can map the directions to these existing frames.
 
 // Flip a matrix horizontally for Left animations
-const flipMatrix = (matrix) => {
+const flipMatrix = (matrix: number[][]) => {
   return matrix.map(row => [...row].reverse());
 };
 
@@ -19,9 +19,8 @@ export const PENKO_TOPDOWN = {
   idle_up: PENKO_IDLE,
   walk_up: PENKO_WALK,
   
-  // Right uses the walk_right animations
+  // Right uses the walk_right animations (walk_right itself comes from the base set in index.ts)
   idle_right: [PENKO_WALK_RIGHT[1]], // The middle standing frame of walk_right
-  walk_right: PENKO_WALK_RIGHT,
   
   // Left is just Right flipped horizontally
   idle_left: [flipMatrix(PENKO_WALK_RIGHT[1])],

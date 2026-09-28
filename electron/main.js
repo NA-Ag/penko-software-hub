@@ -6,18 +6,15 @@ function createWindow() {
     width: 1280,
     height: 800,
     webPreferences: {
-      preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: false,
       contextIsolation: true,
     },
     // Use the PNG icon we generated for the PWA
-    icon: path.join(__dirname, '../public/pwa-512x512.png')
+    icon: path.join(__dirname, '../dist/pwa-512x512.png') // public/ isn't packaged; Vite copies it into dist/
   });
 
-  // In production, load the built index.html
-  // In development, you can load localhost if you set up a dev script, 
-  // but for the release build, we always want the file.
-  if (process.env.NODE_ENV === 'development') {
+  // Unpackaged (npm run electron:dev) loads the Vite dev server; installers load the built files
+  if (!app.isPackaged) {
     win.loadURL('http://localhost:3000');
   } else {
     win.loadFile(path.join(__dirname, '../dist/index.html'));

@@ -14,7 +14,11 @@ export default defineConfig(() => {
         react(),
         VitePWA({
           registerType: 'autoUpdate',
-          includeAssets: ['penguin-logo.svg', 'og-image.png'],
+          includeAssets: ['favicon.svg', 'apple-touch-icon.png', 'penguin-logo.svg', 'og-image.png'],
+          workbox: {
+            // Precache fonts and images too, so the app renders fully offline
+            globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+          },
           manifest: {
             name: 'Penko App Store',
             short_name: 'App Store',
@@ -22,8 +26,7 @@ export default defineConfig(() => {
             theme_color: '#0f172a',
             background_color: '#0f172a',
             display: 'standalone',
-            start_url: '/',
-            orientation: 'portrait',
+            start_url: './',
             icons: [
               {
                 src: 'penguin-logo.svg',

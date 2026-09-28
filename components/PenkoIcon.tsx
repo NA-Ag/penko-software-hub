@@ -5,6 +5,7 @@
 
 import React from 'react';
 import { PENKO_ANIMATIONS } from '../penko_anim';
+import { PENKO_COLORS as COLORS } from './penkoColors';
 
 export type PenkoIconType = 
   | 'japanese' | 'custom'
@@ -26,27 +27,7 @@ interface PenkoIconProps {
   pose?: 'idle' | 'talk' | 'hurt' | 'jump' | 'walk' | 'walk_right' | 'jump_right';
 }
 
-// Color palette: 0=transparent, 1=black, 2=white, 3=blue-gray, 4=orange, 
-// 5=red, 6=yellow/gold, 7=blue, 8=green, 9=purple, 10=pink, 11=brown, 12=cyan, 13=gray
-const COLORS = {
-  0: 'transparent',
-  1: '#111',    // Outline/Black
-  2: '#fff',    // Belly/Eyes/White
-  3: '#64748b', // Slate-500 (Body)
-  4: '#f97316', // Orange-500 (Beak/Feet)
-  5: '#ef4444', // Red
-  6: '#fbbf24', // Amber/Yellow
-  7: '#3b82f6', // Blue
-  8: '#22c55e', // Green
-  9: '#a855f7', // Purple
-  10: '#ec4899', // Pink
-  11: '#8B4513', // Brown
-  12: '#06b6d4', // Cyan
-  13: '#9ca3af', // Light Gray
-};
-
 export const PenkoIcon: React.FC<PenkoIconProps> = React.memo(({ type, size = 64, className = '', pose = 'idle' }) => {
-  const pixelSize = size / 16;
   const [frameIndex, setFrameIndex] = React.useState(0);
 
   const activePose = pose in PENKO_ANIMATIONS ? pose : 'idle';
@@ -57,10 +38,10 @@ export const PenkoIcon: React.FC<PenkoIconProps> = React.memo(({ type, size = 64
     setFrameIndex(0);
     if (!frames || frames.length <= 1) return;
 
-    const fps = activePose === 'talk' ? 300 : 500; // Slower, smoother animations
+    const frameMs = activePose === 'talk' ? 300 : 500; // Slower, smoother animations
     const interval = setInterval(() => {
       setFrameIndex(prev => (prev + 1) % frames.length);
-    }, fps);
+    }, frameMs);
 
     return () => clearInterval(interval);
   }, [frames, activePose]);
@@ -68,7 +49,7 @@ export const PenkoIcon: React.FC<PenkoIconProps> = React.memo(({ type, size = 64
   // Use useMemo to avoid re-parsing on every small render
   const matrix = React.useMemo(() => {
     const currentFrame = frames[frameIndex] || frames[0];
-    let m = JSON.parse(JSON.stringify(currentFrame));
+    const m: number[][] = currentFrame.map(row => [...row]);
 
     // Shared Helper: Suit and Red Tie for Office Suite
     const drawSuitAndTie = () => {
@@ -524,30 +505,35 @@ export const PenkoIcon: React.FC<PenkoIconProps> = React.memo(({ type, size = 64
     return m;
   }, [type, frames, frameIndex]);
 
+  // Merge horizontal runs of the same color into one <rect>: a handful of SVG nodes
+  // per frame instead of 256 divs keeps many animated mascots cheap to render.
+  const rects = React.useMemo(() => {
+    const out: { x: number; y: number; w: number; fill: string }[] = [];
+    matrix.forEach((row, y) => {
+      let x = 0;
+      while (x < row.length) {
+        const c = row[x];
+        let w = 1;
+        while (x + w < row.length && row[x + w] === c) w++;
+        if (c !== 0) out.push({ x, y, w, fill: COLORS[c] });
+        x += w;
+      }
+    });
+    return out;
+  }, [matrix]);
+
   return (
-    <div
-      className={`${className} will-change-transform`}
-      style={{
-        width: size,
-        height: size,
-        display: 'grid',
-        gridTemplateColumns: `repeat(16, ${pixelSize}px)`,
-        gridTemplateRows: `repeat(16, ${pixelSize}px)`,
-        imageRendering: 'pixelated',
-      }}
+    <svg
+      className={className}
+      width={size}
+      height={size}
+      viewBox="0 0 16 16"
+      shapeRendering="crispEdges"
+      aria-hidden="true"
     >
-      {matrix.map((row: number[], y: number) =>
-        row.map((cell: number, x: number) => (
-          <div
-            key={`${x}-${y}`}
-            style={{
-              backgroundColor: COLORS[cell as keyof typeof COLORS],
-              width: pixelSize,
-              height: pixelSize,
-            }}
-          />
-        ))
-      )}
-    </div>
+      {rects.map(r => (
+        <rect key={`${r.x}-${r.y}`} x={r.x} y={r.y} width={r.w} height={1} fill={r.fill} />
+      ))}
+    </svg>
   );
 });

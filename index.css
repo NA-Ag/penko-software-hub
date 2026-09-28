@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  /* Keep anchor targets and keyboard focus clear of the sticky navbar and fixed news ticker */
+  scroll-padding-top: 5rem;
+  scroll-padding-bottom: 3rem;
+}
+
+/* One consistent, high-contrast focus indicator for keyboard users */
+:focus-visible {
+  outline: 2px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Respect the OS "reduce motion" setting across all CSS animations and transitions */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* Custom scrollbar for chat */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Hero Animation Keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Cursor Animation Keyframes */
+@keyframes moveCursor {
+  0% { top: 45%; left: 20%; }
+  16% { top: 38%; left: 15%; }
+  20% { top: 38%; left: 15%; }
+  36% { top: 48%; left: 15%; }
+  40% { top: 48%; left: 15%; }
+  56% { top: 58%; left: 15%; }
+  60% { top: 58%; left: 15%; }
+  100% { top: 45%; left: 20%; }
+}
+
+@keyframes clickPulse {
+  0%, 15%, 21%, 35%, 41%, 55%, 61%, 100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  16%, 36%, 56% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  18%, 38%, 58% {
+    opacity: 0;
+    transform: scale(2.5);
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}

@@ -1,192 +1,122 @@
-# Penko App Store
+# Penko Station
 
-The official installable App Store for Penko Software - a collection of free, open-source Progressive Web Apps (PWAs) for office productivity, learning, music, creativity, and more. Functions as a "mini app store" on your device.
+The official hub for Penko Software: a free, open-source app store for our Progressive Web Apps (PWAs) covering office, learning, music, and creative tools. Installable, works offline, and available as a desktop app.
 
-## Overview
-
-Penko App Store is a modern, responsive Progressive Web App (PWA) that serves as the central station for discovering, installing, and accessing all Penko Software projects. Built with React and TypeScript, it features a clean interface with multi-language support, dark mode, and works offline once installed.
+**Live site:** https://penkosoftware.org/
 
 ## Features
 
-- **Installable App Store** - Works as a native app on your device to manage your Penko ecosystem
-- **23 Projects Showcase** - Display of all Penko Software applications across 6 active categories
-- **Multi-Language Support** - Full internationalization with support for multiple languages
-- **Dark Mode** - Seamless light/dark theme switching with persistent preferences
-- **Responsive Design** - Optimized for desktop, tablet, and mobile devices
-- **Category Filtering** - Easy browsing by project category
-- **Project Status Badges** - Visual indicators for Live, Alpha, Beta, and Coming Soon projects
-- **Steam Integration** - Support options via wishlisting our paid apps on Steam
-- **Privacy-First** - No tracking, no ads, no data collection
+- **Installable & offline-first** - Works as a PWA; everything, including fonts, is cached for offline use
+- **Desktop app** - Packaged with Electron for Linux (AppImage/deb), Windows, and macOS
+- **16 languages** - English, Español, Français, Deutsch, Italiano, Português, Polski, Türkçe, Русский, Українська, हिन्दी, Bahasa Indonesia, Tiếng Việt, 中文, 日本語, 한국어. Each loads on demand and is cached for offline use
+- **Light & dark mode** - Follows your system setting, remembered locally
+- **Accessible** - Keyboard navigable, screen-reader labelled, WCAG AA contrast, respects reduced motion
+- **Privacy-first** - No tracking, no ads, no data collection
 
 ## Technology Stack
 
-- **Framework**: React 19.2.1
-- **Desktop Wrapper**: Electron 40.0.0 (packaged using electron-builder)
-- **Language**: TypeScript
-- **Build Tool**: Vite 6.2.0
+- **Framework**: React 19 + TypeScript
+- **Build Tool**: Vite 6 with `vite-plugin-pwa`
+- **Styling**: Tailwind CSS 3 (compiled at build time, no CDN)
 - **Icons**: Lucide React
-- **Styling**: Tailwind CSS
-- **Type Safety**: TypeScript with strict mode
-
-## Project Categories
-
-1. **Office Suite** - Productivity applications (Writer, Calc, Note, Slide, etc.)
-2. **Learning** - Educational tools (Adventure, Typing, Reader, Soroban)
-3. **Music Platform** - Music streaming and distribution (Tune)
-4. **Creative Tools** - Design and editing software (PDF, Vector, Image, Cut)
-5. **Enterprise Suite** - Business applications (DB, Campus, HCM, ERP)
-6. **Privacy & Security** - Data protection tools (Private)
+- **Desktop**: Electron + electron-builder
+- **Tests**: Vitest
 
 ## Getting Started
 
-### Prerequisites
+Requires Node.js 20 or newer.
 
-- Node.js (v18 or higher recommended)
-- npm or yarn package manager
-
-### Installation
-
-1. Clone the repository:
 ```bash
-git clone https://github.com/penkosoftware/penko-software-hub.git
+git clone https://github.com/NA-Ag/penko-software-hub.git
 cd penko-software-hub
-```
-
-2. Install dependencies:
-```bash
 npm install
-```
-
-3. Start the development server:
-```bash
 npm run dev
 ```
 
-4. Open your browser and navigate to `http://localhost:5173`
+Open http://localhost:3000
 
-### Build for Production
+### Scripts
 
-```bash
-npm run build
-```
-
-The built files will be in the `dist` directory.
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
+| Command | What it does |
+| --- | --- |
+| `npm run dev` | Start the dev server on port 3000 |
+| `npm test` | Run the translation and content checks |
+| `npm run build` | Type-check and build the site into `dist/` |
+| `npm run preview` | Serve the production build locally |
+| `npm run electron:dev` | Run the desktop app against the dev server |
+| `npm run electron:build` | Build desktop installers into `release/` |
+| `node generate-icons.js` | Regenerate the favicon and app icons from the Penko sprite |
 
 ## Project Structure
 
 ```
 penko-software-hub/
-├── components/          # React components
-│   ├── ProductGrid.tsx     # Main product showcase console
-│   ├── DonationSection.tsx # Support console & Steam wishlist
-│   ├── PenkoIcon.tsx       # Mascot custom vector pixel art renderer
-│   ├── NewsTicker.tsx      # Scrolling updates banner
-├── App.tsx             # Main application component
-├── AppContext.tsx      # Global state management (theme, language)
-├── constants.ts        # Product data and configuration
-├── types.ts            # TypeScript type definitions
-├── translations.ts     # Multi-language translations
-├── index.tsx           # Application entry point
-├── index.html          # HTML template with Tailwind CSS
-├── vite.config.ts      # Vite configuration
-├── tsconfig.json       # TypeScript configuration
-└── package.json        # Project dependencies
+├── components/            # UI sections (Navbar, Hero, ProductGrid, DonationSection, ...)
+│   ├── PenkoIcon.tsx      # Pixel-art mascot renderer with per-app costumes
+│   ├── productMeta.ts     # Maps product ids to costumes and description keys
+│   └── productIcons.ts    # Lucide icons used by products
+├── hooks/                 # Shared React hooks
+├── penko_anim/            # Mascot animation frames (16x16 pixel grids)
+├── assets/                # Images bundled by Vite (Vox capsule art)
+├── public/                # Static files (favicon, PWA icons, social image, CNAME)
+├── electron/              # Desktop app entry point
+├── tests/                 # Vitest suites
+├── i18n/
+│   ├── index.ts           # Language list, picker names, and lazy locale loaders
+│   ├── types.ts           # The Translation interface every language implements
+│   └── locales/           # One file per language: UI text + feature label translations
+├── constants.ts           # Product catalog and external links
+└── AppContext.tsx         # Language and theme state
 ```
 
-## Configuration
+## Common Tasks
 
-### Adding a New Project
+### Adding or updating an app
 
-Edit `constants.ts` and add a new product to the `PRODUCTS` array:
+Edit the `PRODUCTS` array in `constants.ts`:
 
 ```typescript
 {
-  id: 'project-id',
-  name: 'Project Name',
-  description: 'Project description',
+  id: 'penko-example',            // also picks the mascot costume and description key
+  name: 'Penko Example',
+  description: 'English fallback description',
   category: ProductCategory.OFFICE,
-  iconName: 'FileText', // Lucide icon name
-  repoUrl: 'https://github.com/penkosoftware/project',
-  liveUrl: 'https://project.penko.software',
-  features: ['Feature 1', 'Feature 2', 'Feature 3'],
-  imageUrl: 'https://picsum.photos/id/1/800/600',
-  status: 'alpha', // 'live' | 'alpha' | 'beta' | 'coming-soon'
-  version: 'v1.0.0'
+  iconName: 'FileText',           // must be listed in components/productIcons.ts
+  repoUrl: 'https://github.com/NA-Ag/penko-example',
+  liveUrl: 'https://example.penkosoftware.org/',
+  features: ['Offline Mode', 'PDF Export'],
+  status: 'alpha',                // 'live' | 'beta' | 'alpha' | 'coming-soon'
+  version: 'v0.1.0'
 }
 ```
 
-### Adding Translations
+Then add a `descPenkoExample` entry to the `ui` object in every file in `i18n/locales/`, and translations for any new feature labels to each file's `features` object. `npm test` fails if anything is missing.
 
-Update `translations.ts` with new translation keys for all supported languages.
+### Adding translation text
 
-### Customizing Theme
+Add the key to the `Translation` interface in `i18n/types.ts` and to every file in `i18n/locales/`. TypeScript and `npm test` both catch missing keys.
 
-Theme colors and styling are defined in the inline `<style>` tag in `index.html` using Tailwind CSS utility classes.
+### Adding a language
 
-## Active Projects
+1. Copy `i18n/locales/en.ts` to `i18n/locales/<code>.ts` and translate it, filling in `features` too
+2. Add the code to `Language` in `i18n/types.ts`
+3. Add its native name and loader in `i18n/index.ts`
+4. Run `npm test`
 
-Currently showcased projects include:
+## Deployment
 
-- **Penko Adventure** (Alpha) - RPG-based language learning with AI storytelling
-- **Penko Writer** (Alpha) - Privacy-first word processor
-- **Penko Tune** (Alpha) - Music platform with 0% artist fees
-- **Penko Typing** (Alpha) - Retro arcade-style typing game
-- **Penko Reader** (Beta) - Accessibility-focused reading tool
-- **Penko Soroban** (Alpha) - Digital Japanese abacus for mental math
-
-and 17 more coming soon.
-
-## Development
-
-### Component Architecture
-
-- `App.tsx` - Main layout with Navbar, Hero, ProductGrid, DonationSection, Privacy, and Footer
-- `AppContext.tsx` - Provides global state for theme and language preferences
-- `ProductGrid.tsx` - Renders filterable product cards
-- `DonationSection.tsx` - Displays donation options
-
-### State Management
-
-The application uses React Context (`AppContext`) for managing:
-- Dark mode preference (persisted to localStorage)
-- Language selection (persisted to localStorage)
-- Translations based on selected language
-
-## License
-
-This project is licensed under the GPL-3.0 License - see the LICENSE file for details.
-
-## Privacy & Transparency
-
-- **No tracking** - Zero analytics or telemetry
-- **No data collection** - All preferences stored locally
-- **No ads** - Completely ad-free experience
-- **Open source** - Full source code available for audit
-- **Free forever** - No hidden costs or subscriptions
+- **Website** - Every push to `main` runs the tests, builds, and deploys to GitHub Pages
+- **Desktop** - Pushing a `v*` tag builds installers for Linux, Windows, and macOS and attaches them to a GitHub release
 
 ## Support
 
-If you find this project useful, consider supporting Penko Software development by wishlisting our paid apps:
+Penko apps are free. If you'd like to support development, check out our paid apps on Steam:
 
-- **Penko Vox Japanese**: https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/
+- **Penko Vox: Japanese** (Early Access): https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/
 
-## Links
+## License
 
-- **Website**: https://penkosoftware.org/
-- **GitHub**: https://github.com/NA-Ag/penko-software-hub
-- **Projects**: All projects are accessible through the hub interface
-
-## Acknowledgments
-
-- Built with [React](https://react.dev/)
-- Icons by [Lucide](https://lucide.dev/)
-- Powered by [Vite](https://vitejs.dev/)
+GPL-3.0. See [LICENSE.md](LICENSE.md).
 
 ---
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#0f172a" />
-    <link rel="icon" type="image/svg+xml" href="/penguin-logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     
     <!-- Primary Meta Tags -->
     <title>Penko Station | Free, Open-Source Apps for Everyone</title>
@@ -15,135 +16,31 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://penko.software/" />
+    <meta property="og:url" content="https://penkosoftware.org/" />
     <meta property="og:title" content="Penko Station | Free, Open-Source Apps for Everyone" />
     <meta property="og:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
-    <meta property="og:image" content="https://penko.software/og-image.png" />
+    <meta property="og:image" content="https://penkosoftware.org/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Penko Station: free software, private by default" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://penko.software/" />
-    <meta property="twitter:title" content="Penko Station | Free, Open-Source Apps for Everyone" />
-    <meta property="twitter:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
-    <meta property="twitter:image" content="https://penko.software/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://penkosoftware.org/" />
+    <meta name="twitter:title" content="Penko Station | Free, Open-Source Apps for Everyone" />
+    <meta name="twitter:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
+    <meta name="twitter:image" content="https://penkosoftware.org/og-image.png" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      tailwind.config = {
-        darkMode: 'class',
-      }
+      // Apply the saved/system theme before first paint to avoid a light flash in dark mode
+      try {
+        var saved = localStorage.getItem('penko-theme');
+        if (saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
     </script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-      html { scroll-behavior: smooth; }
-      body { font-family: 'Inter', sans-serif; }
-      /* Custom scrollbar for chat */
-      .scrollbar-hide::-webkit-scrollbar {
-          display: none;
-      }
-      .scrollbar-hide {
-          -ms-overflow-style: none;
-          scrollbar-width: none;
-      }
-
-      /* Hero Animation Keyframes */
-      @keyframes float {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-20px); }
-      }
-
-      @keyframes slideInLeft {
-        from {
-          opacity: 0;
-          transform: translateX(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      @keyframes slideInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes slideInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes scaleIn {
-        from {
-          opacity: 0;
-          transform: scale(0.8);
-        }
-        to {
-          opacity: 1;
-          transform: scale(1);
-        }
-      }
-
-      @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-      }
-
-      /* Cursor Animation Keyframes */
-      @keyframes moveCursor {
-        0% { top: 45%; left: 20%; }
-        16% { top: 38%; left: 15%; }
-        20% { top: 38%; left: 15%; }
-        36% { top: 48%; left: 15%; }
-        40% { top: 48%; left: 15%; }
-        56% { top: 58%; left: 15%; }
-        60% { top: 58%; left: 15%; }
-        100% { top: 45%; left: 20%; }
-      }
-
-      @keyframes clickPulse {
-        0%, 15%, 21%, 35%, 41%, 55%, 61%, 100% {
-          opacity: 0;
-          transform: scale(1);
-        }
-        16%, 36%, 56% {
-          opacity: 0.5;
-          transform: scale(1);
-        }
-        18%, 38%, 58% {
-          opacity: 0;
-          transform: scale(2.5);
-        }
-      }
-
-      @keyframes marquee {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/"
-  }
-}
-</script>
-</head>
+  </head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>

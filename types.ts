@@ -17,20 +17,7 @@ export interface Product {
   repoUrl?: string; // Optional for coming soon projects
   liveUrl?: string; // Live demo URL
   features: string[];
-  imageUrl: string;
   status?: 'live' | 'alpha' | 'beta' | 'coming-soon'; // Project status
   version?: string; // Current version
   isNew?: boolean; // Show "New" badge
-}
-
-export type DonationType = 'crypto' | 'link';
-
-export interface DonationOption {
-  id: string;
-  name: string;
-  type: DonationType;
-  value: string; // URL for link, Address for crypto
-  iconName: string;
-  color: string;
-  description: string;
 }
