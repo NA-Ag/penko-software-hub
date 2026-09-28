@@ -31,7 +31,7 @@ The page is organized as:
 
 ## Getting Started
 
-Requires Node.js 20 or newer.
+Requires Node.js 22.22 or newer (the test suite's jsdom needs it).
 
 ```bash
 git clone https://github.com/NA-Ag/penko-software-hub.git

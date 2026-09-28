@@ -6,6 +6,9 @@
   "author": "Penko Software <contact@penkosoftware.org>",
   "type": "module",
   "main": "electron/main.js",
+  "engines": {
+    "node": ">=22.22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
