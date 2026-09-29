@@ -5,6 +5,8 @@ export const ui: Translation = {
   // Navbar
   navProjects: 'Aplikacje',
   navSupport: 'Wesprzyj Penko',
+  navSections: 'Sekcje witryny',
+  navBreadcrumb: 'Ścieżka nawigacji',
   navGitHub: 'GitHub',
 
   // Hero
@@ -73,27 +75,17 @@ export const ui: Translation = {
   // Donations
   donationsTagline: '100% opcjonalne',
   donationsTitle: 'Wesprzyj Penko',
-  donationsDescription1: 'Wszystkie aplikacje w Penko Plaza są całkowicie darmowe, działają przede wszystkim offline i są otwartoźródłowe. Aby finansować ich dalszy rozwój, okresowo tworzymy i wydajemy wyspecjalizowane, płatne oprogramowanie.',
-  donationsDescription2: 'Te płatne aplikacje to osobne, zaawansowane narzędzia. Ich zakup jest w 100% opcjonalny, ale bezpośrednio finansuje tworzenie naszego darmowego oprogramowania.',
-  upcomingPaidTitle: 'Przyszłe płatne aplikacje',
-  upcomingPaidDesc: 'Rozwijamy kolejne wyspecjalizowane aplikacje desktopowe, pomoce naukowe i narzędzia offline, które będą wydawane okresowo, aby wspierać Penko.',
-  upcomingPaidFeature1: 'Wyspecjalizowane narzędzia',
-  upcomingPaidFeature2: 'Integracje desktopowe',
-  upcomingPaidFeature3: 'Moc offline',
-  upcomingPaidStatus: 'W trakcie tworzenia',
-  voxJapaneseTitle: 'Penko Vox Japanese',
-  voxJapaneseTagline: 'Immersja japońskiego z AI offline',
-  voxJapaneseDesc: 'Nasza kompletna aplikacja do nauki języka japońskiego. Silnik immersji AI działający przede wszystkim lokalnie, z ponad 40 interaktywnymi scenkami społecznymi na poziomach JLPT od N5 do N1 oraz prywatnym korepetytorem AI, który słucha, mówi i delikatnie Cię poprawia – wszystko offline, na Twoim własnym komputerze. Żadnej chmury, żadnych subskrypcji.',
-  voxJapaneseFeature1: '40+ scenek · N5–N1',
+  voxJapaneseTitle: 'Penko Vox: Japanese',
+  voxJapaneseDesc: 'Nasza kompletna aplikacja do nauki języka japońskiego. Silnik immersji AI działający lokalnie, z 38 scenariuszami rozmów na poziomach JLPT od N5 do N1, własnymi scenariuszami oraz prywatnym korepetytorem AI, który słucha, mówi i delikatnie Cię poprawia – wszystko offline, na Twoim własnym komputerze. Żadnej chmury, żadnych subskrypcji.',
+  voxJapaneseFeature1: '38 scenariuszy · N5–N1',
   voxJapaneseFeature2: 'Korepetytor AI w 100% offline',
-  voxJapaneseFeature3: 'Mowa na wejściu i wyjściu',
-  voxJapaneseFeature4: 'Plansza kolejności kresek',
-  voxJapaneseStatus: 'Już dostępne we wczesnym dostępie',
+  voxJapaneseFeature3: 'Rozmowy głosowe',
+  voxJapaneseFeature4: 'Ćwiczenie pisania kany',
+  voxJapaneseFeature5: 'RPG Kotoba Islands',
+  voxFullRelease: 'Pełna wersja: sierpień 2027',
   voxJapaneseCta: 'Zdobądź na Steam',
 
   // Footer
-  footerDescription: 'Tworzymy darmowe i otwartoźródłowe oprogramowanie dla wszystkich, na zawsze. Żadnych subskrypcji, żadnych reklam, żadnego śledzenia.',
-  footerProjects: 'Projekty',
   footerLinks: 'Linki',
   footerLicense: 'Licencja (GPLv3)',
   footerPrivacy: 'Polityka prywatności',
@@ -101,13 +93,13 @@ export const ui: Translation = {
 
   // Privacy Policy
   privacyTitle: 'Nasza filozofia prywatności',
-  privacyAsIs: 'Wszystkie aplikacje są udostępniane całkowicie bezpłatnie i w stanie \'takim, jakim są\' na licencji GPL3.',
+  privacyAsIs: 'Wszystkie aplikacje Penko Plaza są udostępniane całkowicie bezpłatnie i w stanie \'takim, jakim są\' na licencji GPL-3.0.',
   privacyFree: 'Do podstawowych aplikacji PWA nigdy nie zostaną wprowadzone subskrypcje, płatne poziomy ani ukryte płatności.',
   privacyNoWarranties: 'Nie udzielamy żadnej gwarancji ani odpowiedzialności za bezpieczeństwo danych, użytkowanie czy błędy.',
   privacyNoData: 'Nie zbieramy, nie przechowujemy ani nie sprzedajemy żadnych danych użytkownika. Twoje dane pozostają w bazie danych Twojej przeglądarki.',
-  privacySoloDev: 'Rozwijane i utrzymywane przez jednego programistę zaangażowanego w dostępność oprogramowania.',
+  privacyOffline: 'Każda aplikacja Penko Plaza jest tworzona z myślą o pracy offline, więc Twoje narzędzia działają bez połączenia z internetem.',
   privacyBestEffort: 'Aktualizacje i nowe funkcje wprowadzane są w miarę możliwości i dostępnego czasu.',
-  privacyVerify: 'Cały kod źródłowy jest dostępny do weryfikacji w odpowiednich repozytoriach GitHub na licencji GPL3.',
+  privacyVerify: 'Kod źródłowy każdej aplikacji Penko Plaza jest dostępny do weryfikacji w jej repozytorium GitHub na licencji GPL-3.0.',
 
   // Status badges
   statusLive: 'Live',
@@ -116,7 +108,7 @@ export const ui: Translation = {
   statusComingSoon: 'Wkrótce',
 
   // News
-  newsUpdate1: 'Penko Vox Japanese jest już dostępne we wczesnym dostępie na Steam!',
+  newsUpdate1: 'Penko Vox: Japanese v2.1 już jest: RPG Kotoba Islands, rozmowy głosowe i więcej.',
   newsUpdate2: 'Penko Reader v2.0.13 przynosi kompletną wizualną przebudowę.',
   newsUpdate3: 'Penko Adventure v1.8.0 jest teraz w publicznej becie.',
   newsUpdate4: 'Penko Plaza działa teraz w pełni offline i mówi w 16 językach.',
@@ -136,10 +128,11 @@ export const ui: Translation = {
   supportIssuesTitle: 'Zgłaszaj błędy i pomysły',
   supportIssuesDesc: 'Znalazłeś coś zepsutego lub masz pomysł na funkcję? Zgłoś issue.',
   supportPurchaseNote: 'Każdy zakup bezpośrednio finansuje darmowe aplikacje.',
-  voxUpdateTitle: 'Nadchodzi w następnej aktualizacji',
-  voxUpdate1: 'Kompletne, wciągające doświadczenie RPG',
-  voxUpdate2: 'Przebudowane tryby czatu i rozmów głosowych',
-  voxUpdate3: 'Przebudowany słownik i system fiszek pamięciowych',
+  voxUpdateTitle: 'Nowość w v2.1',
+  voxUpdate1: 'Kotoba Islands – RPG, w którym swobodnie rozmawiasz z każdym mieszkańcem',
+  voxUpdate2: 'Naturalne rozmowy głosowe z przejmowaniem głosu, przerywaniem i usuwaniem echa',
+  voxUpdate3: 'Nowe centrum nauki z powtórkami FSRS oraz słownik offline z wyszukiwaniem po dotknięciu',
+  voxUpdate4: 'Obsługa kontrolera i Steam Deck (eksperymentalna)',
   privacyLead: 'Żadnego drobnego druku. Oto dokładnie, co dostajesz, a czego nie.',
   privacyVerifyCta: 'Przeglądaj kod źródłowy na GitHub',
   privacyStatTrackers: 'Trackery',
@@ -150,7 +143,7 @@ export const ui: Translation = {
   privacyFreeTitle: 'Darmowe na zawsze',
   privacyNoWarrantiesTitle: 'Bez gwarancji',
   privacyNoDataTitle: 'Twoje dane pozostają Twoje',
-  privacySoloDevTitle: 'Stworzone przez jednego programistę',
+  privacyOfflineTitle: 'Działa offline',
   privacyBestEffortTitle: 'Aktualizacje w miarę możliwości',
   skipToContent: 'Przejdź do treści',
   themeToggle: 'Przełącz tryb ciemny',
@@ -161,9 +154,37 @@ export const ui: Translation = {
   navRoadmap: 'Plan rozwoju',
   whatsNewTitle: 'Co nowego',
   whatsNewVoxCta: 'Dowiedz się więcej',
-  roadmapTitle: 'W planach rozwoju',
-  roadmapSubtitle: 'Aplikacje w budowie, tworzone jedna po drugiej i w pełni jawnie. Śledź postępy na GitHub.',
+  roadmapSubtitle: 'Kolejne aplikacje, które tworzymy jedna po drugiej i w pełni jawnie. Śledź postępy na GitHub.',
   voxVsAdventure: 'Chcesz po prostu ćwiczyć języki dla przyjemności? Penko Adventure jest darmowe i obejmuje 12 języków. Vox to nasza zaawansowana aplikacja do prawdziwej nauki japońskiego.',
+
+  // Trust & contact
+  privacyPolicyLink: 'Przeczytaj pełną politykę prywatności',
+  footerByline: 'od Penko Software',
+  footerContact: 'Kontakt',
+  schoolsTitle: 'Dla szkół i uczelni',
+  schoolsBody: 'Penko Vox: Japanese jest dostępne w ramach pilotaży w klasie i rocznych licencji instytucjonalnych. Nasze darmowe aplikacje nie zbierają danych, więc też nadają się do szkoły.',
+  schoolsCta: 'Skontaktuj się z nami',
+
+  // Studio structure: free Plaza apps funded by paid apps
+  navPaidApps: 'Aplikacje płatne',
+  studioLine: 'Penko Software tworzy darmowe aplikacje open source (Penko Plaza) i finansuje je płatnymi aplikacjami, takimi jak Penko Vox.',
+  fundingTitle: 'Jak finansowane jest Penko',
+  fundingBody: 'Aplikacje Penko Plaza są darmowe i open source. Finansujemy je, tworząc kilka specjalistycznych aplikacji płatnych, takich jak Penko Vox: Japanese. Kupno jednej z nich jest dobrowolne i bezpośrednio wspiera darmowe aplikacje.',
+  fundingCta: 'Zobacz nasze aplikacje płatne',
+
+  // Reading options menu
+  readingOptions: 'Opcje czytania',
+  readingTextSize: 'Rozmiar tekstu',
+  readingSmaller: 'Mniejszy tekst',
+  readingLarger: 'Większy tekst',
+  readingFont: 'Czcionka',
+  readingFontDefault: 'Domyślna',
+  readingFontReadable: 'Łatwa do czytania (Atkinson Hyperlegible)',
+  readingFontDyslexic: 'Przyjazna przy dysleksji (OpenDyslexic)',
+  readingSpacing: 'Większy odstęp między wierszami',
+  readingUnderline: 'Podkreślaj linki',
+  readingReduceMotion: 'Ogranicz animacje',
+  readingReset: 'Zresetuj opcje czytania',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

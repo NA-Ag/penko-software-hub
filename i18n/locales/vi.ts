@@ -5,6 +5,8 @@ export const ui: Translation = {
   // Navbar
   navProjects: 'Ứng dụng',
   navSupport: 'Ủng hộ Penko',
+  navSections: 'Các phần của trang',
+  navBreadcrumb: 'Đường dẫn điều hướng',
   navGitHub: 'GitHub',
 
   // Hero
@@ -73,27 +75,17 @@ export const ui: Translation = {
   // Donations
   donationsTagline: 'Hoàn toàn tùy chọn',
   donationsTitle: 'Ủng hộ Penko',
-  donationsDescription1: 'Tất cả ứng dụng trong Penko Plaza đều hoàn toàn miễn phí, ưu tiên ngoại tuyến và mã nguồn mở. Để tài trợ cho quá trình phát triển liên tục, chúng tôi định kỳ xây dựng và phát hành các phần mềm trả phí chuyên biệt.',
-  donationsDescription2: 'Các ứng dụng trả phí này là những công cụ nâng cao, độc lập. Việc mua chúng hoàn toàn tùy chọn, nhưng sẽ trực tiếp tài trợ cho việc tạo ra phần mềm miễn phí của chúng tôi.',
-  upcomingPaidTitle: 'Ứng dụng trả phí sắp tới',
-  upcomingPaidDesc: 'Chúng tôi đang phát triển thêm các ứng dụng máy tính để bàn chuyên biệt, công cụ hỗ trợ học tập và công cụ ngoại tuyến, sẽ được phát hành định kỳ để hỗ trợ Penko.',
-  upcomingPaidFeature1: 'Tiện ích chuyên biệt',
-  upcomingPaidFeature2: 'Tích hợp máy tính để bàn',
-  upcomingPaidFeature3: 'Sức mạnh ngoại tuyến',
-  upcomingPaidStatus: 'Đang phát triển',
-  voxJapaneseTitle: 'Penko Vox Japanese',
-  voxJapaneseTagline: 'Hòa mình vào tiếng Nhật bằng AI ngoại tuyến',
-  voxJapaneseDesc: 'Ứng dụng học tiếng Nhật toàn diện của chúng tôi. Một cỗ máy hòa mình vào tiếng Nhật bằng AI, ưu tiên chạy cục bộ, với hơn 40 tình huống nhập vai xã hội tương tác trải dài từ JLPT N5 đến N1, cùng một gia sư AI riêng tư biết lắng nghe, nói chuyện và nhẹ nhàng sửa lỗi cho bạn, tất cả đều chạy ngoại tuyến ngay trên máy tính của bạn. Không đám mây, không thuê bao.',
-  voxJapaneseFeature1: '40+ tình huống nhập vai · N5–N1',
+  voxJapaneseTitle: 'Penko Vox: Japanese',
+  voxJapaneseDesc: 'Ứng dụng học tiếng Nhật toàn diện của chúng tôi. Một cỗ máy hòa mình vào tiếng Nhật bằng AI, ưu tiên chạy cục bộ, với 38 tình huống hội thoại trải dài từ JLPT N5 đến N1, cùng các tình huống tự tạo của riêng bạn, và một gia sư AI riêng tư biết lắng nghe, nói chuyện và nhẹ nhàng sửa lỗi cho bạn, tất cả đều chạy ngoại tuyến ngay trên máy tính của bạn. Không đám mây, không thuê bao.',
+  voxJapaneseFeature1: '38 tình huống · N5–N1',
   voxJapaneseFeature2: 'Gia sư AI 100% ngoại tuyến',
-  voxJapaneseFeature3: 'Nhận giọng nói & Phản hồi bằng giọng nói',
-  voxJapaneseFeature4: 'Bảng viết theo thứ tự nét',
-  voxJapaneseStatus: 'Hiện đã có mặt ở giai đoạn Early Access',
+  voxJapaneseFeature3: 'Gọi thoại',
+  voxJapaneseFeature4: 'Luyện viết kana theo nét',
+  voxJapaneseFeature5: 'Kotoba Islands RPG',
+  voxFullRelease: 'Phát hành chính thức: tháng 8/2027',
   voxJapaneseCta: 'Nhận trên Steam',
 
   // Footer
-  footerDescription: 'Xây dựng phần mềm miễn phí và mã nguồn mở cho tất cả mọi người, Mãi mãi. Không thuê bao, không quảng cáo, không theo dõi.',
-  footerProjects: 'Dự án',
   footerLinks: 'Liên kết',
   footerLicense: 'Giấy phép (GPLv3)',
   footerPrivacy: 'Chính sách quyền riêng tư',
@@ -101,13 +93,13 @@ export const ui: Translation = {
 
   // Privacy Policy
   privacyTitle: 'Triết lý về quyền riêng tư của chúng tôi',
-  privacyAsIs: 'Tất cả ứng dụng được cung cấp hoàn toàn miễn phí và ở nguyên trạng theo giấy phép GPL3.',
+  privacyAsIs: 'Tất cả ứng dụng Penko Plaza được cung cấp hoàn toàn miễn phí và ở nguyên trạng theo giấy phép GPL-3.0.',
   privacyFree: 'Sẽ không bao giờ có thuê bao, gói cao cấp hay tường phí ẩn nào được áp dụng cho các PWA cốt lõi.',
   privacyNoWarranties: 'Chúng tôi không đưa ra bất kỳ bảo hành hay trách nhiệm pháp lý nào về an toàn dữ liệu, việc sử dụng hay lỗi phát sinh.',
   privacyNoData: 'Chúng tôi không thu thập, lưu trữ hay bán bất kỳ dữ liệu người dùng nào. Dữ liệu của bạn luôn ở trong cơ sở dữ liệu trình duyệt của bạn.',
-  privacySoloDev: 'Được phát triển và duy trì bởi một lập trình viên duy nhất, cam kết vì khả năng tiếp cận phần mềm.',
+  privacyOffline: 'Mọi ứng dụng Penko Plaza đều được xây dựng theo hướng ngoại tuyến trước tiên, nên công cụ của bạn vẫn hoạt động mà không cần kết nối internet.',
   privacyBestEffort: 'Các bản cập nhật và tính năng mới được đưa ra trong khả năng cho phép, tùy theo thời gian.',
-  privacyVerify: 'Toàn bộ mã nguồn đều có thể được kiểm chứng tại các kho lưu trữ GitHub tương ứng theo giấy phép GPL3.',
+  privacyVerify: 'Mã nguồn của mọi ứng dụng Penko Plaza đều có thể được kiểm chứng tại kho GitHub tương ứng theo giấy phép GPL-3.0.',
 
   // Status badges
   statusLive: 'Hoạt động',
@@ -116,7 +108,7 @@ export const ui: Translation = {
   statusComingSoon: 'Sắp ra mắt',
 
   // News
-  newsUpdate1: 'Penko Vox Japanese hiện đã có mặt ở giai đoạn Early Access trên Steam!',
+  newsUpdate1: 'Penko Vox: Japanese v2.1 đã ra mắt: game RPG Kotoba Islands, gọi thoại và nhiều hơn nữa.',
   newsUpdate2: 'Penko Reader v2.0.13 ra mắt với giao diện được đại tu hoàn toàn.',
   newsUpdate3: 'Penko Adventure v1.8.0 hiện đang trong giai đoạn beta công khai.',
   newsUpdate4: 'Penko Plaza giờ đây hoạt động hoàn toàn ngoại tuyến và hỗ trợ 16 ngôn ngữ.',
@@ -136,10 +128,11 @@ export const ui: Translation = {
   supportIssuesTitle: 'Báo lỗi & góp ý ý tưởng',
   supportIssuesDesc: 'Phát hiện lỗi hoặc có ý tưởng cho tính năng mới? Hãy mở một issue.',
   supportPurchaseNote: 'Mỗi lượt mua đều trực tiếp tài trợ cho các ứng dụng miễn phí.',
-  voxUpdateTitle: 'Sắp có trong bản cập nhật tiếp theo',
-  voxUpdate1: 'Trải nghiệm RPG nhập vai hoàn chỉnh',
-  voxUpdate2: 'Chế độ trò chuyện & gọi thoại được đại tu',
-  voxUpdate3: 'Hệ thống từ điển & thẻ ghi nhớ được xây dựng lại',
+  voxUpdateTitle: 'Mới trong v2.1',
+  voxUpdate1: 'Kotoba Islands, một game RPG nơi bạn trò chuyện tự do với mọi cư dân',
+  voxUpdate2: 'Cuộc gọi thoại tự nhiên, với luân phiên lượt nói, ngắt lời và khử tiếng vọng',
+  voxUpdate3: 'Study Hub mới với ôn tập ngắt quãng FSRS, cùng từ điển ngoại tuyến tra cứu bằng một chạm',
+  voxUpdate4: 'Hỗ trợ tay cầm và Steam Deck (thử nghiệm)',
   privacyLead: 'Không có điều khoản nhỏ ẩn giấu. Đây chính xác là những gì bạn nhận được, và những gì bạn không nhận được.',
   privacyVerifyCta: 'Xem mã nguồn trên GitHub',
   privacyStatTrackers: 'Trình theo dõi',
@@ -150,7 +143,7 @@ export const ui: Translation = {
   privacyFreeTitle: 'Miễn phí mãi mãi',
   privacyNoWarrantiesTitle: 'Không bảo hành',
   privacyNoDataTitle: 'Dữ liệu của bạn vẫn là của bạn',
-  privacySoloDevTitle: 'Được tạo bởi một lập trình viên',
+  privacyOfflineTitle: 'Hoạt động ngoại tuyến',
   privacyBestEffortTitle: 'Cập nhật trong khả năng cho phép',
   skipToContent: 'Chuyển đến nội dung chính',
   themeToggle: 'Chuyển đổi chế độ tối',
@@ -161,9 +154,37 @@ export const ui: Translation = {
   navRoadmap: 'Lộ trình',
   whatsNewTitle: 'Có gì mới',
   whatsNewVoxCta: 'Tìm hiểu thêm',
-  roadmapTitle: 'Trên lộ trình phát triển',
-  roadmapSubtitle: 'Các ứng dụng đang được phát triển, xây dựng từng cái một cách công khai. Theo dõi tiến trình trên GitHub.',
+  roadmapSubtitle: 'Các ứng dụng tiếp theo chúng tôi đang xây dựng, từng cái một và công khai. Theo dõi tiến trình trên GitHub.',
   voxVsAdventure: 'Chỉ muốn luyện ngôn ngữ cho vui thôi? Penko Adventure miễn phí và hỗ trợ 12 ngôn ngữ. Vox là ứng dụng chuyên sâu của chúng tôi để thực sự học tiếng Nhật.',
+
+  // Trust & contact
+  privacyPolicyLink: 'Đọc toàn bộ chính sách quyền riêng tư',
+  footerByline: 'bởi Penko Software',
+  footerContact: 'Liên hệ',
+  schoolsTitle: 'Dành cho trường học & đại học',
+  schoolsBody: 'Penko Vox: Japanese có sẵn cho các lớp học thí điểm và giấy phép tổ chức theo năm. Các ứng dụng miễn phí của chúng tôi không thu thập dữ liệu, nên cũng sẵn sàng dùng trong lớp học.',
+  schoolsCta: 'Liên hệ chúng tôi',
+
+  // Studio structure: free Plaza apps funded by paid apps
+  navPaidApps: 'Ứng dụng trả phí',
+  studioLine: 'Penko Software tạo ra các ứng dụng miễn phí, mã nguồn mở (Penko Plaza) và tài trợ cho chúng bằng các ứng dụng trả phí như Penko Vox.',
+  fundingTitle: 'Penko được tài trợ như thế nào',
+  fundingBody: 'Các ứng dụng Penko Plaza miễn phí và mã nguồn mở. Chúng tôi tài trợ cho chúng bằng cách tạo ra một vài ứng dụng trả phí chuyên biệt, như Penko Vox: Japanese. Việc mua là tùy chọn và trực tiếp hỗ trợ các ứng dụng miễn phí.',
+  fundingCta: 'Xem các ứng dụng trả phí',
+
+  // Reading options menu
+  readingOptions: 'Tùy chọn đọc',
+  readingTextSize: 'Cỡ chữ',
+  readingSmaller: 'Chữ nhỏ hơn',
+  readingLarger: 'Chữ lớn hơn',
+  readingFont: 'Phông chữ',
+  readingFontDefault: 'Mặc định',
+  readingFontReadable: 'Dễ đọc (Atkinson Hyperlegible)',
+  readingFontDyslexic: 'Thân thiện với chứng khó đọc (OpenDyslexic)',
+  readingSpacing: 'Giãn dòng rộng hơn',
+  readingUnderline: 'Gạch chân liên kết',
+  readingReduceMotion: 'Giảm chuyển động',
+  readingReset: 'Đặt lại tùy chọn đọc',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

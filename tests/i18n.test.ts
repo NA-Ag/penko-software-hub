@@ -34,6 +34,15 @@ describe('translations', () => {
   });
 });
 
+describe('Penko Vox: Japanese naming', () => {
+  // Must match the Steam store name exactly, in every language
+  it.each(LANGUAGES)('%s uses the exact product name', lang => {
+    expect(ui(lang).voxJapaneseTitle).toBe('Penko Vox: Japanese');
+    const wrong = Object.entries(ui(lang)).filter(([, v]) => /Penko Vox Japanese/.test(v)).map(([k]) => k);
+    expect(wrong).toEqual([]);
+  });
+});
+
 describe('products', () => {
   it.each(PRODUCTS.map(p => p.id))('%s has a description in every language', id => {
     const key = getDescriptionKey(id);

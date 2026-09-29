@@ -5,6 +5,8 @@ export const ui: Translation = {
   // Navbar
   navProjects: 'ऐप्स',
   navSupport: 'Penko को सपोर्ट करें',
+  navSections: 'साइट के हिस्से',
+  navBreadcrumb: 'नेविगेशन पथ',
   navGitHub: 'GitHub',
 
   // Hero
@@ -73,27 +75,17 @@ export const ui: Translation = {
   // Donations
   donationsTagline: '100% वैकल्पिक',
   donationsTitle: 'Penko को सपोर्ट करें',
-  donationsDescription1: 'Penko Plaza के अंदर सभी ऐप्स पूरी तरह मुफ़्त, ऑफ़लाइन-फर्स्ट, और ओपन-सोर्स हैं। इनके निरंतर विकास को फंड करने के लिए, हम समय-समय पर विशेष पेड सॉफ़्टवेयर बनाते और रिलीज़ करते हैं।',
-  donationsDescription2: 'ये पेड ऐप्स अलग, एडवांस्ड टूल्स हैं। इन्हें खरीदना 100% वैकल्पिक है, लेकिन यह सीधे हमारे मुफ़्त सॉफ़्टवेयर के निर्माण को फंड करता है।',
-  upcomingPaidTitle: 'आने वाले पेड ऐप्स',
-  upcomingPaidDesc: 'हम और विशेष डेस्कटॉप एप्लिकेशन, स्टडी हेल्पर, और ऑफ़लाइन टूल्स विकसित कर रहे हैं, जो Penko को सपोर्ट करने के लिए समय-समय पर रिलीज़ होंगे।',
-  upcomingPaidFeature1: 'विशेष यूटिलिटीज़',
-  upcomingPaidFeature2: 'डेस्कटॉप इंटीग्रेशन',
-  upcomingPaidFeature3: 'ऑफ़लाइन पावर',
-  upcomingPaidStatus: 'विकासाधीन',
-  voxJapaneseTitle: 'Penko Vox Japanese',
-  voxJapaneseTagline: 'ऑफ़लाइन AI जापानी इमर्शन',
-  voxJapaneseDesc: 'जापानी सीखने के लिए हमारा पूर्ण ऐप। JLPT N5 से N1 तक 40+ इंटरैक्टिव सोशल रोलप्ले वाला एक लोकल-फर्स्ट AI इमर्शन इंजन, और एक प्राइवेट AI ट्यूटर जो सुनता है, बोलता है, और आपको धीरे से सुधारता है — यह सब आपके अपने कंप्यूटर पर पूरी तरह ऑफ़लाइन चलता है। न कोई क्लाउड, न कोई सब्सक्रिप्शन।',
-  voxJapaneseFeature1: '40+ रोलप्ले · N5–N1',
+  voxJapaneseTitle: 'Penko Vox: Japanese',
+  voxJapaneseDesc: 'जापानी सीखने के लिए हमारा पूर्ण ऐप। JLPT N5 से N1 तक 38 बातचीत के सीनारियो और आपके अपने कस्टम सीनारियो वाला एक लोकल-फर्स्ट AI इमर्शन इंजन, और एक प्राइवेट AI ट्यूटर जो सुनता है, बोलता है, और आपको धीरे से सुधारता है — यह सब आपके अपने कंप्यूटर पर पूरी तरह ऑफ़लाइन चलता है। न कोई क्लाउड, न कोई सब्सक्रिप्शन।',
+  voxJapaneseFeature1: '38 सीनारियो · N5–N1',
   voxJapaneseFeature2: '100% ऑफ़लाइन AI ट्यूटर',
-  voxJapaneseFeature3: 'स्पीच इनपुट और वॉइस आउटपुट',
-  voxJapaneseFeature4: 'स्ट्रोक-ऑर्डर कैनवस',
-  voxJapaneseStatus: 'अभी अर्ली एक्सेस में उपलब्ध',
+  voxJapaneseFeature3: 'वॉइस कॉल',
+  voxJapaneseFeature4: 'काना स्ट्रोक प्रैक्टिस',
+  voxJapaneseFeature5: 'Kotoba Islands RPG',
+  voxFullRelease: 'पूर्ण रिलीज़: अगस्त 2027',
   voxJapaneseCta: 'Steam पर पाएं',
 
   // Footer
-  footerDescription: 'सबके लिए हमेशा मुफ़्त और ओपन-सोर्स सॉफ़्टवेयर बनाना। कोई सब्सक्रिप्शन नहीं, कोई विज्ञापन नहीं, कोई ट्रैकिंग नहीं।',
-  footerProjects: 'प्रोजेक्ट्स',
   footerLinks: 'लिंक्स',
   footerLicense: 'लाइसेंस (GPLv3)',
   footerPrivacy: 'प्राइवेसी पॉलिसी',
@@ -101,13 +93,13 @@ export const ui: Translation = {
 
   // Privacy Policy
   privacyTitle: 'हमारा प्राइवेसी दर्शन',
-  privacyAsIs: 'सभी एप्लिकेशन GPL3 लाइसेंस के तहत पूरी तरह मुफ़्त और \'जैसा है वैसा\' उपलब्ध कराए जाते हैं।',
+  privacyAsIs: 'सभी Penko Plaza ऐप GPL-3.0 लाइसेंस के तहत पूरी तरह मुफ़्त और \'जैसा है वैसा\' उपलब्ध कराए जाते हैं।',
   privacyFree: 'कोर PWA में कभी भी कोई सब्सक्रिप्शन, प्रीमियम टियर, या छिपा हुआ पेवॉल नहीं लाया जाएगा।',
   privacyNoWarranties: 'हम डेटा सुरक्षा, उपयोग, या त्रुटियों के लिए किसी भी तरह की वारंटी या जवाबदेही की पेशकश नहीं करते।',
   privacyNoData: 'हम किसी भी यूज़र डेटा को इकट्ठा, स्टोर, या बेचते नहीं हैं। आपका डेटा आपके ब्राउज़र डेटाबेस में ही रहता है।',
-  privacySoloDev: 'सॉफ़्टवेयर की सुलभता के प्रति समर्पित एक अकेले प्रोग्रामर द्वारा विकसित और मेंटेन किया जाता है।',
+  privacyOffline: 'हर Penko Plaza ऐप ऑफ़लाइन-फ़र्स्ट बनाया गया है, इसलिए इंटरनेट कनेक्शन के बिना भी आपके टूल काम करते रहते हैं।',
   privacyBestEffort: 'अपडेट और फ़ीचर समय मिलने पर बेस्ट-एफर्ट आधार पर लाए जाते हैं।',
-  privacyVerify: 'सभी सोर्स कोड GPL3 लाइसेंस के तहत संबंधित GitHub रिपॉज़िटरी में सत्यापन के लिए उपलब्ध है।',
+  privacyVerify: 'हर Penko Plaza ऐप का सोर्स कोड GPL-3.0 लाइसेंस के तहत उसकी GitHub रिपॉज़िटरी में सत्यापन के लिए उपलब्ध है।',
 
   // Status badges
   statusLive: 'लाइव',
@@ -116,7 +108,7 @@ export const ui: Translation = {
   statusComingSoon: 'जल्द आ रहा है',
 
   // News
-  newsUpdate1: 'Penko Vox Japanese अब Steam पर अर्ली एक्सेस में उपलब्ध है!',
+  newsUpdate1: 'Penko Vox: Japanese v2.1 आ गया है: Kotoba Islands RPG, वॉइस कॉल और बहुत कुछ।',
   newsUpdate2: 'Penko Reader v2.0.13 पूरी तरह नए विज़ुअल्स के साथ आ गया है।',
   newsUpdate3: 'Penko Adventure v1.8.0 अब पब्लिक बीटा में है।',
   newsUpdate4: 'Penko Plaza अब पूरी तरह ऑफ़लाइन काम करता है और 16 भाषाओं में उपलब्ध है।',
@@ -136,10 +128,11 @@ export const ui: Translation = {
   supportIssuesTitle: 'बग और आइडिया रिपोर्ट करें',
   supportIssuesDesc: 'कुछ खराब मिला या कोई फ़ीचर आइडिया है? एक issue खोलें।',
   supportPurchaseNote: 'हर खरीद सीधे मुफ़्त ऐप्स को फंड करती है।',
-  voxUpdateTitle: 'अगले अपडेट में आ रहा है',
-  voxUpdate1: 'एक पूर्ण इमर्सिव RPG अनुभव',
-  voxUpdate2: 'नए सिरे से बनाए गए चैट और वॉइस कॉल मोड',
-  voxUpdate3: 'फिर से बनाया गया डिक्शनरी और कार्ड मेमोरी सिस्टम',
+  voxUpdateTitle: 'v2.1 में नया',
+  voxUpdate1: 'Kotoba Islands, एक RPG जिसमें आप हर निवासी से खुलकर बात कर सकते हैं',
+  voxUpdate2: 'बारी-बारी से बोलने, बीच में टोकने और इको कैंसलेशन वाले नेचुरल वॉइस कॉल',
+  voxUpdate3: 'FSRS स्पेस्ड रिपीटिशन वाला नया स्टडी हब, और टैप करके देखने वाली ऑफ़लाइन डिक्शनरी',
+  voxUpdate4: 'कंट्रोलर और Steam Deck सपोर्ट (प्रायोगिक)',
   privacyLead: 'कोई छिपी हुई शर्तें नहीं। यहाँ बिल्कुल साफ़ है कि आपको क्या मिलता है, और क्या नहीं।',
   privacyVerifyCta: 'GitHub पर सोर्स देखें',
   privacyStatTrackers: 'ट्रैकर्स',
@@ -150,7 +143,7 @@ export const ui: Translation = {
   privacyFreeTitle: 'हमेशा मुफ़्त',
   privacyNoWarrantiesTitle: 'कोई वारंटी नहीं',
   privacyNoDataTitle: 'आपका डेटा आपका ही रहता है',
-  privacySoloDevTitle: 'एक डेवलपर द्वारा निर्मित',
+  privacyOfflineTitle: 'ऑफ़लाइन काम करता है',
   privacyBestEffortTitle: 'बेस्ट-एफर्ट अपडेट',
   skipToContent: 'सामग्री पर जाएं',
   themeToggle: 'डार्क मोड टॉगल करें',
@@ -161,9 +154,37 @@ export const ui: Translation = {
   navRoadmap: 'रोडमैप',
   whatsNewTitle: 'क्या नया है',
   whatsNewVoxCta: 'और जानें',
-  roadmapTitle: 'रोडमैप पर',
-  roadmapSubtitle: 'ऐसे ऐप्स जिन पर काम चल रहा है, एक-एक करके और खुले तौर पर बनाए जा रहे हैं। GitHub पर फॉलो करें।',
+  roadmapSubtitle: 'अगले ऐप्स जिन्हें हम एक-एक करके और खुले तौर पर बना रहे हैं। GitHub पर फॉलो करें।',
   voxVsAdventure: 'बस मज़े के लिए भाषाएं प्रैक्टिस करना चाहते हैं? Penko Adventure मुफ़्त है और 12 भाषाओं को कवर करता है। Vox हमारा गहन ऐप है, जो वाकई जापानी सीखने के लिए है।',
+
+  // Trust & contact
+  privacyPolicyLink: 'पूरी प्राइवेसी पॉलिसी पढ़ें',
+  footerByline: 'Penko Software की ओर से',
+  footerContact: 'संपर्क करें',
+  schoolsTitle: 'स्कूलों और विश्वविद्यालयों के लिए',
+  schoolsBody: 'Penko Vox: Japanese क्लासरूम पायलट और वार्षिक संस्थागत लाइसेंस के लिए उपलब्ध है। हमारे मुफ़्त ऐप कोई डेटा इकट्ठा नहीं करते, इसलिए वे भी क्लासरूम के लिए तैयार हैं।',
+  schoolsCta: 'हमसे संपर्क करें',
+
+  // Studio structure: free Plaza apps funded by paid apps
+  navPaidApps: 'सशुल्क ऐप्स',
+  studioLine: 'Penko Software मुफ़्त, ओपन-सोर्स ऐप्स (Penko Plaza) बनाता है और उन्हें Penko Vox जैसे सशुल्क ऐप्स से फंड करता है।',
+  fundingTitle: 'Penko को फंड कैसे मिलता है',
+  fundingBody: 'Penko Plaza के ऐप्स मुफ़्त और ओपन सोर्स हैं। हम इन्हें Penko Vox: Japanese जैसे कुछ खास सशुल्क ऐप्स बनाकर फंड करते हैं। इन्हें खरीदना वैकल्पिक है, और इससे मुफ़्त ऐप्स को सीधा सहयोग मिलता है।',
+  fundingCta: 'हमारे सशुल्क ऐप्स देखें',
+
+  // Reading options menu
+  readingOptions: 'पढ़ने के विकल्प',
+  readingTextSize: 'टेक्स्ट का आकार',
+  readingSmaller: 'छोटा टेक्स्ट',
+  readingLarger: 'बड़ा टेक्स्ट',
+  readingFont: 'फ़ॉन्ट',
+  readingFontDefault: 'डिफ़ॉल्ट',
+  readingFontReadable: 'पढ़ने में आसान (Atkinson Hyperlegible)',
+  readingFontDyslexic: 'डिस्लेक्सिया के अनुकूल (OpenDyslexic)',
+  readingSpacing: 'लाइनों के बीच ज़्यादा जगह',
+  readingUnderline: 'लिंक को रेखांकित करें',
+  readingReduceMotion: 'एनिमेशन कम करें',
+  readingReset: 'पढ़ने के विकल्प रीसेट करें',
 };
 
 // Product feature labels, keyed by the English text in constants.ts

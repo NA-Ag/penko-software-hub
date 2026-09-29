@@ -13,6 +13,8 @@ export interface Translation {
   // Navbar
   navProjects: string;
   navSupport: string;
+  navSections: string; // accessible name of the Penko Plaza / Paid apps switch
+  navBreadcrumb: string; // accessible name of the breadcrumb trail
   navGitHub: string;
 
   // Hero
@@ -81,27 +83,17 @@ export interface Translation {
   // Donations
   donationsTagline: string;
   donationsTitle: string;
-  donationsDescription1: string;
-  donationsDescription2: string;
-  upcomingPaidTitle: string;
-  upcomingPaidDesc: string;
-  upcomingPaidFeature1: string;
-  upcomingPaidFeature2: string;
-  upcomingPaidFeature3: string;
-  upcomingPaidStatus: string;
   voxJapaneseTitle: string;
-  voxJapaneseTagline: string;
   voxJapaneseDesc: string;
   voxJapaneseFeature1: string;
   voxJapaneseFeature2: string;
   voxJapaneseFeature3: string;
   voxJapaneseFeature4: string;
-  voxJapaneseStatus: string;
+  voxJapaneseFeature5: string;
+  voxFullRelease: string;
   voxJapaneseCta: string;
 
   // Footer
-  footerDescription: string;
-  footerProjects: string;
   footerLinks: string;
   footerLicense: string;
   footerPrivacy: string;
@@ -113,7 +105,7 @@ export interface Translation {
   privacyFree: string;
   privacyNoWarranties: string;
   privacyNoData: string;
-  privacySoloDev: string;
+  privacyOffline: string;
   privacyBestEffort: string;
   privacyVerify: string;
 
@@ -148,6 +140,7 @@ export interface Translation {
   voxUpdate1: string;
   voxUpdate2: string;
   voxUpdate3: string;
+  voxUpdate4: string;
   privacyLead: string;
   privacyVerifyCta: string;
   privacyStatTrackers: string;
@@ -158,7 +151,7 @@ export interface Translation {
   privacyFreeTitle: string;
   privacyNoWarrantiesTitle: string;
   privacyNoDataTitle: string;
-  privacySoloDevTitle: string;
+  privacyOfflineTitle: string;
   privacyBestEffortTitle: string;
 
   // Accessibility labels
@@ -171,7 +164,35 @@ export interface Translation {
   navRoadmap: string;
   whatsNewTitle: string;
   whatsNewVoxCta: string;
-  roadmapTitle: string;
   roadmapSubtitle: string;
   voxVsAdventure: string;
+
+  // Trust & contact
+  privacyPolicyLink: string;
+  footerByline: string;
+  footerContact: string;
+  schoolsTitle: string;
+  schoolsBody: string;
+  schoolsCta: string;
+
+  // Studio structure: free Plaza apps funded by paid apps
+  navPaidApps: string;
+  studioLine: string;
+  fundingTitle: string;
+  fundingBody: string;
+  fundingCta: string;
+
+  // Reading options menu
+  readingOptions: string;
+  readingTextSize: string;
+  readingSmaller: string;
+  readingLarger: string;
+  readingFont: string;
+  readingFontDefault: string;
+  readingFontReadable: string;
+  readingFontDyslexic: string;
+  readingSpacing: string;
+  readingUnderline: string;
+  readingReduceMotion: string;
+  readingReset: string;
 }

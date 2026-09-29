@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import { AppProvider, getInitialLanguage } from './AppContext';
+import { AppProvider, getInitialLanguage, redirectToPreferredLanguage } from './AppContext';
 import { loadLocale } from './i18n';
 import '@fontsource-variable/inter';
 import './index.css';
+import { registerServiceWorker } from './lib/registerServiceWorker';
+import { applyReadingPrefs, readReadingPrefs } from './lib/readingPrefs';
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
@@ -13,7 +15,7 @@ if (!rootElement) {
 
 // Load the visitor's language before the first render so the page never flashes English.
 // If the chunk can't load (e.g. offline before it was cached), fall back to English.
-loadLocale(getInitialLanguage()).catch(() => undefined).then(() => {
+if (!redirectToPreferredLanguage()) loadLocale(getInitialLanguage()).catch(() => undefined).then(() => {
   ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
       <AppProvider>
@@ -22,3 +24,6 @@ loadLocale(getInitialLanguage()).catch(() => undefined).then(() => {
     </React.StrictMode>
   );
 });
+
+registerServiceWorker();
+applyReadingPrefs(readReadingPrefs());

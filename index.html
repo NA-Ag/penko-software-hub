@@ -9,26 +9,26 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     
     <!-- Primary Meta Tags -->
-    <title>Penko Plaza | Free, Open-Source Apps for Everyone</title>
-    <meta name="title" content="Penko Plaza | Free, Open-Source Apps for Everyone" />
-    <meta name="description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions. Just software for everyone." />
-    <meta name="keywords" content="open source, pwa, free software, privacy, offline first, language learning, office suite, web apps" />
+    <title>Penko Plaza by Penko Software | Free Apps & Penko Vox: Japanese</title>
+    <meta name="title" content="Penko Plaza by Penko Software | Free Apps & Penko Vox: Japanese" />
+    <meta name="description" content="Free, private, open-source apps from Penko Software, plus Penko Vox: Japanese, an offline AI app for learning Japanese, now in Early Access on Steam." />
+    <meta name="keywords" content="open source, pwa, free software, privacy, offline first, language learning, learn japanese, penko vox, office suite, web apps" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://penkosoftware.org/" />
-    <meta property="og:title" content="Penko Plaza | Free, Open-Source Apps for Everyone" />
-    <meta property="og:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
+    <meta property="og:title" content="Penko Plaza by Penko Software | Free Apps & Penko Vox: Japanese" />
+    <meta property="og:description" content="Free, private, open-source apps from Penko Software, plus Penko Vox: Japanese, an offline AI app for learning Japanese, now in Early Access on Steam." />
     <meta property="og:image" content="https://penkosoftware.org/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Penko Plaza: free software, private by default" />
+    <meta property="og:image:alt" content="Penko Plaza by Penko Software: free software, private by default. Now on Steam: Penko Vox: Japanese." />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://penkosoftware.org/" />
-    <meta name="twitter:title" content="Penko Plaza | Free, Open-Source Apps for Everyone" />
-    <meta name="twitter:description" content="A non-profit ecosystem of free, privacy-first Progressive Web Apps (PWAs). No ads, no tracking, no subscriptions." />
+    <meta name="twitter:title" content="Penko Plaza by Penko Software | Free Apps & Penko Vox: Japanese" />
+    <meta name="twitter:description" content="Free, private, open-source apps from Penko Software, plus Penko Vox: Japanese, an offline AI app for learning Japanese, now in Early Access on Steam." />
     <meta name="twitter:image" content="https://penkosoftware.org/og-image.png" />
 
     <script>
@@ -39,9 +39,23 @@
           document.documentElement.classList.add('dark');
         }
       } catch (e) {}
+      // Apply saved reading options (text size, font, spacing) before first paint too
+      try {
+        var r = JSON.parse(localStorage.getItem('penko-reading') || '{}'), h = document.documentElement;
+        if (r.size) h.style.fontSize = ['100%', '112.5%', '125%', '137.5%'][r.size];
+        if (r.font === 'readable') h.style.setProperty('--reading-font', '"Atkinson Hyperlegible"');
+        if (r.font === 'dyslexic') h.style.setProperty('--reading-font', '"OpenDyslexic"');
+        if (r.spacing) h.classList.add('a11y-spacing');
+        if (r.underline) h.classList.add('a11y-underline');
+        if (r.reduceMotion) h.classList.add('a11y-reduce-motion');
+      } catch (e) {}
+    </script>
+    <!-- Supporting browsers load a page in the background when you hover a link to it, so moving between pages feels instant -->
+    <script type="speculationrules">
+      {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"selector_matches": "[target=_blank], [href*='#'], [href^='mailto:']"}}]}, "eagerness": "moderate"}]}
     </script>
   </head>
-  <body class="bg-slate-50 text-slate-900 antialiased">
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 antialiased">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>

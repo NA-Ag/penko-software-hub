@@ -5,6 +5,8 @@ export const ui: Translation = {
   // Navbar
   navProjects: 'Apps',
   navSupport: 'Support Penko',
+  navSections: 'Site sections',
+  navBreadcrumb: 'Breadcrumb',
   navGitHub: 'GitHub',
 
   // Hero
@@ -73,27 +75,17 @@ export const ui: Translation = {
   // Donations
   donationsTagline: '100% Optional',
   donationsTitle: 'Support Penko',
-  donationsDescription1: 'All apps inside Penko Plaza are completely free, offline-first, and open-source. To fund their ongoing development, we periodically build and release specialized paid software.',
-  donationsDescription2: 'These paid apps are separate, advanced tools. Buying them is 100% optional, but it directly funds the creation of our free software.',
-  upcomingPaidTitle: 'Future Paid Apps',
-  upcomingPaidDesc: 'We are developing more specialized desktop applications, study helpers, and offline tools that will release periodically to support Penko.',
-  upcomingPaidFeature1: 'Specialized Utilities',
-  upcomingPaidFeature2: 'Desktop Integrations',
-  upcomingPaidFeature3: 'Offline Power',
-  upcomingPaidStatus: 'In Development',
-  voxJapaneseTitle: 'Penko Vox Japanese',
-  voxJapaneseTagline: 'Offline AI Japanese Immersion',
-  voxJapaneseDesc: 'Our complete app for learning Japanese. A local-first AI immersion engine with 40+ interactive social roleplays across JLPT N5 to N1, and a private AI tutor that listens, speaks, and gently corrects you, all running offline on your own computer. No cloud, no subscriptions.',
-  voxJapaneseFeature1: '40+ Roleplays · N5–N1',
+  voxJapaneseTitle: 'Penko Vox: Japanese',
+  voxJapaneseDesc: 'Our complete app for learning Japanese. A local-first AI immersion engine with 38 conversation scenarios across JLPT N5 to N1, plus your own custom scenarios, and a private AI tutor that listens, speaks, and gently corrects you, all running offline on your own computer. No cloud, no subscriptions.',
+  voxJapaneseFeature1: '38 Scenarios · N5–N1',
   voxJapaneseFeature2: '100% Offline AI Tutor',
-  voxJapaneseFeature3: 'Speech In & Voice Out',
-  voxJapaneseFeature4: 'Stroke-Order Canvas',
-  voxJapaneseStatus: 'Now available in Early Access',
+  voxJapaneseFeature3: 'Voice Calls',
+  voxJapaneseFeature4: 'Kana Stroke Practice',
+  voxJapaneseFeature5: 'Kotoba Islands RPG',
+  voxFullRelease: 'Full release: August 2027',
   voxJapaneseCta: 'Get it on Steam',
 
   // Footer
-  footerDescription: 'Building free and open-source software for everyone, Forever. No subscriptions, no ads, no tracking.',
-  footerProjects: 'Projects',
   footerLinks: 'Links',
   footerLicense: 'License (GPLv3)',
   footerPrivacy: 'Privacy Policy',
@@ -101,13 +93,13 @@ export const ui: Translation = {
 
   // Privacy Policy
   privacyTitle: 'Our Privacy Philosophy',
-  privacyAsIs: 'All applications are provided completely free of charge and as-is under the GPL3 license.',
+  privacyAsIs: 'All Penko Plaza apps are provided completely free of charge and as-is under the GPL-3.0 license.',
   privacyFree: 'No subscriptions, premium tiers, or hidden paywalls will ever be introduced to the core PWAs.',
   privacyNoWarranties: 'We offer no warranty or liability of any kind for data safety, usage, or errors.',
   privacyNoData: 'We do not collect, store, or sell any user data. Your data stays in your browser database.',
-  privacySoloDev: 'Developed and maintained by a single programmer committed to software accessibility.',
+  privacyOffline: 'Every Penko Plaza app is built offline-first, so your tools keep working without an internet connection.',
   privacyBestEffort: 'Updates and features are introduced on a best-effort basis as time permits.',
-  privacyVerify: 'All source code is available for verification in the respective GitHub repositories under the GPL3 license.',
+  privacyVerify: 'The source code of every Penko Plaza app is available for verification in its GitHub repository under the GPL-3.0 license.',
 
   // Status badges
   statusLive: 'Live',
@@ -116,7 +108,7 @@ export const ui: Translation = {
   statusComingSoon: 'Coming Soon',
 
   // News
-  newsUpdate1: 'Penko Vox Japanese is now available in Early Access on Steam!',
+  newsUpdate1: 'Penko Vox: Japanese v2.1 is out: the Kotoba Islands RPG, voice calls and more.',
   newsUpdate2: 'Penko Reader v2.0.13 arrives with a complete visual overhaul.',
   newsUpdate3: 'Penko Adventure v1.8.0 is now in public beta.',
   newsUpdate4: 'Penko Plaza now works fully offline and speaks 16 languages.',
@@ -136,10 +128,11 @@ export const ui: Translation = {
   supportIssuesTitle: 'Report bugs & ideas',
   supportIssuesDesc: 'Found something broken or have a feature idea? Open an issue.',
   supportPurchaseNote: 'Every purchase directly funds the free apps.',
-  voxUpdateTitle: 'Coming in the next update',
-  voxUpdate1: 'A complete immersive RPG experience',
-  voxUpdate2: 'Overhauled chat & voice call modes',
-  voxUpdate3: 'Rebuilt dictionary & card memory system',
+  voxUpdateTitle: 'New in v2.1',
+  voxUpdate1: 'Kotoba Islands, an RPG where you talk freely with every resident',
+  voxUpdate2: 'Natural voice calls, with turn-taking, interrupting and echo cancellation',
+  voxUpdate3: 'A new Study Hub with FSRS spaced repetition, plus an offline dictionary with tap-to-lookup',
+  voxUpdate4: 'Controller and Steam Deck support (experimental)',
   privacyLead: 'No fine print. Here is exactly what you get, and what you don\'t.',
   privacyVerifyCta: 'Browse the source on GitHub',
   privacyStatTrackers: 'Trackers',
@@ -150,7 +143,7 @@ export const ui: Translation = {
   privacyFreeTitle: 'Free forever',
   privacyNoWarrantiesTitle: 'No warranty',
   privacyNoDataTitle: 'Your data stays yours',
-  privacySoloDevTitle: 'Made by one developer',
+  privacyOfflineTitle: 'Works offline',
   privacyBestEffortTitle: 'Best-effort updates',
   skipToContent: 'Skip to content',
   themeToggle: 'Toggle dark mode',
@@ -161,9 +154,37 @@ export const ui: Translation = {
   navRoadmap: 'Roadmap',
   whatsNewTitle: 'What\'s new',
   whatsNewVoxCta: 'Learn more',
-  roadmapTitle: 'On the roadmap',
-  roadmapSubtitle: 'Apps in the works, built one at a time and in the open. Follow along on GitHub.',
+  roadmapSubtitle: 'The next apps we\'re building, one at a time and in the open. Follow along on GitHub.',
   voxVsAdventure: 'Just want to practice languages for fun? Penko Adventure is free and covers 12 languages. Vox is our in-depth app for truly learning Japanese.',
+
+  // Trust & contact
+  privacyPolicyLink: 'Read the full privacy policy',
+  footerByline: 'by Penko Software',
+  footerContact: 'Contact',
+  schoolsTitle: 'For schools & universities',
+  schoolsBody: 'Penko Vox: Japanese is available for classroom pilots and yearly institutional licences. Our free apps collect no data, so they are ready for the classroom too.',
+  schoolsCta: 'Contact us',
+
+  // Studio structure: free Plaza apps funded by paid apps
+  navPaidApps: 'Paid apps',
+  studioLine: 'Penko Software makes free, open-source apps (Penko Plaza) and funds them with paid apps like Penko Vox.',
+  fundingTitle: 'How Penko is funded',
+  fundingBody: 'Penko Plaza apps are free and open source. We fund them by making a few specialized paid apps, like Penko Vox: Japanese. Buying one is optional, and it directly supports the free apps.',
+  fundingCta: 'See our paid apps',
+
+  // Reading options menu
+  readingOptions: 'Reading options',
+  readingTextSize: 'Text size',
+  readingSmaller: 'Smaller text',
+  readingLarger: 'Larger text',
+  readingFont: 'Font',
+  readingFontDefault: 'Default',
+  readingFontReadable: 'Easy to read (Atkinson Hyperlegible)',
+  readingFontDyslexic: 'Dyslexia-friendly (OpenDyslexic)',
+  readingSpacing: 'Wider line spacing',
+  readingUnderline: 'Underline links',
+  readingReduceMotion: 'Reduce motion',
+  readingReset: 'Reset reading options',
 };
 
 // English is the source text in constants.ts, so no feature translations are needed.

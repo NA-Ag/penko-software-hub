@@ -1,8 +1,9 @@
 import React from 'react';
-import { ArrowUpRight, Clock, EyeOff, Github, HeartHandshake, LucideIcon, Scale, ShieldAlert, User } from 'lucide-react';
+import { ArrowUpRight, Clock, EyeOff, FileText, Github, HeartHandshake, LucideIcon, Scale, ShieldAlert, User } from 'lucide-react';
 import { useApp } from '../AppContext';
 import { Translation } from '../i18n';
 import { GITHUB_URL } from '../constants';
+import { sitePath } from '../lib/sitePaths';
 import { PenkoIcon } from './PenkoIcon';
 
 type Point = {
@@ -17,7 +18,7 @@ const POINTS: Point[] = [
   { title: 'privacyFreeTitle', body: 'privacyFree', Icon: HeartHandshake, tone: 'bg-rose-500/10 text-rose-600 dark:text-rose-400' },
   { title: 'privacyAsIsTitle', body: 'privacyAsIs', Icon: Scale, tone: 'bg-indigo-500/10 text-indigo-600 dark:text-indigo-400' },
   { title: 'privacyNoWarrantiesTitle', body: 'privacyNoWarranties', Icon: ShieldAlert, tone: 'bg-amber-500/10 text-amber-600 dark:text-amber-400' },
-  { title: 'privacySoloDevTitle', body: 'privacySoloDev', Icon: User, tone: 'bg-sky-500/10 text-sky-600 dark:text-sky-400' },
+  { title: 'privacyOfflineTitle', body: 'privacyOffline', Icon: User, tone: 'bg-sky-500/10 text-sky-600 dark:text-sky-400' },
   { title: 'privacyBestEffortTitle', body: 'privacyBestEffort', Icon: Clock, tone: 'bg-violet-500/10 text-violet-600 dark:text-violet-400' },
 ];
 
@@ -84,6 +85,14 @@ const PrivacySection: React.FC = () => {
               <ArrowUpRight size={16} />
             </a>
           </div>
+
+          <a
+            href={sitePath('privacy.html')}
+            className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-red-600 dark:text-amber-400 hover:underline underline-offset-4"
+          >
+            <FileText size={16} />
+            {t.privacyPolicyLink}
+          </a>
         </div>
 
         {/* Right: the promises, spelled out */}

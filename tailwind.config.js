@@ -6,11 +6,13 @@ export default {
     './*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
     './hooks/**/*.{ts,tsx}',
+    './pages/**/*.{ts,tsx}',
+    './lib/**/*.{ts,tsx}',
   ],
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Inter Variable"', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        sans: ['var(--reading-font, "Inter Variable")', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
     },
   },

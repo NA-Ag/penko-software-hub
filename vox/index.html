@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" data-page="vox" data-root="../">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0f172a" />
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+    <title>Penko Vox: Japanese | Offline AI Japanese immersion</title>
+    <meta name="description" content="Learn Japanese by talking. Penko Vox: Japanese is a private, offline AI tutor with 38 conversation scenarios across JLPT N5–N1, voice calls and the Kotoba Islands RPG. Now in Early Access on Steam." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://penkosoftware.org/vox/" />
+    <meta property="og:title" content="Penko Vox: Japanese | Offline AI Japanese immersion" />
+    <meta property="og:description" content="Learn Japanese by talking. Penko Vox: Japanese is a private, offline AI tutor with 38 conversation scenarios across JLPT N5–N1, voice calls and the Kotoba Islands RPG. Now in Early Access on Steam." />
+    <meta property="og:image" content="https://penkosoftware.org/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Apply the saved/system theme before first paint to avoid a light flash in dark mode
+      try {
+        var saved = localStorage.getItem('penko-theme');
+        if (saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+      // Apply saved reading options (text size, font, spacing) before first paint too
+      try {
+        var r = JSON.parse(localStorage.getItem('penko-reading') || '{}'), h = document.documentElement;
+        if (r.size) h.style.fontSize = ['100%', '112.5%', '125%', '137.5%'][r.size];
+        if (r.font === 'readable') h.style.setProperty('--reading-font', '"Atkinson Hyperlegible"');
+        if (r.font === 'dyslexic') h.style.setProperty('--reading-font', '"OpenDyslexic"');
+        if (r.spacing) h.classList.add('a11y-spacing');
+        if (r.underline) h.classList.add('a11y-underline');
+        if (r.reduceMotion) h.classList.add('a11y-reduce-motion');
+      } catch (e) {}
+    </script>
+    <!-- Supporting browsers load a page in the background when you hover a link to it, so moving between pages feels instant -->
+    <script type="speculationrules">
+      {"prerender": [{"where": {"and": [{"href_matches": "/*"}, {"not": {"selector_matches": "[target=_blank], [href*='#'], [href^='mailto:']"}}]}, "eagerness": "moderate"}]}
+    </script>
+  </head>
+  <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 antialiased">
+    <div id="root"></div>
+    <script type="module" src="../site.tsx"></script>
+  </body>
+</html>

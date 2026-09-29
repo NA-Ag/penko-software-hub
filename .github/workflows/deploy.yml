@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  # Daily rebuild so screenshots and the trailer stay in sync with the Steam store page
+  schedule:
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:

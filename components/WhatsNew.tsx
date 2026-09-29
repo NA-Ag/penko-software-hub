@@ -2,6 +2,7 @@ import React from 'react';
 import { ArrowRight, ArrowUpRight, BookOpen, Gamepad2, Languages, LucideIcon, Sparkles } from 'lucide-react';
 import { useApp } from '../AppContext';
 import { PRODUCTS } from '../constants';
+import { sitePath } from '../lib/sitePaths';
 import { Translation } from '../i18n';
 import voxCapsuleUrl from '../assets/vox_capsule.svg';
 
@@ -27,9 +28,9 @@ const WhatsNew: React.FC = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
-          {/* Featured: Penko Vox Japanese, our paid app that funds the free ones */}
+          {/* Featured: Penko Vox: Japanese, our paid app that funds the free ones */}
           <a
-            href="#donate"
+            href={sitePath('vox/')}
             className="group md:col-span-3 lg:col-span-2 flex flex-col sm:flex-row gap-4 p-4 rounded-2xl bg-gradient-to-br from-[#0c0a12] via-[#1c1328] to-[#3c1a3b] border border-white/10 shadow-lg hover:shadow-xl transition-shadow"
           >
             <img

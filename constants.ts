@@ -3,6 +3,27 @@ import { Product, ProductCategory } from './types';
 export const GITHUB_URL = 'https://github.com/NA-Ag';
 export const HUB_REPO_URL = 'https://github.com/NA-Ag/penko-software-hub';
 export const VOX_STEAM_URL = 'https://store.steampowered.com/app/4836870/Penko_Vox_Japanese/';
+// Store link tagged so Steamworks' UTM analytics show which part of our site sent the visit.
+// Nothing is tracked on our own site; the tags only travel with the click to Steam.
+export const voxSteamLink = (placement: string) =>
+  `${VOX_STEAM_URL}?utm_source=penkosoftware.org&utm_medium=website&utm_campaign=${placement}`;
+export const VOX_PLATFORMS = ['Windows', 'Linux', 'Steam Deck'];
+export const VOX_FORUMS_URL = 'https://steamcommunity.com/app/4836870/discussions/';
+// Interface and audio languages from the Steam page; subtitles only in the first four
+export const VOX_LANGUAGES = [
+  { code: 'en', subtitles: true },
+  { code: 'fr', subtitles: true },
+  { code: 'de', subtitles: true },
+  { code: 'ja', subtitles: true },
+  { code: 'ko', subtitles: false },
+  { code: 'zh-Hans', subtitles: false },
+  { code: 'es-419', subtitles: false },
+  { code: 'vi', subtitles: false },
+];
+export const CONTACT_EMAIL = 'contact@penkosoftware.org';
+
+// The Roadmap section shows only these, the apps being built next
+export const NEXT_UP_IDS = ['penko-calc', 'penko-note', 'penko-slide'];
 
 export const PRODUCTS: Product[] = [
   // ===== ACTIVE PROJECTS =====

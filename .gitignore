@@ -137,3 +137,10 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Synced from the Steam store at build time (scripts/fetch-steam-media.mjs)
+public/media/
+generated/
+
+# Temporary server build used by scripts/prerender.mjs
+dist-ssr/

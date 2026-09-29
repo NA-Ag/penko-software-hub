@@ -1,5 +1,6 @@
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState, ReactNode } from 'react';
 import { getLoadedLocale, isLanguage, Language, loadLocale, Translation } from './i18n';
+import { localizedPagePath } from './lib/sitePaths';
 
 interface AppContextType {
   language: Language;
@@ -21,6 +22,10 @@ export const useApp = () => {
   return context;
 };
 
+// On the live site every page exists in every language, so changing language means going
+// to that language's URL for this page; the dev server swaps text in place instead
+const LANGUAGE_URLS = import.meta.env.PROD;
+
 // localStorage can throw (private mode, blocked storage), so preferences degrade gracefully
 const readPref = (key: string): string | null => {
   try { return localStorage.getItem(key); } catch { return null; }
@@ -29,23 +34,43 @@ const writePref = (key: string, value: string) => {
   try { localStorage.setItem(key, value); } catch { /* preference just won't persist */ }
 };
 
-export const getInitialLanguage = (): Language => {
+// The visitor's preferred language: saved choice, else the browser's language if we have it
+export const getPreferredLanguage = (): Language | null => {
   const saved = readPref('penko-language');
   if (saved && isLanguage(saved)) return saved;
-  // Try to match browser language
-  const browserLang = navigator.language.split('-')[0];
-  return isLanguage(browserLang) ? browserLang : 'en';
+  const browserLang = typeof navigator === 'undefined' ? '' : navigator.language.split('-')[0];
+  return isLanguage(browserLang) ? browserLang : null;
+};
+
+// On the live site every page URL has a language (/es/vox/ is Spanish), and it wins;
+// on the dev server pages have no language, so the visitor's preference applies
+export const getInitialLanguage = (): Language => {
+  const pageLang = typeof document === 'undefined' ? undefined : document.documentElement.dataset.lang;
+  if (pageLang && isLanguage(pageLang)) return pageLang;
+  return getPreferredLanguage() ?? 'en';
+};
+
+// Live site only: an English URL opened by someone who prefers another language is sent
+// to that language's version of the page. Returns true when a redirect is under way.
+export const redirectToPreferredLanguage = (): boolean => {
+  if (!LANGUAGE_URLS || document.documentElement.dataset.lang !== 'en') return false;
+  const preferred = getPreferredLanguage();
+  if (!preferred || preferred === 'en') return false;
+  window.location.replace(localizedPagePath(preferred) + window.location.hash);
+  return true;
 };
 
 const getInitialTheme = (): boolean => {
+  if (typeof window === 'undefined') return false; // pre-rendering
   const saved = readPref('penko-theme');
   if (saved) return saved === 'dark';
   return window.matchMedia('(prefers-color-scheme: dark)').matches;
 };
 
-export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  // index.tsx preloads the initial locale, so it is available synchronously here
-  const [language, setLanguageState] = useState<Language>(getInitialLanguage);
+// `language` is set when pre-rendering, where there's no document to read it from
+export const AppProvider: React.FC<{ children: ReactNode; language?: Language }> = ({ children, language: fixedLanguage }) => {
+  // The entry file preloads the initial locale, so it is available synchronously here
+  const [language, setLanguageState] = useState<Language>(() => fixedLanguage ?? getInitialLanguage());
   const [locale, setLocale] = useState(() => getLoadedLocale(language));
   const [isDarkMode, setIsDarkMode] = useState<boolean>(getInitialTheme);
   // Latest language the user picked; an older, slower chunk load must not override it
@@ -62,6 +87,10 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
 
   const setLanguage = useCallback((lang: Language) => {
     writePref('penko-language', lang);
+    if (LANGUAGE_URLS) {
+      window.location.href = localizedPagePath(lang) + window.location.hash;
+      return;
+    }
     requestedLanguage.current = lang;
     // Swap text only once the language's chunk has loaded, so the page never shows missing strings
     loadLocale(lang).then(loaded => {

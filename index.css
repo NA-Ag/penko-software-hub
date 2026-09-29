@@ -118,3 +118,44 @@ html {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
+
+/* Smooth page-to-page navigation (cross-document View Transitions, where supported):
+   pages cross-fade while the header stays in place. Skipped when motion is reduced. */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition {
+    navigation: auto;
+  }
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 180ms;
+}
+.site-header {
+  view-transition-name: site-header;
+}
+
+/* Reading options (lib/readingPrefs.ts). Text size and font are set on <html> directly. */
+html.a11y-spacing p,
+html.a11y-spacing li,
+html.a11y-spacing dd,
+html.a11y-spacing td {
+  line-height: 1.9 !important;
+  letter-spacing: 0.02em;
+  word-spacing: 0.08em;
+}
+html.a11y-underline a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html.a11y-reduce-motion *,
+html.a11y-reduce-motion *::before,
+html.a11y-reduce-motion *::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+html.a11y-reduce-motion::view-transition-old(*),
+html.a11y-reduce-motion::view-transition-new(*) {
+  animation: none !important;
+}

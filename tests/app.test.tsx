@@ -46,6 +46,40 @@ describe('Penko Plaza page', () => {
     expect(within(explore).getAllByText('Penko Reader').length).toBeGreaterThan(0);
   });
 
+  it('roadmap shows only the next-up apps', () => {
+    renderApp();
+    const roadmap = document.getElementById('roadmap')!;
+    for (const name of ['Penko Calc', 'Penko Note', 'Penko Slide']) {
+      expect(within(roadmap).getByText(name)).toBeTruthy();
+    }
+    expect(within(roadmap).queryByText('Penko ERP')).toBeNull();
+  });
+
+  it('footer links to the Plaza privacy policy and to the paid apps', () => {
+    renderApp();
+    const footer = document.querySelector('footer')!;
+    expect(within(footer).getByRole('link', { name: 'Privacy Policy' }).getAttribute('href')).toBe('./privacy.html');
+    expect(within(footer).getByRole('link', { name: 'Penko Vox: Japanese' }).getAttribute('href')).toBe('./vox/');
+    expect(within(footer).getByRole('link', { name: 'Paid apps' }).getAttribute('href')).toBe('./products/');
+  });
+
+  it('navbar has the Support link and marks Penko Plaza as the current section', () => {
+    renderApp();
+    const header = document.querySelector<HTMLElement>('.site-header')!;
+    expect(within(header).getAllByRole('link', { name: 'Support Penko' })[0].getAttribute('href')).toBe('#donate');
+    const sections = within(header).getAllByRole('navigation', { name: 'Site sections' })[0];
+    expect(within(sections).getByRole('link', { name: 'Penko Plaza' }).getAttribute('aria-current')).toBe('page');
+    expect(within(sections).getByRole('link', { name: 'Paid apps' }).getAttribute('href')).toBe('./products/');
+  });
+
+  it('the home page keeps Penko Vox to a short funding card', () => {
+    renderApp();
+    const support = document.getElementById('donate')!;
+    expect(within(support).getByRole('link', { name: /See our paid apps/ }).getAttribute('href')).toBe('./products/');
+    expect(within(support).queryByText(/System requirements/)).toBeNull();
+    expect(document.body.textContent).not.toMatch(/one developer|single developer/i);
+  });
+
   it('switching category selects that category’s first app', async () => {
     const user = userEvent.setup();
     renderApp();
@@ -71,7 +105,7 @@ describe('Penko Plaza page', () => {
     const user = userEvent.setup();
     renderApp();
     await user.click(screen.getByRole('button', { name: 'Language' }));
-    await user.click(screen.getAllByRole('button', { name: '日本語' })[0]);
+    await user.click(screen.getAllByRole('link', { name: '日本語' })[0]);
     await waitFor(() => expect(document.documentElement.lang).toBe('ja'));
     expect(localStorage.getItem('penko-language')).toBe('ja');
     // A feature label from the Japanese feature table is now shown
@@ -92,12 +126,26 @@ describe('Penko Plaza page', () => {
     expect(screen.getByRole('status')).toBeTruthy();
   });
 
+  it('reading options change text size and link underlines, and reset', async () => {
+    const user = userEvent.setup();
+    renderApp();
+    await user.click(screen.getAllByRole('button', { name: 'Reading options' })[0]);
+    await user.click(screen.getByRole('button', { name: 'Larger text' }));
+    expect(document.documentElement.style.fontSize).toBe('112.5%');
+    await user.click(screen.getByRole('switch', { name: 'Underline links' }));
+    expect(document.documentElement.classList.contains('a11y-underline')).toBe(true);
+    expect(JSON.parse(localStorage.getItem('penko-reading')!)).toMatchObject({ size: 1, underline: true });
+    await user.click(screen.getByRole('button', { name: 'Reset reading options' }));
+    expect(document.documentElement.style.fontSize).toBe('100%');
+    expect(document.documentElement.classList.contains('a11y-underline')).toBe(false);
+  });
+
   it('language menu closes with Escape', async () => {
     const user = userEvent.setup();
     renderApp();
     await user.click(screen.getByRole('button', { name: 'Language' }));
-    expect(screen.getAllByRole('button', { name: 'Deutsch' }).length).toBeGreaterThan(0);
+    expect(screen.getAllByRole('link', { name: 'Deutsch' }).length).toBeGreaterThan(0);
     await user.keyboard('{Escape}');
-    expect(screen.queryAllByRole('button', { name: 'Deutsch' })).toHaveLength(0);
+    expect(screen.queryAllByRole('link', { name: 'Deutsch' })).toHaveLength(0);
   });
 });
