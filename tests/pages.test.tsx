@@ -51,6 +51,18 @@ describe('studio pages', () => {
     }
   });
 
+  it('Vox language table: audio in Japanese only; interface and subtitles in every language', () => {
+    renderPage('vox', '../');
+    const table = screen.getByRole('columnheader', { name: 'Audio' }).closest('table')!;
+    for (const row of within(table).getAllByRole('row').slice(1)) {
+      const [iface, audio, subtitles] = within(row).getAllByRole('cell');
+      const isJapanese = within(row).getByRole('rowheader').getAttribute('lang') === 'ja';
+      expect(within(iface).queryByLabelText('✓')).not.toBeNull();
+      expect(within(subtitles).queryByLabelText('✓')).not.toBeNull();
+      expect(within(audio).queryByLabelText('✓') !== null).toBe(isJapanese);
+    }
+  });
+
   it.each([
     ['vox-privacy', docs.voxPrivacy],
     ['vox-terms', docs.voxTerms],

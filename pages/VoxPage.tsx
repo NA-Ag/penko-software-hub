@@ -260,10 +260,10 @@ const VoxPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100 dark:divide-slate-800/80">
-                {VOX_LANGUAGES.map(({ code, subtitles }) => (
+                {VOX_LANGUAGES.map(({ code, audio }) => (
                   <tr key={code}>
                     <th scope="row" lang={code} className="px-4 py-2 text-left font-medium text-slate-700 dark:text-slate-200">{languageName(code)}</th>
-                    {[true, true, subtitles].map((yes, i) => (
+                    {[true, audio, true].map((yes, i) => (
                       <td key={i} className="px-3 py-2 text-center">
                         {yes
                           ? <Check size={16} className="inline text-emerald-500" aria-label="✓" />

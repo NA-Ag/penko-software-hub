@@ -9,16 +9,17 @@ export const voxSteamLink = (placement: string) =>
   `${VOX_STEAM_URL}?utm_source=penkosoftware.org&utm_medium=website&utm_campaign=${placement}`;
 export const VOX_PLATFORMS = ['Windows', 'Linux', 'Steam Deck'];
 export const VOX_FORUMS_URL = 'https://steamcommunity.com/app/4836870/discussions/';
-// Interface and audio languages from the Steam page; subtitles only in the first four
+// Penko Vox: Japanese languages. The interface and subtitles are available in all of these;
+// spoken audio (the tutor's voice) is Japanese only, since it's the language being learned.
 export const VOX_LANGUAGES = [
-  { code: 'en', subtitles: true },
-  { code: 'fr', subtitles: true },
-  { code: 'de', subtitles: true },
-  { code: 'ja', subtitles: true },
-  { code: 'ko', subtitles: false },
-  { code: 'zh-Hans', subtitles: false },
-  { code: 'es-419', subtitles: false },
-  { code: 'vi', subtitles: false },
+  { code: 'en', audio: false },
+  { code: 'fr', audio: false },
+  { code: 'de', audio: false },
+  { code: 'ja', audio: true },
+  { code: 'ko', audio: false },
+  { code: 'zh-Hans', audio: false },
+  { code: 'es-419', audio: false },
+  { code: 'vi', audio: false },
 ];
 export const CONTACT_EMAIL = 'contact@penkosoftware.org';
 
