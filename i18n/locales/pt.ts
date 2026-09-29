@@ -74,7 +74,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 cenários · N5–N1',
   voxJapaneseFeature2: 'Tutor de IA 100% offline',
   voxJapaneseFeature3: 'Chamadas de voz',
-  voxJapaneseFeature4: 'Prática de traços de kana',
+  voxJapaneseFeature4: 'Escrita de kana e kanji',
   voxJapaneseFeature5: 'RPG Kotoba Islands',
   voxFullRelease: 'Lançamento completo: agosto de 2027',
   voxJapaneseCta: 'Obtenha na Steam',
@@ -151,7 +151,7 @@ export const ui: Translation = {
   footerByline: 'por Penko Software',
   footerContact: 'Contato',
   schoolsTitle: 'Para escolas e universidades',
-  schoolsBody: 'Penko Vox: Japanese está disponível para pilotos em sala de aula e licenças institucionais anuais. Nossos apps gratuitos não coletam dados, então também estão prontos para a sala de aula.',
+  schoolsBody: 'Penko Vox: Japanese está disponível para pilotos em sala de aula e licenças institucionais anuais. Ele roda inteiramente em cada computador e não coleta dados pessoais, então está pronto para a sala de aula.',
   schoolsCta: 'Fale conosco',
 
   // Studio structure: free Plaza apps funded by paid apps

@@ -1,7 +1,7 @@
 import React, { useMemo } from 'react';
 import {
   BookOpenCheck, Brain, Cpu, Check, ChevronDown, CheckCircle2, ExternalLink, FileText, Gamepad2, GraduationCap, Heart,
-  KeyRound, Mail, MessageCircle, Mic, Minus, Monitor, Newspaper, PenLine, Phone, Rocket, Shield, Sparkles, TrendingUp, Volume2,
+  KeyRound, Mail, Scale, MessageCircle, Mic, Minus, Monitor, Newspaper, PenLine, Phone, Rocket, Shield, Sparkles, TrendingUp, Volume2,
   LucideIcon,
 } from 'lucide-react';
 import { useApp } from '../AppContext';
@@ -61,6 +61,7 @@ const VoxPage: React.FC = () => {
     { href: sitePath('vox/privacy/'), label: common.privacy, Icon: Shield },
     { href: sitePath('vox/terms/'), label: common.terms, Icon: FileText },
     { href: sitePath('vox/press/'), label: common.press, Icon: Newspaper },
+    { href: sitePath('vox/credits/'), label: common.credits, Icon: Scale },
   ];
 
   return (

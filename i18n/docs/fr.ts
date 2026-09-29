@@ -31,6 +31,10 @@ export const docs: Docs = {
       title: 'Guide de démarrage | Penko Vox : Japanese',
       description: 'Comment configurer et tirer le meilleur parti de Penko Vox : Japanese : configuration requise, réglage du micro, conversations, Kotoba Islands, Study Hub et dépannage.',
     },
+    voxCredits: {
+      title: 'Crédits et licences | Penko Vox: Japanese',
+      description: 'Logiciels, modèles d\'IA et données tiers utilisés dans Penko Vox: Japanese, avec leurs licences et les mentions requises.',
+    },
     voxPress: {
       title: 'Dossier de presse | Penko Vox : Japanese',
       description: 'Dossier de presse de Penko Vox : Japanese : fiche technique, descriptions, logos et contact.',
@@ -46,6 +50,7 @@ export const docs: Docs = {
     terms: 'Conditions d\'utilisation (CLUF)',
     guide: 'Guide',
     press: 'Dossier de presse',
+    credits: 'Crédits',
     comingSoon: 'Bientôt disponible',
     learnMore: 'En savoir plus',
   },
@@ -89,7 +94,7 @@ export const docs: Docs = {
       { title: 'Kotoba Islands', body: 'Un RPG où vous explorez et discutez librement avec chaque habitant, avec le japonais que vous apprenez.' },
       { title: 'Appels vocaux naturels', body: 'Parlez à voix haute avec des tours de parole naturels. Vous pouvez interrompre, et l\'annulation d\'écho permet d\'utiliser des haut-parleurs.' },
       { title: 'Study Hub et dictionnaire', body: 'Les mots rencontrés alimentent des révisions planifiées par répétition espacée FSRS, et un dictionnaire hors ligne permet de toucher n\'importe quel mot pour le consulter.' },
-      { title: 'Tracé des kana', body: 'Exercez-vous à écrire les hiragana et les katakana avec un retour visuel en temps réel.' },
+      { title: 'Entraînement à l\'écriture', body: 'Exercez-vous à écrire les hiragana, les katakana, les kanji pour débutants et des mots, avec un retour visuel en temps réel.' },
       { title: 'La maîtrise par la pratique', body: 'Votre progression avance quand vous employez correctement un mot ou une structure grammaticale dans une vraie conversation, pas en retournant des cartes mémoire.' },
       { title: 'Privé et hors ligne', body: 'Votre voix, vos recherches et vos conversations ne quittent jamais votre ordinateur. Pas de compte, pas de cloud, pas de télémétrie.' },
       { title: 'À vous pour toujours', body: 'Un achat unique. Pas d\'abonnement, pas de limite de jetons et pas de paliers d\'utilisation.' },
@@ -101,7 +106,7 @@ export const docs: Docs = {
       plan: 'Nous prévoyons la version finale pour août 2027. D\'ici là, des mises à jour ajoutent régulièrement du contenu et des améliorations.',
       fullVersionTitle: 'Prévu pour la version finale',
       fullVersion: [
-        'Une bibliothèque de scénarios de conversation bien plus vaste, avec un objectif de plus de 100',
+        'Une bibliothèque de scénarios de conversation bien plus vaste',
         'Davantage de parcours d\'apprentissage JLPT spécialisés',
         'Plus d\'options de voix pour la synthèse vocale',
         'Des analyses de progression plus poussées et davantage de fonctionnalités Steam',
@@ -158,7 +163,7 @@ export const docs: Docs = {
     },
     languages: {
       title: 'Langues',
-      intro: 'Vous apprenez le japonais ; l\'interface et les explications de l\'application sont disponibles dans ces langues.',
+      intro: 'L\'interface et les sous-titres sont disponibles en 8 langues. Le tuteur parle japonais, la langue que vous apprenez.',
       interface: 'Interface',
       audio: 'Audio',
       subtitles: 'Sous-titres',
@@ -174,7 +179,7 @@ export const docs: Docs = {
       { q: 'Pourquoi faut-il 16 GB de RAM et un processeur AVX2 ?', a: 'Penko Vox exécute un modèle de langage IA complet en local plutôt que sur un serveur. Cela demande de la mémoire et un processeur avec les instructions AVX2. C\'est ce qui protège vos données et permet d\'utiliser l\'application hors ligne.' },
       { q: 'Fonctionne-t-il sur Steam Deck ?', a: 'Oui. Il a été testé sur Steam Deck, et la prise en charge de la manette est arrivée dans la version 2.1 en tant que fonctionnalité expérimentale.' },
       { q: 'Existe-t-il une version Mac ?', a: 'Pas pour le moment. Penko Vox est disponible pour Windows et Linux, y compris SteamOS.' },
-      { q: 'Quel niveau de japonais faut-il ?', a: 'Les scénarios de conversation vont du JLPT N5 (débutant) au N1 (avancé), et l\'entraînement aux kana aide si vous commencez tout juste à lire.' },
+      { q: 'Quel niveau de japonais faut-il ?', a: 'Les scénarios de conversation vont du JLPT N5 (débutant) au N1 (avancé), et l\'entraînement à l\'écriture aide si vous commencez tout juste à lire.' },
       { q: 'Est-ce un abonnement ?', a: 'Non. C\'est un achat unique sur Steam, sans abonnement, sans limite de jetons ni paliers d\'utilisation.' },
       { q: 'L\'IA a-t-elle toujours raison ?', a: 'Non. C\'est un excellent partenaire d\'entraînement, mais elle peut se tromper. Pour des examens ou des traductions importantes, vérifiez auprès d\'un professeur ou d\'une référence fiable.' },
       { q: 'Penko Vox est-il open source ?', a: 'Non. Penko Vox est une application payante à code source fermé. Ses ventes financent Penko Plaza, nos applications gratuites et open source.' },
@@ -259,12 +264,12 @@ export const docs: Docs = {
       },
       {
         id: 'study-hub',
-        title: 'Study Hub, dictionnaire et entraînement aux kana',
+        title: 'Study Hub, dictionnaire et entraînement à l\'écriture',
         blocks: [
           { ul: [
             'Study Hub : les mots rencontrés dans les conversations deviennent des révisions, planifiées par répétition espacée FSRS pour que vous les revoyiez juste avant de les oublier. Quelques minutes par jour suffisent.',
             'Dictionnaire : touchez n\'importe quel mot pour le chercher, entièrement hors ligne.',
-            'Entraînement aux kana : apprenez à écrire les hiragana et les katakana trait par trait, avec un retour en temps réel.',
+            'Entraînement à l\'écriture : apprenez à écrire les hiragana, les katakana, les kanji pour débutants et des mots trait par trait, avec un retour en temps réel.',
           ] },
         ],
       },
@@ -353,7 +358,7 @@ export const docs: Docs = {
       {
         id: 'website',
         title: 'Ce site web',
-        blocks: ['Notre site web est hébergé sur GitHub Pages. Comme la plupart des hébergeurs, GitHub peut consigner des informations techniques telles que votre adresse IP afin de garder le service sécurisé et en fonctionnement (voir la Déclaration de confidentialité de GitHub). Nous n\'avons pas accès à ces journaux et ne les utilisons pas. Le site enregistre sur votre appareil la langue et le thème que vous avez choisis, et n\'utilise ni cookies, ni analyses, ni traceurs. Les captures d\'écran sont servies depuis notre propre site ; la bande-annonce n\'est diffusée depuis les serveurs de Steam qu\'après que vous avez appuyé sur lecture.'],
+        blocks: ['Notre site web est hébergé sur GitHub Pages. Comme la plupart des hébergeurs, GitHub peut consigner des informations techniques telles que votre adresse IP afin de garder le service sécurisé et en fonctionnement (voir la Déclaration de confidentialité de GitHub). Nous n\'avons pas accès à ces journaux et ne les utilisons pas. Le site enregistre sur votre appareil la langue et le thème que vous avez choisis, et n\'utilise ni cookies, ni analyses, ni traceurs. Les captures d\'écran sont servies depuis notre propre site ; la bande-annonce n\'est diffusée depuis les serveurs de Steam qu\'après que vous avez appuyé sur lecture. Les liens vers Steam comportent une balise de campagne qui permet à Steam de nous indiquer laquelle de nos pages a généré une visite ; elle ne contient aucune information vous concernant.'],
       },
       {
         id: 'children',
@@ -375,14 +380,14 @@ export const docs: Docs = {
       {
         id: 'agreement',
         title: '1. Accord',
-        blocks: ['Les présentes conditions constituent un accord entre vous et Penko Software (« nous ») concernant Penko Vox: Japanese (le « Logiciel »). En installant ou en utilisant le Logiciel, vous les acceptez. Votre achat via Steam est également régi par le Contrat de souscription Steam.'],
+        blocks: ['Les présentes conditions constituent un accord entre vous et Penko Software (« nous ») concernant Penko Vox: Japanese (le « Logiciel »). En installant ou en utilisant le Logiciel, vous les acceptez. Votre achat via Steam est également régi par le Contrat de souscription Steam, et les remboursements suivent la politique de remboursement de Steam.'],
       },
       {
         id: 'licence',
         title: '2. Votre licence',
         blocks: [
           'Nous vous accordons une licence personnelle, non exclusive et non transférable pour installer et utiliser le Logiciel sur des appareils que vous possédez ou contrôlez, pour votre propre apprentissage, dans les conditions permises par Steam (y compris le Partage familial Steam).',
-          'L\'utilisation du Logiciel pour enseigner à des classes ou sur les appareils d\'une organisation nécessite une licence institutionnelle. Contactez-nous à contact@penkosoftware.org.',
+          'Les étudiants et les enseignants peuvent utiliser leurs propres licences personnelles pour leurs études et leurs travaux de cours. Une licence institutionnelle est nécessaire lorsqu\'une organisation met le Logiciel à disposition de ses étudiants ou de son personnel, ou l\'installe sur ses propres appareils. Contactez-nous à contact@penkosoftware.org.',
         ],
       },
       {
@@ -392,7 +397,7 @@ export const docs: Docs = {
           { ul: [
             'Copier, vendre, louer ou distribuer le Logiciel, sauf via les fonctionnalités fournies par Steam.',
             'Effectuer de l\'ingénierie inverse, décompiler ou désassembler le Logiciel, sauf lorsque la loi l\'autorise expressément.',
-            'Extraire les modèles d\'IA, les voix ou d\'autres éléments du Logiciel pour les utiliser séparément.',
+            'Extraire le contenu propre au Logiciel (tel que les illustrations, les scénarios, les personnages et les autres éléments créés par Penko Software) pour l\'utiliser séparément. Les composants tiers restent disponibles sous leurs propres licences (section 8).',
             'Supprimer ou modifier les mentions de droit d\'auteur ou de licence.',
           ] },
         ],
@@ -405,7 +410,7 @@ export const docs: Docs = {
       {
         id: 'ai',
         title: '5. Contenu généré par l\'IA',
-        blocks: ['Le Logiciel utilise une IA générative qui s\'exécute sur votre ordinateur. Ses dialogues, corrections et paroles sont générés automatiquement et peuvent être inexacts ou inattendus. Le Logiciel est une aide à l\'apprentissage, non un substitut à un professeur qualifié, à un examen officiel ou à une traduction professionnelle.'],
+        blocks: ['Le Logiciel utilise une IA générative qui s\'exécute sur votre ordinateur. Ses dialogues, corrections et paroles sont générés automatiquement et peuvent être inexacts ou inattendus. Le Logiciel est une aide à l\'apprentissage, non un substitut à un professeur qualifié, à un examen officiel ou à une traduction professionnelle, et rien de ce qu\'il génère ne constitue un conseil professionnel, juridique ou financier.'],
       },
       {
         id: 'early-access',
@@ -420,7 +425,7 @@ export const docs: Docs = {
       {
         id: 'third-party',
         title: '8. Composants tiers',
-        blocks: ['Le Logiciel peut inclure des composants tiers, concédés sous leurs propres conditions. Ces conditions s\'appliquent à ces composants.'],
+        blocks: ['Le Logiciel inclut des composants tiers, tels que ses modèles d\'IA, ses moteurs vocaux et son dictionnaire, concédés sous leurs propres conditions. Ces conditions s\'appliquent à ces composants, et aucune disposition des présentes conditions ne limite vos droits à ce titre. La liste complète, avec les licences et les mentions requises, est disponible à l\'adresse https://penkosoftware.org/vox/credits/.'],
       },
       {
         id: 'warranty',
@@ -495,6 +500,36 @@ export const docs: Docs = {
     ],
   },
 
+  credits: {
+    title: 'Crédits et licences',
+    intro: 'Penko Vox: Japanese repose sur d\'excellents logiciels open source, modèles d\'IA et données. Ces composants conservent leurs propres licences, et vos droits à ce titre ne sont pas limités par nos conditions.',
+    component: 'Composant',
+    licence: 'Licence',
+    purposes: {
+      qwen: 'Modèle de langage à la base du tuteur IA',
+      llamacpp: 'Exécute le modèle de langage sur votre ordinateur',
+      kotobawhisper: 'Modèle de reconnaissance vocale du japonais',
+      whispercpp: 'Moteur de reconnaissance vocale',
+      reazonspeech: 'Modèle de reconnaissance vocale du japonais',
+      sherpaonnx: 'Environnement d\'exécution pour la reconnaissance et la synthèse vocales',
+      silerovad: 'Détecte quand vous commencez et arrêtez de parler',
+      kokoro: 'Voix japonaises (synthèse vocale)',
+      kuromoji: 'Découpe les phrases japonaises en mots',
+      jmdict: 'Données du dictionnaire de japonais',
+      wanakana: 'Convertit entre romaji et kana',
+      tsfsrs: 'Planifie les révisions du Study Hub (FSRS)',
+      threejs: 'Graphismes 3D',
+      react: 'Interface utilisateur',
+      electron: 'Framework d\'application de bureau',
+      chromium: 'Moteur web inclus avec Electron',
+      steamworksjs: 'Intégration Steam (succès, sauvegardes cloud)',
+    },
+    jmdictTitle: 'Données du dictionnaire',
+    jmdictNotice: 'Penko Vox: Japanese utilise les fichiers du dictionnaire JMdict. Ces fichiers sont la propriété de l\'Electronic Dictionary Research and Development Group (EDRDG) et sont utilisés conformément à la licence du Groupe (Creative Commons Attribution-ShareAlike 4.0) : https://www.edrdg.org/edrdg/licence.html',
+    chromiumNote: 'Chromium inclut de nombreux composants open source ; leurs licences sont répertoriées dans le fichier LICENSES.chromium.html du dossier d\'installation de l\'application.',
+    fullTexts: 'Les textes complets des licences sont fournis avec l\'application. Questions : contact@penkosoftware.org.',
+  },
+
   press: {
     title: 'Dossier de presse',
     intro: 'Tout ce qu\'il faut pour écrire sur Penko Vox: Japanese. Vous pouvez utiliser librement ces textes et ces images dans vos articles sur l\'application.',
@@ -505,7 +540,8 @@ export const docs: Docs = {
       { label: 'Version finale', value: 'Prévue pour août 2027' },
       { label: 'Plateformes', value: 'Windows, Linux, SteamOS (Steam Deck)' },
       { label: 'Prix', value: 'Variable selon la région ; voir Steam' },
-      { label: 'Langues de l\'interface', value: 'Anglais, français, allemand, japonais, coréen, chinois simplifié, espagnol (Amérique latine), vietnamien' },
+      { label: 'Langues de l\'interface et des sous-titres', value: 'Anglais, français, allemand, japonais, coréen, chinois simplifié, espagnol (Amérique latine), vietnamien' },
+      { label: 'Voix', value: 'Japonais' },
     ],
     shortTitle: 'Description courte',
     short: 'Penko Vox: Japanese est un tuteur IA privé et hors ligne qui enseigne le japonais par la conversation. Parcourez 38 scénarios du JLPT N5 au N1, passez des appels vocaux naturels et explorez le RPG Kotoba Islands, le tout en local sur votre propre ordinateur.',

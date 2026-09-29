@@ -31,6 +31,10 @@ export const docs: Docs = {
       title: '入门指南 | Penko Vox: Japanese',
       description: '如何设置并用好 Penko Vox: Japanese：系统要求、麦克风设置、对话、Kotoba Islands、学习中心和故障排除。',
     },
+    voxCredits: {
+      title: '致谢与许可 | Penko Vox: Japanese',
+      description: 'Penko Vox: Japanese 使用的第三方软件、AI 模型和数据，及其许可和必要声明。',
+    },
     voxPress: {
       title: '媒体资料包 | Penko Vox: Japanese',
       description: 'Penko Vox: Japanese 媒体资料包：概况表、简介、徽标和联系方式。',
@@ -46,6 +50,7 @@ export const docs: Docs = {
     terms: '使用条款 (EULA)',
     guide: '指南',
     press: '媒体资料包',
+    credits: '致谢',
     comingSoon: '即将推出',
     learnMore: '了解更多',
   },
@@ -89,7 +94,7 @@ export const docs: Docs = {
       { title: 'Kotoba Islands', body: '一款角色扮演游戏，您可以探索各个岛屿，并用正在学习的日语与每位居民自由交谈。' },
       { title: '自然的语音通话', body: '大声说话，轮流发言自然流畅。您可以随时打断，回声消除让您也能使用扬声器。' },
       { title: '学习中心与词典', body: '您遇到的单词会进入按 FSRS 间隔重复安排的复习，离线词典让您点按任意单词即可查询。' },
-      { title: '假名笔顺练习', body: '通过实时的视觉反馈，练习书写平假名和片假名。' },
+      { title: '书写练习', body: '通过实时的视觉反馈，练习书写平假名、片假名、初级汉字和单词。' },
       { title: '在使用中掌握', body: '当您在真实对话中正确使用某个单词或语法句型时，进度才会增长，而不是靠翻闪卡。' },
       { title: '私密且离线', body: '您的声音、查询和对话永远不会离开您的电脑。无需账号，没有云端，没有遥测。' },
       { title: '一次购买，永久拥有', body: '一次性购买。没有订阅，没有 token 限制，也没有使用档位。' },
@@ -101,7 +106,7 @@ export const docs: Docs = {
       plan: '我们计划在 2027 年 8 月发布正式版。在此之前，更新会定期加入新内容和改进。',
       fullVersionTitle: '正式版计划内容',
       fullVersion: [
-        '规模大得多的对话场景库，目标是 100 个以上',
+        '规模大得多的对话场景库',
         '更多专门的 JLPT 学习路径',
         '更多语音合成的声音选择',
         '更深入的学习进度分析，以及更多 Steam 功能',
@@ -158,7 +163,7 @@ export const docs: Docs = {
     },
     languages: {
       title: '语言',
-      intro: '您学习的是日语；应用的界面和讲解提供以下语言版本。',
+      intro: '界面和字幕提供 8 种语言版本。导师说日语，也就是您正在学习的语言。',
       interface: '界面',
       audio: '音频',
       subtitles: '字幕',
@@ -174,7 +179,7 @@ export const docs: Docs = {
       { q: '为什么需要 16 GB 内存和支持 AVX2 的 CPU？', a: 'Penko Vox 在本地运行完整的 AI 语言模型，而不是在服务器上运行。这需要内存和支持 AVX2 指令的 CPU。这正是您的数据保持私密、应用可离线使用的原因。' },
       { q: '能在 Steam Deck 上运行吗？', a: '可以。它已在 Steam Deck 上测试，并且手柄支持作为实验性功能于 2.1 版本加入。' },
       { q: '有 Mac 版本吗？', a: '目前没有。Penko Vox 提供 Windows 和 Linux 版本，包括 SteamOS。' },
-      { q: '我需要达到什么日语水平？', a: '对话场景涵盖从 JLPT N5 (初级) 到 N1 (高级)，如果您刚开始学习阅读，假名练习也能帮上忙。' },
+      { q: '我需要达到什么日语水平？', a: '对话场景涵盖从 JLPT N5 (初级) 到 N1 (高级)，如果您刚开始学习阅读，书写练习也能帮上忙。' },
       { q: '是订阅制吗？', a: '不是。这是在 Steam 上的一次性购买，没有订阅、token 限制或使用档位。' },
       { q: 'AI 总是对的吗？', a: '不是。它是出色的练习伙伴，但也可能出错。对于考试或重要的翻译，请向老师或可靠的参考资料核实。' },
       { q: 'Penko Vox 是开源的吗？', a: '不是。Penko Vox 是闭源的付费应用。它的销售收入为我们免费的开源应用 Penko Plaza 提供资金。' },
@@ -259,12 +264,12 @@ export const docs: Docs = {
       },
       {
         id: 'study-hub',
-        title: '学习中心、词典与假名练习',
+        title: '学习中心、词典与书写练习',
         blocks: [
           { ul: [
             '学习中心：您在对话中遇到的单词会变成复习内容，按 FSRS 间隔重复安排，让您在快要忘记之前再次看到它们。每天几分钟效果最好。',
             '词典：点按任意单词即可查询，完全离线。',
-            '假名练习：逐笔学习书写平假名和片假名，并获得实时反馈。',
+            '书写练习：逐笔学习书写平假名、片假名、初级汉字和单词，并获得实时反馈。',
           ] },
         ],
       },
@@ -353,7 +358,7 @@ export const docs: Docs = {
       {
         id: 'website',
         title: '本网站',
-        blocks: ['我们的网站托管在 GitHub Pages 上。与大多数网站主机一样，GitHub 可能会记录 IP 地址等技术信息，以保障服务安全和正常运行 (参见 GitHub 隐私声明)。我们无法访问这些日志，也不会使用它们。本网站会在您的设备上保存您所选择的语言和主题，没有 cookie、分析或跟踪器。截图由我们自己的网站提供；只有在您按下播放后，预告片才会从 Steam 的服务器加载。'],
+        blocks: ['我们的网站托管在 GitHub Pages 上。与大多数网站主机一样，GitHub 可能会记录 IP 地址等技术信息，以保障服务安全和正常运行 (参见 GitHub 隐私声明)。我们无法访问这些日志，也不会使用它们。本网站会在您的设备上保存您所选择的语言和主题，没有 cookie、分析或跟踪器。截图由我们自己的网站提供；只有在您按下播放后，预告片才会从 Steam 的服务器加载。指向 Steam 的链接带有一个活动标签，以便 Steam 向我们显示访问来自我们的哪个页面；该标签不包含任何与您有关的信息。'],
       },
       {
         id: 'children',
@@ -375,14 +380,14 @@ export const docs: Docs = {
       {
         id: 'agreement',
         title: '1. 协议',
-        blocks: ['本条款是您与 Penko Software (“我们”) 之间就 Penko Vox: Japanese (“软件”) 达成的协议。安装或使用本软件，即表示您接受这些条款。您通过 Steam 进行的购买还受 Steam 订户协议约束。'],
+        blocks: ['本条款是您与 Penko Software (“我们”) 之间就 Penko Vox: Japanese (“软件”) 达成的协议。安装或使用本软件，即表示您接受这些条款。您通过 Steam 进行的购买还受 Steam 订户协议约束，退款遵循 Steam 的退款政策。'],
       },
       {
         id: 'licence',
         title: '2. 您的许可',
         blocks: [
           '我们授予您个人的、非排他的、不可转让的许可，允许您在您拥有或控制的设备上安装并使用本软件，用于您自己的学习，并以 Steam 允许的方式为限 (包括 Steam 家庭共享)。',
-          '使用本软件授课，或在组织的多台设备上使用，需要机构授权。请通过 contact@penkosoftware.org 联系我们。',
+          '学生和教师可以将自己的个人许可用于学习和课业。当组织向其学生或员工提供本软件，或将其安装在自己的设备上时，则需要机构授权。请通过 contact@penkosoftware.org 联系我们。',
         ],
       },
       {
@@ -392,7 +397,7 @@ export const docs: Docs = {
           { ul: [
             '复制、出售、出租或分发本软件，但通过 Steam 提供的功能进行的除外。',
             '对本软件进行逆向工程、反编译或反汇编，但法律明确允许的情况除外。',
-            '提取本软件的 AI 模型、声音或其他资源，以单独使用它们。',
+            '提取本软件自身的内容 (例如由 Penko Software 创作的美术、场景、角色和其他资源)，以单独使用它。第三方组件仍可依据其自身许可使用 (第 8 条)。',
             '删除或更改版权或许可声明。',
           ] },
         ],
@@ -405,7 +410,7 @@ export const docs: Docs = {
       {
         id: 'ai',
         title: '5. AI 生成的内容',
-        blocks: ['本软件使用在您的电脑上运行的生成式 AI。其对话、纠正和语音均为自动生成，可能不准确或出人意料。本软件是学习辅助工具，不能替代合格的教师、官方考试或专业翻译。'],
+        blocks: ['本软件使用在您的电脑上运行的生成式 AI。其对话、纠正和语音均为自动生成，可能不准确或出人意料。本软件是学习辅助工具，不能替代合格的教师、官方考试或专业翻译，其生成的任何内容均不构成专业、法律或财务建议。'],
       },
       {
         id: 'early-access',
@@ -420,7 +425,7 @@ export const docs: Docs = {
       {
         id: 'third-party',
         title: '8. 第三方组件',
-        blocks: ['本软件可能包含第三方组件，这些组件依据其自身条款获得许可。这些条款适用于相应组件。'],
+        blocks: ['本软件包含第三方组件，例如其 AI 模型、语音引擎和词典，这些组件依据其自身条款获得许可。这些条款适用于相应组件，且本条款中的任何内容均不限制您在这些条款下的权利。包含许可和所需声明的完整列表见 https://penkosoftware.org/vox/credits/。'],
       },
       {
         id: 'warranty',
@@ -495,6 +500,36 @@ export const docs: Docs = {
     ],
   },
 
+  credits: {
+    title: '致谢与许可',
+    intro: 'Penko Vox: Japanese 建立在出色的开源软件、AI 模型和数据之上。这些组件保留各自的许可，您依据这些许可享有的权利不受我们条款的限制。',
+    component: '组件',
+    licence: '许可',
+    purposes: {
+      qwen: 'AI 导师背后的语言模型',
+      llamacpp: '在您的电脑上运行语言模型',
+      kotobawhisper: '日语语音识别模型',
+      whispercpp: '语音识别引擎',
+      reazonspeech: '日语语音识别模型',
+      sherpaonnx: '语音识别和合成运行时',
+      silerovad: '检测您何时开始和停止说话',
+      kokoro: '日语声音 (语音合成)',
+      kuromoji: '将日语句子切分为单词',
+      jmdict: '日语词典数据',
+      wanakana: '在罗马字和假名之间转换',
+      tsfsrs: '安排学习中心的复习 (FSRS)',
+      threejs: '3D 图形',
+      react: '用户界面',
+      electron: '桌面应用框架',
+      chromium: 'Electron 附带的网页引擎',
+      steamworksjs: 'Steam 集成 (成就、云存档)',
+    },
+    jmdictTitle: '词典数据',
+    jmdictNotice: 'Penko Vox: Japanese 使用 JMdict 词典文件。这些文件是 Electronic Dictionary Research and Development Group (EDRDG) 的财产，并依据该组织的许可 (Creative Commons Attribution-ShareAlike 4.0) 使用：https://www.edrdg.org/edrdg/licence.html',
+    chromiumNote: 'Chromium 包含许多开源组件；它们的许可列在应用安装文件夹中的 LICENSES.chromium.html 文件里。',
+    fullTexts: '完整的许可文本随应用一同提供。如有疑问：contact@penkosoftware.org。',
+  },
+
   press: {
     title: '媒体资料包',
     intro: '撰写有关 Penko Vox: Japanese 的报道所需的一切。欢迎在应用的报道中使用这些文字和图片。',
@@ -505,7 +540,8 @@ export const docs: Docs = {
       { label: '正式版发布', value: '计划于 2027 年 8 月' },
       { label: '平台', value: 'Windows、Linux、SteamOS (Steam Deck)' },
       { label: '价格', value: '因地区而异；请见 Steam' },
-      { label: '界面语言', value: '英语、法语、德语、日语、韩语、简体中文、西班牙语 (拉丁美洲)、越南语' },
+      { label: '界面和字幕语言', value: '英语、法语、德语、日语、韩语、简体中文、西班牙语 (拉丁美洲)、越南语' },
+      { label: '语音', value: '日语' },
     ],
     shortTitle: '简短介绍',
     short: 'Penko Vox: Japanese 是一位私密的离线 AI 导师，通过对话教授日语。您可以在涵盖 JLPT N5–N1 的 38 个场景中畅谈，进行自然的语音通话，并探索 Kotoba Islands 角色扮演游戏，一切都在您自己的电脑上本地运行。',

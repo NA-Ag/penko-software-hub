@@ -5,6 +5,7 @@ import { cleanup, render, screen, within } from '@testing-library/react';
 import { AppProvider } from '../AppContext';
 import SitePage, { PageId } from '../pages/SitePage';
 import { docs } from '../i18n/docs/en';
+import { VOX_CREDITS } from '../constants';
 import { loadLocale } from '../i18n';
 import { loadDocs } from '../i18n/docs';
 import userEvent from '@testing-library/user-event';
@@ -116,6 +117,16 @@ describe('studio pages', () => {
     // Picking a language points at this same page in that language
     expect(screen.getAllByRole('link', { name: '日本語' })[0].getAttribute('href')).toBe('../../../ja/vox/guide/');
     expect(screen.getAllByRole('link', { name: 'English' })[0].getAttribute('href')).toBe('../../../vox/guide/');
+  });
+
+  it('credits page lists every component with its licence and the required JMdict notice', () => {
+    renderPage('vox-credits', '../../');
+    for (const item of VOX_CREDITS) {
+      const row = screen.getByRole('link', { name: item.name }).closest('tr')!;
+      expect(within(row).getByText(item.licence)).toBeTruthy();
+    }
+    expect(screen.getByText(/property of the Electronic Dictionary Research and Development Group/)).toBeTruthy();
+    expect(screen.getByRole('link', { name: 'https://www.edrdg.org/edrdg/licence.html' })).toBeTruthy();
   });
 
   it('press kit offers the logo downloads', () => {

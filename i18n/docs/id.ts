@@ -31,6 +31,10 @@ export const docs: Docs = {
       title: 'Panduan Memulai | Penko Vox: Japanese',
       description: 'Cara menyiapkan dan memaksimalkan Penko Vox: Japanese: persyaratan, pengaturan mikrofon, percakapan, Kotoba Islands, Study Hub, dan pemecahan masalah.',
     },
+    voxCredits: {
+      title: 'Kredit dan lisensi | Penko Vox: Japanese',
+      description: 'Perangkat lunak pihak ketiga, model AI, dan data yang dipakai di Penko Vox: Japanese, beserta lisensi dan pemberitahuan yang diwajibkan.',
+    },
     voxPress: {
       title: 'Press Kit | Penko Vox: Japanese',
       description: 'Press kit Penko Vox: Japanese: lembar fakta, deskripsi, logo, dan kontak.',
@@ -46,6 +50,7 @@ export const docs: Docs = {
     terms: 'Ketentuan (EULA)',
     guide: 'Panduan',
     press: 'Press kit',
+    credits: 'Kredit',
     comingSoon: 'Segera hadir',
     learnMore: 'Pelajari lebih lanjut',
   },
@@ -89,7 +94,7 @@ export const docs: Docs = {
       { title: 'Kotoba Islands', body: 'RPG tempat kamu menjelajah dan mengobrol bebas dengan setiap penduduk, memakai bahasa Jepang yang sedang kamu pelajari.' },
       { title: 'Panggilan suara natural', body: 'Berbicaralah dengan lantang dengan giliran bicara yang natural. Kamu bisa menyela, dan pembatalan gema memungkinkan kamu memakai speaker.' },
       { title: 'Study Hub dan kamus', body: 'Kata yang kamu temui masuk ke ulasan yang dijadwalkan dengan pengulangan berjarak FSRS, dan kamus offline memungkinkan kamu mengetuk kata apa pun untuk mencarinya.' },
-      { title: 'Latihan goresan kana', body: 'Berlatih menulis hiragana dan katakana dengan umpan balik visual secara real-time.' },
+      { title: 'Latihan menulis', body: 'Berlatih menulis hiragana, katakana, kanji dasar, dan kata dengan umpan balik visual secara real-time.' },
       { title: 'Menguasai lewat pemakaian', body: 'Kemajuanmu bertambah saat kamu memakai kata atau pola tata bahasa dengan benar dalam percakapan nyata, bukan dengan membolak-balik kartu hafalan.' },
       { title: 'Privat dan offline', body: 'Suara, pencarian kata, dan percakapanmu tidak pernah meninggalkan komputermu. Tanpa akun, tanpa cloud, tanpa telemetri.' },
       { title: 'Milikmu selamanya', body: 'Sekali beli. Tanpa langganan, tanpa batas token, dan tanpa tingkatan pemakaian.' },
@@ -101,7 +106,7 @@ export const docs: Docs = {
       plan: 'Kami merencanakan rilis penuh pada Agustus 2027. Hingga saat itu, pembaruan akan menambah konten dan peningkatan secara berkala.',
       fullVersionTitle: 'Direncanakan untuk rilis penuh',
       fullVersion: [
-        'Pustaka skenario percakapan yang jauh lebih besar, dengan target 100+',
+        'Pustaka skenario percakapan yang jauh lebih besar',
         'Lebih banyak jalur belajar JLPT yang terspesialisasi',
         'Lebih banyak pilihan suara untuk sintesis ucapan',
         'Analitik kemajuan yang lebih mendalam dan lebih banyak fitur Steam',
@@ -158,7 +163,7 @@ export const docs: Docs = {
     },
     languages: {
       title: 'Bahasa',
-      intro: 'Kamu belajar bahasa Jepang; antarmuka dan penjelasan di dalam aplikasi tersedia dalam bahasa-bahasa berikut.',
+      intro: 'Antarmuka dan subtitle tersedia dalam 8 bahasa. Tutornya berbicara bahasa Jepang, bahasa yang sedang kamu pelajari.',
       interface: 'Antarmuka',
       audio: 'Audio',
       subtitles: 'Subjudul',
@@ -174,7 +179,7 @@ export const docs: Docs = {
       { q: 'Mengapa butuh RAM 16 GB dan CPU AVX2?', a: 'Penko Vox menjalankan model bahasa AI lengkap secara lokal, bukan di server. Itu membutuhkan memori dan CPU dengan instruksi AVX2. Inilah yang menjaga datamu tetap privat dan aplikasi bisa dipakai secara offline.' },
       { q: 'Apakah bisa berjalan di Steam Deck?', a: 'Ya. Aplikasi ini sudah diuji di Steam Deck, dan dukungan controller hadir di versi 2.1 sebagai fitur eksperimental.' },
       { q: 'Apakah ada versi Mac?', a: 'Belum saat ini. Penko Vox tersedia untuk Windows dan Linux, termasuk SteamOS.' },
-      { q: 'Level bahasa Jepang apa yang dibutuhkan?', a: 'Skenario percakapan berkisar dari JLPT N5 (pemula) hingga N1 (mahir), dan latihan kana membantu jika kamu baru mulai belajar membaca.' },
+      { q: 'Level bahasa Jepang apa yang dibutuhkan?', a: 'Skenario percakapan berkisar dari JLPT N5 (pemula) hingga N1 (mahir), dan latihan menulis membantu jika kamu baru mulai belajar membaca.' },
       { q: 'Apakah ini berlangganan?', a: 'Tidak. Ini pembelian sekali bayar di Steam, tanpa langganan, batas token, atau tingkatan pemakaian.' },
       { q: 'Apakah AI-nya selalu benar?', a: 'Tidak. Ia mitra latihan yang andal, tetapi bisa melakukan kesalahan. Untuk ujian atau terjemahan penting, periksa kembali dengan guru atau referensi tepercaya.' },
       { q: 'Apakah Penko Vox open source?', a: 'Tidak. Penko Vox adalah aplikasi berbayar closed source. Hasil penjualannya mendanai Penko Plaza, aplikasi gratis dan open source kami.' },
@@ -259,12 +264,12 @@ export const docs: Docs = {
       },
       {
         id: 'study-hub',
-        title: 'Study Hub, kamus, dan latihan kana',
+        title: 'Study Hub, kamus, dan latihan menulis',
         blocks: [
           { ul: [
             'Study Hub: kata yang kamu temui dalam percakapan menjadi ulasan, dijadwalkan dengan pengulangan berjarak FSRS sehingga kamu melihatnya tepat sebelum lupa. Beberapa menit sehari paling efektif.',
             'Kamus: ketuk kata apa pun untuk mencarinya, sepenuhnya offline.',
-            'Latihan kana: belajar menulis hiragana dan katakana goresan demi goresan, dengan umpan balik real-time.',
+            'Latihan menulis: belajar menulis hiragana, katakana, kanji dasar, dan kata goresan demi goresan, dengan umpan balik real-time.',
           ] },
         ],
       },
@@ -353,7 +358,7 @@ export const docs: Docs = {
       {
         id: 'website',
         title: 'Situs web ini',
-        blocks: ['Situs web kami di-hosting di GitHub Pages. Seperti kebanyakan penyedia hosting web, GitHub dapat mencatat informasi teknis seperti alamat IP-mu untuk menjaga layanan tetap aman dan berjalan (lihat Pernyataan Privasi GitHub). Kami tidak memiliki akses ke log tersebut dan tidak menggunakannya. Situs ini menyimpan bahasa dan tema pilihanmu di perangkatmu, dan tidak memiliki cookie, analitik, atau pelacak. Tangkapan layar disajikan dari situs kami sendiri; trailer baru diputar dari server Steam setelah kamu menekan putar.'],
+        blocks: ['Situs web kami di-hosting di GitHub Pages. Seperti kebanyakan penyedia hosting web, GitHub dapat mencatat informasi teknis seperti alamat IP-mu untuk menjaga layanan tetap aman dan berjalan (lihat Pernyataan Privasi GitHub). Kami tidak memiliki akses ke log tersebut dan tidak menggunakannya. Situs ini menyimpan bahasa dan tema pilihanmu di perangkatmu, dan tidak memiliki cookie, analitik, atau pelacak. Tangkapan layar disajikan dari situs kami sendiri; trailer baru diputar dari server Steam setelah kamu menekan putar. Tautan ke Steam menyertakan tag kampanye agar Steam dapat menunjukkan kepada kami halaman kami yang mana yang mengarahkan sebuah kunjungan; tag ini tidak berisi informasi apa pun tentangmu.'],
       },
       {
         id: 'children',
@@ -375,14 +380,14 @@ export const docs: Docs = {
       {
         id: 'agreement',
         title: '1. Perjanjian',
-        blocks: ['Ketentuan ini merupakan perjanjian antara kamu dan Penko Software ("kami") mengenai Penko Vox: Japanese ("Perangkat Lunak"). Dengan menginstal atau memakai Perangkat Lunak, kamu menerimanya. Pembelianmu lewat Steam juga diatur oleh Perjanjian Pelanggan Steam.'],
+        blocks: ['Ketentuan ini merupakan perjanjian antara kamu dan Penko Software ("kami") mengenai Penko Vox: Japanese ("Perangkat Lunak"). Dengan menginstal atau memakai Perangkat Lunak, kamu menerimanya. Pembelianmu lewat Steam juga diatur oleh Perjanjian Pelanggan Steam, dan pengembalian dana mengikuti kebijakan pengembalian dana Steam.'],
       },
       {
         id: 'licence',
         title: '2. Lisensimu',
         blocks: [
           'Kami memberimu lisensi pribadi, non-eksklusif, dan tidak dapat dipindahtangankan untuk menginstal dan memakai Perangkat Lunak di perangkat yang kamu miliki atau kendalikan, untuk pembelajaranmu sendiri, sebagaimana diizinkan oleh Steam (termasuk Berbagi Keluarga Steam).',
-          'Memakai Perangkat Lunak untuk mengajar kelas atau di seluruh perangkat suatu organisasi memerlukan lisensi institusi. Hubungi kami di contact@penkosoftware.org.',
+          'Siswa dan guru dapat memakai lisensi pribadi mereka sendiri untuk studi dan tugas belajar mereka. Lisensi institusi diperlukan ketika suatu organisasi menyediakan Perangkat Lunak kepada siswa atau stafnya, atau menginstalnya di perangkat miliknya sendiri. Hubungi kami di contact@penkosoftware.org.',
         ],
       },
       {
@@ -392,7 +397,7 @@ export const docs: Docs = {
           { ul: [
             'Menyalin, menjual, menyewakan, atau mendistribusikan Perangkat Lunak, kecuali lewat fitur yang disediakan Steam.',
             'Melakukan reverse engineering, dekompilasi, atau disassembly terhadap Perangkat Lunak, kecuali jika hukum secara tegas mengizinkannya.',
-            'Mengekstrak model AI, suara, atau aset lain milik Perangkat Lunak untuk dipakai secara terpisah.',
+            'Mengekstrak konten milik Perangkat Lunak itu sendiri (seperti seni, skenario, karakter, dan aset lain buatan Penko Software) untuk dipakai secara terpisah. Komponen pihak ketiga tetap tersedia berdasarkan lisensinya masing-masing (bagian 8).',
             'Menghapus atau mengubah pemberitahuan hak cipta atau lisensi.',
           ] },
         ],
@@ -405,7 +410,7 @@ export const docs: Docs = {
       {
         id: 'ai',
         title: '5. Konten buatan AI',
-        blocks: ['Perangkat Lunak menggunakan AI generatif yang berjalan di komputermu. Dialog, koreksi, dan ucapannya dihasilkan secara otomatis dan mungkin tidak akurat atau tidak terduga. Perangkat Lunak adalah alat bantu belajar, bukan pengganti guru yang berkualifikasi, ujian resmi, atau terjemahan profesional.'],
+        blocks: ['Perangkat Lunak menggunakan AI generatif yang berjalan di komputermu. Dialog, koreksi, dan ucapannya dihasilkan secara otomatis dan mungkin tidak akurat atau tidak terduga. Perangkat Lunak adalah alat bantu belajar, bukan pengganti guru yang berkualifikasi, ujian resmi, atau terjemahan profesional, dan tidak ada yang dihasilkannya merupakan nasihat profesional, hukum, atau keuangan.'],
       },
       {
         id: 'early-access',
@@ -420,7 +425,7 @@ export const docs: Docs = {
       {
         id: 'third-party',
         title: '8. Komponen pihak ketiga',
-        blocks: ['Perangkat Lunak dapat menyertakan komponen pihak ketiga, yang dilisensikan berdasarkan ketentuannya masing-masing. Ketentuan tersebut berlaku untuk komponen-komponen itu.'],
+        blocks: ['Perangkat Lunak menyertakan komponen pihak ketiga, seperti model AI, mesin ucapan, dan kamusnya, yang dilisensikan berdasarkan ketentuannya masing-masing. Ketentuan tersebut berlaku untuk komponen-komponen itu, dan tidak ada ketentuan di sini yang membatasi hakmu berdasarkan ketentuan tersebut. Daftar lengkap beserta lisensi dan pemberitahuan yang diwajibkan ada di https://penkosoftware.org/vox/credits/.'],
       },
       {
         id: 'warranty',
@@ -495,6 +500,36 @@ export const docs: Docs = {
     ],
   },
 
+  credits: {
+    title: 'Kredit dan lisensi',
+    intro: 'Penko Vox: Japanese dibangun di atas perangkat lunak open source, model AI, dan data yang luar biasa. Komponen-komponen ini tetap memakai lisensinya masing-masing, dan hakmu berdasarkan lisensi tersebut tidak dibatasi oleh ketentuan kami.',
+    component: 'Komponen',
+    licence: 'Lisensi',
+    purposes: {
+      qwen: 'Model bahasa di balik tutor AI',
+      llamacpp: 'Menjalankan model bahasa di komputermu',
+      kotobawhisper: 'Model pengenalan ucapan bahasa Jepang',
+      whispercpp: 'Mesin pengenalan ucapan',
+      reazonspeech: 'Model pengenalan ucapan bahasa Jepang',
+      sherpaonnx: 'Runtime pengenalan dan sintesis ucapan',
+      silerovad: 'Mendeteksi kapan kamu mulai dan berhenti berbicara',
+      kokoro: 'Suara bahasa Jepang (sintesis ucapan)',
+      kuromoji: 'Memecah kalimat bahasa Jepang menjadi kata',
+      jmdict: 'Data kamus bahasa Jepang',
+      wanakana: 'Mengonversi antara romaji dan kana',
+      tsfsrs: 'Menjadwalkan ulasan Study Hub (FSRS)',
+      threejs: 'Grafik 3D',
+      react: 'Antarmuka pengguna',
+      electron: 'Framework aplikasi desktop',
+      chromium: 'Mesin web yang disertakan dengan Electron',
+      steamworksjs: 'Integrasi Steam (pencapaian, simpanan cloud)',
+    },
+    jmdictTitle: 'Data kamus',
+    jmdictNotice: 'Penko Vox: Japanese memakai berkas kamus JMdict. Berkas-berkas ini adalah milik Electronic Dictionary Research and Development Group (EDRDG), dan dipakai sesuai dengan lisensi grup tersebut (Creative Commons Attribution-ShareAlike 4.0): https://www.edrdg.org/edrdg/licence.html',
+    chromiumNote: 'Chromium menyertakan banyak komponen open source; lisensinya tercantum dalam berkas LICENSES.chromium.html di folder instalasi aplikasi.',
+    fullTexts: 'Teks lisensi lengkap disertakan bersama aplikasi. Pertanyaan: contact@penkosoftware.org.',
+  },
+
   press: {
     title: 'Press kit',
     intro: 'Semua yang kamu butuhkan untuk menulis tentang Penko Vox: Japanese. Silakan gunakan teks dan gambar ini dalam liputan tentang aplikasi ini.',
@@ -505,7 +540,8 @@ export const docs: Docs = {
       { label: 'Rilis penuh', value: 'Direncanakan Agustus 2027' },
       { label: 'Platform', value: 'Windows, Linux, SteamOS (Steam Deck)' },
       { label: 'Harga', value: 'Berbeda di tiap wilayah; lihat Steam' },
-      { label: 'Bahasa antarmuka', value: 'Inggris, Prancis, Jerman, Jepang, Korea, Mandarin Sederhana, Spanyol (Amerika Latin), Vietnam' },
+      { label: 'Bahasa antarmuka dan subtitle', value: 'Inggris, Prancis, Jerman, Jepang, Korea, Mandarin Sederhana, Spanyol (Amerika Latin), Vietnam' },
+      { label: 'Suara', value: 'Jepang' },
     ],
     shortTitle: 'Deskripsi singkat',
     short: 'Penko Vox: Japanese adalah tutor AI privat dan offline yang mengajarkan bahasa Jepang lewat percakapan. Bicaralah melalui 38 skenario di JLPT N5–N1, lakukan panggilan suara yang natural, dan jelajahi RPG Kotoba Islands, semuanya berjalan secara lokal di komputermu sendiri.',

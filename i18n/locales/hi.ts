@@ -80,7 +80,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 सीनारियो · N5–N1',
   voxJapaneseFeature2: '100% ऑफ़लाइन AI ट्यूटर',
   voxJapaneseFeature3: 'वॉइस कॉल',
-  voxJapaneseFeature4: 'काना स्ट्रोक प्रैक्टिस',
+  voxJapaneseFeature4: 'काना और कांजी लेखन',
   voxJapaneseFeature5: 'Kotoba Islands RPG',
   voxFullRelease: 'पूर्ण रिलीज़: अगस्त 2027',
   voxJapaneseCta: 'Steam पर पाएं',
@@ -162,7 +162,7 @@ export const ui: Translation = {
   footerByline: 'Penko Software की ओर से',
   footerContact: 'संपर्क करें',
   schoolsTitle: 'स्कूलों और विश्वविद्यालयों के लिए',
-  schoolsBody: 'Penko Vox: Japanese क्लासरूम पायलट और वार्षिक संस्थागत लाइसेंस के लिए उपलब्ध है। हमारे मुफ़्त ऐप कोई डेटा इकट्ठा नहीं करते, इसलिए वे भी क्लासरूम के लिए तैयार हैं।',
+  schoolsBody: 'Penko Vox: Japanese क्लासरूम पायलट और वार्षिक संस्थागत लाइसेंस के लिए उपलब्ध है। यह पूरी तरह हर कंप्यूटर पर चलता है और कोई निजी डेटा इकट्ठा नहीं करता, इसलिए क्लासरूम के लिए तैयार है।',
   schoolsCta: 'हमसे संपर्क करें',
 
   // Studio structure: free Plaza apps funded by paid apps

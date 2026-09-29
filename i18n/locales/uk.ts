@@ -69,7 +69,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 сценаріїв · N5–N1',
   voxJapaneseFeature2: 'ШІ-репетитор 100% офлайн',
   voxJapaneseFeature3: 'Голосові дзвінки',
-  voxJapaneseFeature4: 'Практика написання кани',
+  voxJapaneseFeature4: 'Письмо: кана й кандзі',
   voxJapaneseFeature5: 'RPG Kotoba Islands',
   voxFullRelease: 'Повний реліз: серпень 2027',
   voxJapaneseCta: 'Купити в Steam',
@@ -143,7 +143,7 @@ export const ui: Translation = {
   footerByline: 'від Penko Software',
   footerContact: 'Зв\'язатися',
   schoolsTitle: 'Для шкіл та університетів',
-  schoolsBody: 'Penko Vox: Japanese доступна для пілотних проєктів у класі та річних інституційних ліцензій. Наші безкоштовні застосунки не збирають даних, тому їх також можна використовувати у навчанні.',
+  schoolsBody: 'Penko Vox: Japanese доступна для пілотних проєктів у класі та річних інституційних ліцензій. Застосунок працює повністю на кожному комп\'ютері й не збирає персональних даних, тож його можна використовувати в класі.',
   schoolsCta: 'Зв\'яжіться з нами',
 
   // Studio structure: free Plaza apps funded by paid apps

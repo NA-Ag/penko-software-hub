@@ -31,6 +31,10 @@ export const docs: Docs = {
       title: 'Başlangıç Rehberi | Penko Vox: Japanese',
       description: 'Penko Vox: Japanese nasıl kurulur ve en iyi şekilde kullanılır: gereksinimler, mikrofon kurulumu, konuşmalar, Kotoba Islands, Study Hub ve sorun giderme.',
     },
+    voxCredits: {
+      title: 'Katkıda Bulunanlar ve Lisanslar | Penko Vox: Japanese',
+      description: 'Penko Vox: Japanese\'ta kullanılan üçüncü taraf yazılımlar, yapay zeka modelleri ve veriler; lisansları ve gerekli bildirimleriyle birlikte.',
+    },
     voxPress: {
       title: 'Basın Kiti | Penko Vox: Japanese',
       description: 'Penko Vox: Japanese basın kiti: bilgi sayfası, açıklamalar, logolar ve iletişim.',
@@ -46,6 +50,7 @@ export const docs: Docs = {
     terms: 'Koşullar (EULA)',
     guide: 'Rehber',
     press: 'Basın kiti',
+    credits: 'Katkıda bulunanlar',
     comingSoon: 'Yakında',
     learnMore: 'Daha fazla bilgi',
   },
@@ -89,7 +94,7 @@ export const docs: Docs = {
       { title: 'Kotoba Islands', body: 'Öğrendiğiniz Japoncayı kullanarak adaları keşfettiğiniz ve her sakinle özgürce konuştuğunuz bir RPG.' },
       { title: 'Doğal sesli görüşmeler', body: 'Doğal bir konuşma sırasıyla yüksek sesle konuşun. Araya girebilirsiniz ve yankı engelleme sayesinde hoparlör kullanabilirsiniz.' },
       { title: 'Çalışma Merkezi ve sözlük', body: 'Karşılaştığınız kelimeler FSRS aralıklı tekrar ile planlanan tekrarlara girer; çevrimdışı sözlükte herhangi bir kelimeye dokunarak anlamına bakabilirsiniz.' },
-      { title: 'Kana yazım pratiği', body: 'Hiragana ve katakana yazmayı gerçek zamanlı görsel geri bildirimle çalışın.' },
+      { title: 'Yazma pratiği', body: 'Hiragana, katakana, başlangıç düzeyi kanji ve kelime yazmayı gerçek zamanlı görsel geri bildirimle çalışın.' },
       { title: 'Kullanarak ustalaşın', body: 'İlerlemeniz, bir kelimeyi veya dilbilgisi kalıbını gerçek bir sohbette doğru kullandığınızda artar; bilgi kartlarını çevirerek değil.' },
       { title: 'Özel ve çevrimdışı', body: 'Sesiniz, sözlük aramalarınız ve sohbetleriniz bilgisayarınızdan asla çıkmaz. Hesap yok, bulut yok, telemetri yok.' },
       { title: 'Ömür boyu sizin', body: 'Tek seferlik satın alma. Abonelik yok, jeton sınırı yok, kullanım katmanı yok.' },
@@ -101,7 +106,7 @@ export const docs: Docs = {
       plan: 'Tam sürümü Ağustos 2027 için planlıyoruz. O zamana kadar güncellemeler düzenli olarak yeni içerik ve iyileştirmeler getirecek.',
       fullVersionTitle: 'Tam sürüm için planlananlar',
       fullVersion: [
-        'Çok daha geniş bir konuşma senaryosu kitaplığı, hedef 100\'den fazla',
+        'Çok daha geniş bir konuşma senaryosu kitaplığı',
         'Daha fazla özelleşmiş JLPT öğrenme yolu',
         'Konuşma sentezi için daha fazla ses seçeneği',
         'Daha ayrıntılı ilerleme analizleri ve daha fazla Steam özelliği',
@@ -158,7 +163,7 @@ export const docs: Docs = {
     },
     languages: {
       title: 'Diller',
-      intro: 'Siz Japonca öğreniyorsunuz; uygulamanın arayüzü ve açıklamaları şu dillerde sunuluyor.',
+      intro: 'Arayüz ve altyazılar 8 dilde sunuluyor. Eğitmen, öğrendiğiniz dil olan Japoncayı konuşur.',
       interface: 'Arayüz',
       audio: 'Ses',
       subtitles: 'Altyazı',
@@ -174,7 +179,7 @@ export const docs: Docs = {
       { q: 'Neden 16 GB RAM ve AVX2 destekli bir CPU gerekiyor?', a: 'Penko Vox, eksiksiz bir yapay zeka dil modelini bir sunucuda değil, yerel olarak çalıştırır. Bunun için bellek ve AVX2 komutlarına sahip bir CPU gerekir. Verilerinizi gizli tutan ve uygulamayı çevrimdışı kullanılabilir kılan da budur.' },
       { q: 'Steam Deck\'te çalışır mı?', a: 'Evet. Steam Deck\'te test edildi ve kontrolcü desteği, deneysel bir özellik olarak 2.1 sürümüyle geldi.' },
       { q: 'Mac sürümü var mı?', a: 'Şu an yok. Penko Vox, SteamOS dahil Windows ve Linux için mevcuttur.' },
-      { q: 'Ne seviyede Japoncaya ihtiyacım var?', a: 'Konuşma senaryoları JLPT N5 (başlangıç) seviyesinden N1 (ileri) seviyesine kadar uzanır; okumaya yeni başlıyorsanız kana pratiği yardımcı olur.' },
+      { q: 'Ne seviyede Japoncaya ihtiyacım var?', a: 'Konuşma senaryoları JLPT N5 (başlangıç) seviyesinden N1 (ileri) seviyesine kadar uzanır; okumaya yeni başlıyorsanız yazma pratiği yardımcı olur.' },
       { q: 'Abonelik mi?', a: 'Hayır. Steam\'de tek seferlik bir satın almadır; abonelik, jeton sınırı veya kullanım katmanı yoktur.' },
       { q: 'Yapay zeka her zaman doğru mudur?', a: 'Hayır. Güçlü bir pratik ortağıdır ama hata yapabilir. Sınavlar veya önemli çeviriler için bir öğretmenle ya da güvenilir bir kaynakla mutlaka kontrol edin.' },
       { q: 'Penko Vox açık kaynak mı?', a: 'Hayır. Penko Vox kapalı kaynaklı, ücretli bir uygulamadır. Satışları, ücretsiz ve açık kaynaklı uygulamalarımız olan Penko Plaza\'yı finanse eder.' },
@@ -259,12 +264,12 @@ export const docs: Docs = {
       },
       {
         id: 'study-hub',
-        title: 'Çalışma Merkezi, sözlük ve kana pratiği',
+        title: 'Çalışma Merkezi, sözlük ve yazma pratiği',
         blocks: [
           { ul: [
             'Çalışma Merkezi: sohbetlerde karşılaştığınız kelimeler tekrarlara dönüşür ve FSRS aralıklı tekrar ile tam unutmak üzereyken karşınıza çıkacak şekilde planlanır. Günde birkaç dakika en iyi sonucu verir.',
             'Sözlük: herhangi bir kelimeye dokunup anlamına bakın, tamamen çevrimdışı.',
-            'Kana pratiği: hiragana ve katakana yazmayı çizgi çizgi, gerçek zamanlı geri bildirimle öğrenin.',
+            'Yazma pratiği: hiragana, katakana, başlangıç düzeyi kanji ve kelime yazmayı çizgi çizgi, gerçek zamanlı geri bildirimle öğrenin.',
           ] },
         ],
       },
@@ -353,7 +358,7 @@ export const docs: Docs = {
       {
         id: 'website',
         title: 'Bu web sitesi',
-        blocks: ['Web sitemiz GitHub Pages üzerinde barındırılır. Çoğu web barındırıcısı gibi GitHub da hizmeti güvenli ve çalışır durumda tutmak için IP adresiniz gibi teknik bilgileri kaydedebilir (GitHub Gizlilik Beyanı\'na bakın). Bu kayıtlara erişimimiz yoktur ve onları kullanmayız. Site, seçtiğiniz dili ve temayı cihazınızda saklar; çerez, analitik veya izleyici yoktur. Ekran görüntüleri kendi sitemizden sunulur; fragman yalnızca oynat düğmesine bastıktan sonra Steam sunucularından yayınlanır.'],
+        blocks: ['Web sitemiz GitHub Pages üzerinde barındırılır. Çoğu web barındırıcısı gibi GitHub da hizmeti güvenli ve çalışır durumda tutmak için IP adresiniz gibi teknik bilgileri kaydedebilir (GitHub Gizlilik Beyanı\'na bakın). Bu kayıtlara erişimimiz yoktur ve onları kullanmayız. Site, seçtiğiniz dili ve temayı cihazınızda saklar; çerez, analitik veya izleyici yoktur. Ekran görüntüleri kendi sitemizden sunulur; fragman yalnızca oynat düğmesine bastıktan sonra Steam sunucularından yayınlanır. Steam bağlantıları, Steam\'in bir ziyaretin hangi sayfamızdan geldiğini bize gösterebilmesi için bir kampanya etiketi içerir; bu etiket sizinle ilgili hiçbir bilgi içermez.'],
       },
       {
         id: 'children',
@@ -375,14 +380,14 @@ export const docs: Docs = {
       {
         id: 'agreement',
         title: '1. Sözleşme',
-        blocks: ['Bu koşullar, sizinle Penko Software ("biz") arasında Penko Vox: Japanese ("Yazılım") hakkında yapılmış bir sözleşmedir. Yazılımı kurarak veya kullanarak bu koşulları kabul etmiş olursunuz. Steam üzerinden yaptığınız satın alma ayrıca Steam Abone Sözleşmesi\'ne tabidir.'],
+        blocks: ['Bu koşullar, sizinle Penko Software ("biz") arasında Penko Vox: Japanese ("Yazılım") hakkında yapılmış bir sözleşmedir. Yazılımı kurarak veya kullanarak bu koşulları kabul etmiş olursunuz. Steam üzerinden yaptığınız satın alma ayrıca Steam Abone Sözleşmesi\'ne tabidir ve geri ödemeler Steam\'in geri ödeme politikasına tabidir.'],
       },
       {
         id: 'licence',
         title: '2. Lisansınız',
         blocks: [
           'Size, Yazılım\'ı sahip olduğunuz veya kontrol ettiğiniz cihazlara kurmak ve kendi öğreniminiz için kullanmak üzere, Steam\'in izin verdiği ölçüde (Steam Aile Paylaşımı dahil) kişisel, münhasır olmayan ve devredilemez bir lisans veriyoruz.',
-          'Yazılım\'ı ders vermek için veya bir kurumun cihazlarında kullanmak, kurumsal lisans gerektirir. Bize contact@penkosoftware.org adresinden ulaşın.',
+          'Öğrenciler ve öğretmenler, kendi kişisel lisanslarını eğitimleri ve ders çalışmaları için kullanabilir. Bir kurum Yazılım\'ı öğrencilerine veya personeline sunduğunda ya da kendi cihazlarına kurduğunda kurumsal lisans gerekir. Bize contact@penkosoftware.org adresinden ulaşın.',
         ],
       },
       {
@@ -392,7 +397,7 @@ export const docs: Docs = {
           { ul: [
             'Steam\'in sağladığı özellikler dışında Yazılım\'ı kopyalamak, satmak, kiralamak veya dağıtmak.',
             'Kanunun açıkça izin verdiği durumlar dışında Yazılım\'ı tersine mühendislikle incelemek, kaynak koda dönüştürmek veya parçalarına ayırmak.',
-            'Yazılım\'ın yapay zeka modellerini, seslerini veya diğer varlıklarını ayrı olarak kullanmak üzere çıkarmak.',
+            'Yazılım\'ın kendi içeriğini (Penko Software tarafından oluşturulan sanat çalışmaları, senaryolar, karakterler ve diğer varlıklar gibi) ayrı olarak kullanmak üzere çıkarmak. Üçüncü taraf bileşenler, kendi lisansları altında kullanılabilir olmaya devam eder (madde 8).',
             'Telif hakkı veya lisans bildirimlerini kaldırmak ya da değiştirmek.',
           ] },
         ],
@@ -405,7 +410,7 @@ export const docs: Docs = {
       {
         id: 'ai',
         title: '5. Yapay zeka tarafından üretilen içerik',
-        blocks: ['Yazılım, bilgisayarınızda çalışan üretken yapay zeka kullanır. Diyalogları, düzeltmeleri ve konuşması otomatik olarak üretilir ve hatalı ya da beklenmedik olabilir. Yazılım bir öğrenme yardımcısıdır; nitelikli bir öğretmenin, resmi bir sınavın veya profesyonel bir çevirinin yerini tutmaz.'],
+        blocks: ['Yazılım, bilgisayarınızda çalışan üretken yapay zeka kullanır. Diyalogları, düzeltmeleri ve konuşması otomatik olarak üretilir ve hatalı ya da beklenmedik olabilir. Yazılım bir öğrenme yardımcısıdır; nitelikli bir öğretmenin, resmi bir sınavın veya profesyonel bir çevirinin yerini tutmaz ve ürettiği hiçbir şey profesyonel, hukuki veya finansal tavsiye niteliği taşımaz.'],
       },
       {
         id: 'early-access',
@@ -420,7 +425,7 @@ export const docs: Docs = {
       {
         id: 'third-party',
         title: '8. Üçüncü taraf bileşenler',
-        blocks: ['Yazılım, kendi koşulları altında lisanslanan üçüncü taraf bileşenler içerebilir. Bu koşullar, ilgili bileşenler için geçerlidir.'],
+        blocks: ['Yazılım, yapay zeka modelleri, konuşma motorları ve sözlük gibi, kendi koşulları altında lisanslanan üçüncü taraf bileşenler içerir. Bu koşullar ilgili bileşenler için geçerlidir ve bu koşulların hiçbir hükmü, onlar kapsamındaki haklarınızı sınırlamaz. Lisansları ve gerekli bildirimleriyle birlikte tam liste https://penkosoftware.org/vox/credits/ adresindedir.'],
       },
       {
         id: 'warranty',
@@ -495,6 +500,36 @@ export const docs: Docs = {
     ],
   },
 
+  credits: {
+    title: 'Katkıda bulunanlar ve lisanslar',
+    intro: 'Penko Vox: Japanese, mükemmel açık kaynak yazılımlar, yapay zeka modelleri ve veriler üzerine kurulmuştur. Bu bileşenler kendi lisanslarını korur ve bu lisanslar kapsamındaki haklarınız koşullarımızla sınırlanmaz.',
+    component: 'Bileşen',
+    licence: 'Lisans',
+    purposes: {
+      qwen: 'Yapay zeka eğitmeninin arkasındaki dil modeli',
+      llamacpp: 'Dil modelini bilgisayarınızda çalıştırır',
+      kotobawhisper: 'Japonca konuşma tanıma modeli',
+      whispercpp: 'Konuşma tanıma motoru',
+      reazonspeech: 'Japonca konuşma tanıma modeli',
+      sherpaonnx: 'Konuşma tanıma ve sentezi çalışma zamanı',
+      silerovad: 'Konuşmaya ne zaman başlayıp bitirdiğinizi algılar',
+      kokoro: 'Japonca sesler (konuşma sentezi)',
+      kuromoji: 'Japonca cümleleri kelimelere ayırır',
+      jmdict: 'Japonca sözlük verileri',
+      wanakana: 'Romaji ile kana arasında dönüştürme yapar',
+      tsfsrs: 'Çalışma Merkezi tekrarlarını planlar (FSRS)',
+      threejs: '3D grafikler',
+      react: 'Kullanıcı arayüzü',
+      electron: 'Masaüstü uygulama çatısı',
+      chromium: 'Electron ile birlikte gelen web motoru',
+      steamworksjs: 'Steam entegrasyonu (başarımlar, bulut kayıtları)',
+    },
+    jmdictTitle: 'Sözlük verileri',
+    jmdictNotice: 'Penko Vox: Japanese, JMdict sözlük dosyalarını kullanır. Bu dosyalar Electronic Dictionary Research and Development Group\'un (EDRDG) mülkiyetindedir ve Grubun lisansına (Creative Commons Attribution-ShareAlike 4.0) uygun olarak kullanılmaktadır: https://www.edrdg.org/edrdg/licence.html',
+    chromiumNote: 'Chromium birçok açık kaynak bileşen içerir; bunların lisansları uygulamanın kurulum klasöründeki LICENSES.chromium.html dosyasında listelenmiştir.',
+    fullTexts: 'Lisansların tam metinleri uygulamayla birlikte gelir. Sorularınız için: contact@penkosoftware.org.',
+  },
+
   press: {
     title: 'Basın kiti',
     intro: 'Penko Vox: Japanese hakkında yazmak için ihtiyacınız olan her şey. Bu metinleri ve görselleri uygulamayla ilgili haberlerinizde özgürce kullanabilirsiniz.',
@@ -505,7 +540,8 @@ export const docs: Docs = {
       { label: 'Tam sürüm', value: 'Ağustos 2027 için planlanıyor' },
       { label: 'Platformlar', value: 'Windows, Linux, SteamOS (Steam Deck)' },
       { label: 'Fiyat', value: 'Bölgeye göre değişir; Steam\'e bakın' },
-      { label: 'Arayüz dilleri', value: 'İngilizce, Fransızca, Almanca, Japonca, Korece, Basitleştirilmiş Çince, İspanyolca (Latin Amerika), Vietnamca' },
+      { label: 'Arayüz ve altyazı dilleri', value: 'İngilizce, Fransızca, Almanca, Japonca, Korece, Basitleştirilmiş Çince, İspanyolca (Latin Amerika), Vietnamca' },
+      { label: 'Ses', value: 'Japonca' },
     ],
     shortTitle: 'Kısa açıklama',
     short: 'Penko Vox: Japanese, konuşma yoluyla Japonca öğreten, özel ve çevrimdışı bir yapay zeka öğretmenidir. JLPT N5–N1 seviyelerinde 38 senaryoda konuşun, doğal sesli görüşmeler yapın ve Kotoba Islands RPG\'sini keşfedin; hepsi kendi bilgisayarınızda yerel olarak çalışır.',

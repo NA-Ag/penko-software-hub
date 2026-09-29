@@ -15,9 +15,10 @@ export type SitePath =
   | 'vox/privacy/'
   | 'vox/terms/'
   | 'vox/guide/'
-  | 'vox/press/';
+  | 'vox/press/'
+  | 'vox/credits/';
 
-export type PageKey = 'home' | 'plaza-privacy' | 'products' | 'vox' | 'vox-privacy' | 'vox-terms' | 'vox-guide' | 'vox-press';
+export type PageKey = 'home' | 'plaza-privacy' | 'products' | 'vox' | 'vox-privacy' | 'vox-terms' | 'vox-guide' | 'vox-press' | 'vox-credits';
 
 export const PAGE_PATHS: Record<PageKey, SitePath> = {
   home: '',
@@ -28,6 +29,7 @@ export const PAGE_PATHS: Record<PageKey, SitePath> = {
   'vox-terms': 'vox/terms/',
   'vox-guide': 'vox/guide/',
   'vox-press': 'vox/press/',
+  'vox-credits': 'vox/credits/',
 };
 
 interface SiteContext {

@@ -21,6 +21,30 @@ export const VOX_LANGUAGES = [
   { code: 'es-419', audio: false },
   { code: 'vi', audio: false },
 ];
+// Third-party components in Penko Vox: Japanese, shown on /vox/credits/. Licences were
+// checked against each project's official repository or model card (Sept 2026); keep this
+// list in sync with the app's own credits screen when components change.
+export const VOX_CREDITS = [
+  { id: 'qwen', name: 'Qwen3.5', by: 'Qwen team, Alibaba Cloud', licence: 'Apache License 2.0', url: 'https://huggingface.co/Qwen' },
+  { id: 'llamacpp', name: 'llama.cpp', by: 'ggml.org', licence: 'MIT License', url: 'https://github.com/ggml-org/llama.cpp' },
+  { id: 'kotobawhisper', name: 'kotoba-whisper', by: 'Kotoba Technologies', licence: 'Apache License 2.0', url: 'https://huggingface.co/kotoba-tech' },
+  { id: 'whispercpp', name: 'whisper.cpp', by: 'ggml.org', licence: 'MIT License', url: 'https://github.com/ggml-org/whisper.cpp' },
+  { id: 'reazonspeech', name: 'ReazonSpeech', by: 'Reazon Human Interaction Lab', licence: 'Apache License 2.0', url: 'https://huggingface.co/reazon-research' },
+  { id: 'sherpaonnx', name: 'sherpa-onnx', by: 'k2-fsa', licence: 'Apache License 2.0', url: 'https://github.com/k2-fsa/sherpa-onnx' },
+  { id: 'silerovad', name: 'Silero VAD', by: 'Silero Team', licence: 'MIT License', url: 'https://github.com/snakers4/silero-vad' },
+  { id: 'kokoro', name: 'Kokoro', by: 'hexgrad', licence: 'Apache License 2.0', url: 'https://huggingface.co/hexgrad/Kokoro-82M' },
+  { id: 'kuromoji', name: 'kuromoji.js', by: 'Takuya Asano', licence: 'Apache License 2.0', url: 'https://github.com/takuyaa/kuromoji.js' },
+  { id: 'jmdict', name: 'JMdict', by: 'Electronic Dictionary Research and Development Group (EDRDG)', licence: 'Creative Commons Attribution-ShareAlike 4.0', url: 'https://www.edrdg.org/edrdg/licence.html' },
+  { id: 'wanakana', name: 'WanaKana', by: 'WaniKani', licence: 'MIT License', url: 'https://github.com/WaniKani/WanaKana' },
+  { id: 'tsfsrs', name: 'ts-fsrs', by: 'Open Spaced Repetition', licence: 'MIT License', url: 'https://github.com/open-spaced-repetition/ts-fsrs' },
+  { id: 'threejs', name: 'three.js', by: 'three.js authors', licence: 'MIT License', url: 'https://github.com/mrdoob/three.js' },
+  { id: 'react', name: 'React', by: 'Meta Platforms, Inc. and affiliates', licence: 'MIT License', url: 'https://github.com/facebook/react' },
+  { id: 'electron', name: 'Electron', by: 'OpenJS Foundation and Electron contributors', licence: 'MIT License', url: 'https://github.com/electron/electron' },
+  { id: 'chromium', name: 'Chromium', by: 'The Chromium Authors', licence: 'BSD 3-Clause License and others', url: 'https://www.chromium.org/' },
+  { id: 'steamworksjs', name: 'steamworks.js', by: 'ceifa', licence: 'MIT License', url: 'https://github.com/ceifa/steamworks.js' },
+] as const;
+export type VoxCreditId = (typeof VOX_CREDITS)[number]['id'];
+
 export const CONTACT_EMAIL = 'contact@penkosoftware.org';
 
 // The Roadmap section shows only these, the apps being built next
@@ -110,7 +134,7 @@ export const PRODUCTS: Product[] = [
     repoUrl: 'https://github.com/NA-Ag/penko-soroban',
     liveUrl: 'https://soroban.penkosoftware.org/',
     features: ['Digital Soroban', 'Mental Math', 'Offline Mode', 'Touch Support', 'PWA', 'Tutorials'],
-    status: 'alpha',
+    status: 'beta',
     version: 'v1.0.0'
   },
 

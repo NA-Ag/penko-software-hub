@@ -10,4 +10,5 @@ export const CONFIRM: Record<string, string[]> = {
   'vox/requirements': ['Copied from the Steam page (Sept 2026). Update both places together.'],
   'vox-terms/all': ['DRAFT: have a lawyer review before relying on it, especially sections 2, 9, 10 and 12.'],
   'vox-press/facts': ['Steam currently shows the developer/publisher as "penko_soft"; update Steam to "Penko Software" so they match.'],
+  'vox-credits/all': ['Check this list against the shipped build: anything missing or removed? Does the app also use KANJIDIC or other EDRDG files? Is LICENSES.chromium.html in the install folder, and are the full licence texts shipped? Add a matching Credits screen in the app.'],
 };

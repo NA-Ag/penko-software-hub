@@ -69,7 +69,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 Senaryo · N5–N1',
   voxJapaneseFeature2: '%100 Çevrimdışı Yapay Zeka Öğretmeni',
   voxJapaneseFeature3: 'Sesli Aramalar',
-  voxJapaneseFeature4: 'Kana Çizgi Pratiği',
+  voxJapaneseFeature4: 'Kana ve Kanji Yazımı',
   voxJapaneseFeature5: 'Kotoba Islands RPG',
   voxFullRelease: 'Tam sürüm: Ağustos 2027',
   voxJapaneseCta: 'Steam\'de Edinin',
@@ -143,7 +143,7 @@ export const ui: Translation = {
   footerByline: 'Penko Software tarafından',
   footerContact: 'İletişim',
   schoolsTitle: 'Okullar ve üniversiteler için',
-  schoolsBody: 'Sınıf pilot uygulamaları ve yıllık kurumsal lisanslar için Penko Vox: Japanese mevcuttur. Ücretsiz uygulamalarımız veri toplamaz, bu yüzden sınıfta da rahatça kullanılabilir.',
+  schoolsBody: 'Penko Vox: Japanese, sınıf pilot uygulamaları ve yıllık kurumsal lisanslar için mevcuttur. Her bilgisayarda tamamen yerel olarak çalışır ve kişisel veri toplamaz, bu yüzden sınıfta kullanıma hazırdır.',
   schoolsCta: 'Bize ulaşın',
 
   // Studio structure: free Plaza apps funded by paid apps

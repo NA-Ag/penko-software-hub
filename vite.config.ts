@@ -38,6 +38,7 @@ export default defineConfig(({ isSsrBuild }) => {
             voxTerms: r('vox/terms/index.html'),
             voxGuide: r('vox/guide/index.html'),
             voxPress: r('vox/press/index.html'),
+            voxCredits: r('vox/credits/index.html'),
           },
         },
       },

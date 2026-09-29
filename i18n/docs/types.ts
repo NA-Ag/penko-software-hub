@@ -32,9 +32,11 @@ export interface PageMeta {
   description: string;
 }
 
+import type { VoxCreditId } from '../../constants';
+
 export interface Docs {
   // <title> and meta description for each page, used when pre-rendering every language
-  meta: Record<'home' | 'plazaPrivacy' | 'products' | 'vox' | 'voxPrivacy' | 'voxTerms' | 'voxGuide' | 'voxPress', PageMeta>;
+  meta: Record<'home' | 'plazaPrivacy' | 'products' | 'vox' | 'voxPrivacy' | 'voxTerms' | 'voxGuide' | 'voxPress' | 'voxCredits', PageMeta>;
 
   common: {
     lastUpdated: string; // label, e.g. "Last updated"
@@ -45,6 +47,7 @@ export interface Docs {
     terms: string;
     guide: string;
     press: string;
+    credits: string;
     comingSoon: string;
     learnMore: string;
   };
@@ -99,6 +102,18 @@ export interface Docs {
   voxPrivacy: LegalDoc;
   voxTerms: LegalDoc;
   plazaPrivacy: LegalDoc;
+
+  credits: {
+    title: string;
+    intro: string;
+    component: string;
+    licence: string;
+    purposes: Record<VoxCreditId, string>; // what each component does in the app
+    jmdictTitle: string;
+    jmdictNotice: string; // the acknowledgement EDRDG's licence requires
+    chromiumNote: string;
+    fullTexts: string;
+  };
 
   press: {
     title: string;

@@ -80,7 +80,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 tình huống · N5–N1',
   voxJapaneseFeature2: 'Gia sư AI 100% ngoại tuyến',
   voxJapaneseFeature3: 'Gọi thoại',
-  voxJapaneseFeature4: 'Luyện viết kana theo nét',
+  voxJapaneseFeature4: 'Viết kana & kanji',
   voxJapaneseFeature5: 'Kotoba Islands RPG',
   voxFullRelease: 'Phát hành chính thức: tháng 8/2027',
   voxJapaneseCta: 'Nhận trên Steam',
@@ -162,7 +162,7 @@ export const ui: Translation = {
   footerByline: 'bởi Penko Software',
   footerContact: 'Liên hệ',
   schoolsTitle: 'Dành cho trường học & đại học',
-  schoolsBody: 'Penko Vox: Japanese có sẵn cho các lớp học thí điểm và giấy phép tổ chức theo năm. Các ứng dụng miễn phí của chúng tôi không thu thập dữ liệu, nên cũng sẵn sàng dùng trong lớp học.',
+  schoolsBody: 'Penko Vox: Japanese có sẵn cho các lớp học thí điểm và giấy phép tổ chức theo năm. Ứng dụng chạy hoàn toàn trên từng máy tính và không thu thập dữ liệu cá nhân, nên sẵn sàng dùng trong lớp học.',
   schoolsCta: 'Liên hệ chúng tôi',
 
   // Studio structure: free Plaza apps funded by paid apps

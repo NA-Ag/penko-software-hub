@@ -74,7 +74,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 シナリオ · N5–N1',
   voxJapaneseFeature2: '100% オフライン AI チューター',
   voxJapaneseFeature3: '音声通話',
-  voxJapaneseFeature4: 'かな書き順練習',
+  voxJapaneseFeature4: 'かな・漢字の書き練習',
   voxJapaneseFeature5: 'Kotoba Islands RPG',
   voxFullRelease: '正式版リリース：2027 年 8 月',
   voxJapaneseCta: 'Steam で入手',
@@ -151,7 +151,7 @@ export const ui: Translation = {
   footerByline: 'by Penko Software',
   footerContact: 'お問い合わせ',
   schoolsTitle: '学校・大学の皆さまへ',
-  schoolsBody: 'Penko Vox: Japanese は、授業でのパイロット導入や年間の機関ライセンスに対応しています。無料アプリはデータを一切収集しないため、授業でも安心してお使いいただけます。',
+  schoolsBody: 'Penko Vox: Japanese は、授業でのパイロット導入や年間の機関ライセンスに対応しています。各コンピューター上で完結して動作し、個人データを一切収集しないため、授業でも安心してお使いいただけます。',
   schoolsCta: 'お問い合わせ',
 
   // Studio structure: free Plaza apps funded by paid apps

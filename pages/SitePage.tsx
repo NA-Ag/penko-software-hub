@@ -8,8 +8,9 @@ import DocPage from './DocPage';
 import ProductsPage from './ProductsPage';
 import VoxPage from './VoxPage';
 import PressPage from './PressPage';
+import CreditsPage from './CreditsPage';
 
-export type PageId = 'plaza-privacy' | 'products' | 'vox' | 'vox-privacy' | 'vox-terms' | 'vox-guide' | 'vox-press';
+export type PageId = 'plaza-privacy' | 'products' | 'vox' | 'vox-privacy' | 'vox-terms' | 'vox-guide' | 'vox-press' | 'vox-credits';
 
 // Renders the page named by <html data-page="...">; each page has its own HTML file
 const SitePage: React.FC<{ page: PageId }> = ({ page }) => {
@@ -56,6 +57,8 @@ const SitePage: React.FC<{ page: PageId }> = ({ page }) => {
       return <StudioShell extraLinks={[vox]}><DocPage pageId="vox-guide" title={docs.voxGuide.title} intro={docs.voxGuide.intro} sections={docs.voxGuide.sections} crumbs={voxTrail(docs.common.guide)} /></StudioShell>;
     case 'vox-press':
       return <StudioShell extraLinks={[vox]}><PressPage /></StudioShell>;
+    case 'vox-credits':
+      return <StudioShell extraLinks={[vox]}><CreditsPage /></StudioShell>;
   }
 };
 

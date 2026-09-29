@@ -21,6 +21,7 @@ const META_KEYS = {
   'vox-terms': 'voxTerms',
   'vox-guide': 'voxGuide',
   'vox-press': 'voxPress',
+  'vox-credits': 'voxCredits',
 } as const;
 
 export const renderPage = async (page: PageKey, lang: Language, root: string) => {

@@ -70,7 +70,7 @@ export const ui: Translation = {
   voxJapaneseFeature1: '38 Skenario · N5–N1',
   voxJapaneseFeature2: 'Tutor AI 100% Offline',
   voxJapaneseFeature3: 'Panggilan Suara',
-  voxJapaneseFeature4: 'Latihan Goresan Kana',
+  voxJapaneseFeature4: 'Menulis Kana & Kanji',
   voxJapaneseFeature5: 'Kotoba Islands RPG',
   voxFullRelease: 'Rilis penuh: Agustus 2027',
   voxJapaneseCta: 'Dapatkan di Steam',
@@ -144,7 +144,7 @@ export const ui: Translation = {
   footerByline: 'oleh Penko Software',
   footerContact: 'Kontak',
   schoolsTitle: 'Untuk sekolah & universitas',
-  schoolsBody: 'Penko Vox: Japanese tersedia untuk uji coba di kelas dan lisensi institusi tahunan. Aplikasi gratis kami tidak mengumpulkan data, jadi siap juga dipakai di kelas.',
+  schoolsBody: 'Penko Vox: Japanese tersedia untuk uji coba di kelas dan lisensi institusi tahunan. Aplikasi ini berjalan sepenuhnya di setiap komputer dan tidak mengumpulkan data pribadi, jadi siap dipakai di kelas.',
   schoolsCta: 'Hubungi kami',
 
   // Studio structure: free Plaza apps funded by paid apps

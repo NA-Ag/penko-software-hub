@@ -97,6 +97,7 @@ At build time, `scripts/prerender.mjs` renders every page in every language (via
 | `/vox/terms/` | `vox/terms/index.html` | Vox terms of use (EULA) |
 | `/vox/guide/` | `vox/guide/index.html` | Getting-started guide (Steam "Online Manual" URL) |
 | `/vox/press/` | `vox/press/index.html` | Press kit |
+| `/vox/credits/` | `vox/credits/index.html` | Third-party credits and licences (linked from the EULA) |
 
 To add a page: create its HTML file (copy an existing one and adjust `data-page`, `data-root` and the meta tags), add it to `build.rollupOptions.input` in `vite.config.ts`, add a case in `pages/SitePage.tsx`, add its path to `PAGE_PATHS` in `lib/sitePaths.ts`, and add its title and description to `meta` in every `i18n/docs/<lang>.ts`.
 
