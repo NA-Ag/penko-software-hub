@@ -16,6 +16,7 @@
     "electron:dev": "concurrently \"npm run dev\" \"wait-on http://localhost:3000 && electron .\"",
     "electron:build": "npm run build && electron-builder",
     "test": "vitest run",
+    "check:links": "node scripts/check-links.mjs",
     "fetch:steam-media": "node scripts/fetch-steam-media.mjs --force",
     "predev": "node scripts/fetch-steam-media.mjs",
     "prebuild": "node scripts/fetch-steam-media.mjs"
@@ -41,6 +42,7 @@
     "electron": "^40.0.0",
     "electron-builder": "^26.4.0",
     "jsdom": "^30.1.1",
+    "playwright": "^1.63.0",
     "postcss": "^8.5.28",
     "sharp": "^0.34.5",
     "tailwindcss": "^3.4.17",

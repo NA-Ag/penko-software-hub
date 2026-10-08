@@ -40,6 +40,13 @@ jobs:
       - name: Build
         run: npm run build
 
+      # Opens every built page in a headless browser and fails the deploy on broken links
+      - name: Install browser for link check
+        run: npx playwright install --with-deps chromium
+
+      - name: Check links
+        run: npm run check:links
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

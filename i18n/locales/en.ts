@@ -49,12 +49,12 @@ export const ui: Translation = {
   categoryWellness: 'Health & Wellness',
 
   // Project Descriptions
-  descPenkoAdventure: 'A playful RPG for practicing languages through interactive, AI-driven stories. Casual, fun practice across 12 languages, with voice support.',
-  descPenkoWriter: 'Privacy-first word processor with 100+ features. Real-time P2P collaboration, 26 templates, 13 languages. A free alternative to Microsoft Word and Google Docs.',
-  descPenkoTune: 'Music platform with privacy-first streaming and 0% artist fees. IPFS/WebTorrent delivery, crypto payments, 10-band EQ, and professional visualizers. A free alternative to Spotify.',
-  descPenkoTyping: 'Retro arcade-style typing game to learn non-Latin keyboard layouts. Master Korean Hangul, Russian Cyrillic, Japanese Kana, and more.',
-  descPenkoReader: 'Accessibility-focused reading tool to improve focus and speed. Uses RSVP to display text word-by-word. Highly effective for users with ADHD or dyslexia.',
-  descPenkoSoroban: 'Digital Japanese Abacus (Soroban) for mental arithmetic. Master the art of rapid calculation with this offline tool.',
+  descPenkoAdventure: 'A text RPG for practicing languages. Type what you do in the language you\'re learning while an AI narrates, running privately in your browser or through your own Gemini key. Includes CEFR, JLPT and HSK scenarios.',
+  descPenkoWriter: 'A private word processor that runs in your browser and works offline. Write Word-style paged documents, open and save DOCX and PDF, and co-edit live over encrypted peer-to-peer links. No account needed.',
+  descPenkoTune: 'A private player for the music you own. Your library stays on your device with no account, and you can share tracks or listen together with friends over encrypted peer-to-peer links.',
+  descPenkoTyping: 'A retro arcade typing game for building muscle memory on 14 keyboard layouts, including Korean, Russian, Japanese Kana, Arabic and Hebrew.',
+  descPenkoReader: 'An offline reading app for your own books: a paged reader with read-aloud and PDF notes, an RSVP word-by-word speed reader, and reading drills. No account, and nothing leaves your device.',
+  descPenkoSoroban: 'A virtual soroban (Japanese abacus) with guided lessons, calculation drills and Flash Anzan mental-math exams from Kyu to Dan levels.',
   descPenkoCalc: 'Spreadsheet app with 100+ functions, JavaScript cell support, and offline capabilities. A free alternative to Microsoft Excel and Google Sheets.',
   descPenkoNote: 'Rich notes application with smart organization, tags, and search. Your thoughts, organized and accessible.',
   descPenkoSlide: 'Create stunning presentations with beautiful templates and smooth transitions. A free alternative to PowerPoint and Google Slides.',
@@ -109,9 +109,9 @@ export const ui: Translation = {
 
   // News
   newsUpdate1: 'Penko Vox: Japanese v2.1 is out: the Kotoba Islands RPG, voice calls and more.',
-  newsUpdate2: 'Penko Reader v2.0.13 arrives with a complete visual overhaul.',
+  newsUpdate2: 'Penko Reader 3.0 turns it into a full reading app: library, paged reader, read-aloud and RSVP.',
   newsUpdate3: 'Penko Adventure v1.8.0 is now in public beta.',
-  newsUpdate4: 'Penko Plaza now works fully offline and speaks 16 languages.',
+  newsUpdate4: 'Penko Tune is now a private player for your own music, with encrypted sharing between friends.',
 
   // UI labels & support section
   navLanguage: 'Language',

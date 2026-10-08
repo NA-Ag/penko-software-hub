@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Gamepad2, Languages, LucideIcon, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, Gamepad2, LucideIcon, Music, Sparkles } from 'lucide-react';
 import { useApp } from '../AppContext';
 import { PRODUCTS } from '../constants';
 import { sitePath } from '../lib/sitePaths';
@@ -11,7 +11,7 @@ const liveUrl = (id: string) => PRODUCTS.find(p => p.id === id)?.liveUrl;
 const UPDATES: { text: keyof Translation; Icon: LucideIcon; href?: string }[] = [
   { text: 'newsUpdate2', Icon: BookOpen, href: liveUrl('penko-reader') },
   { text: 'newsUpdate3', Icon: Gamepad2, href: liveUrl('penko-adventure') },
-  { text: 'newsUpdate4', Icon: Languages },
+  { text: 'newsUpdate4', Icon: Music, href: liveUrl('penko-tune') },
 ];
 
 const cardClass = 'flex flex-col gap-3 p-5 rounded-2xl bg-white dark:bg-[#0f1219] border border-slate-200 dark:border-slate-800 shadow-sm';

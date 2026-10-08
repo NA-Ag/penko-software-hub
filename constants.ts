@@ -57,12 +57,12 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-adventure',
     name: 'Penko Adventure',
-    description: 'A playful RPG for practicing languages through interactive, AI-driven stories. Casual, fun practice across 12 languages, with voice support.',
+    description: 'A text RPG for practicing languages. Type what you do in the language you\'re learning while an AI narrates, running privately in your browser or through your own Gemini key. Includes CEFR, JLPT and HSK scenarios.',
     category: ProductCategory.LANGUAGE,
     iconName: 'Gamepad2',
     repoUrl: 'https://github.com/NA-Ag/penko-adventure',
     liveUrl: 'https://adventure.penkosoftware.org/',
-    features: ['12 Languages', 'AI Storytelling', 'Speech Recognition', 'Community Workshop', 'Offline Mode', 'Voice Synthesis'],
+    features: ['60+ Languages', 'Private In-Browser AI', 'CEFR/JLPT/HSK Scenarios', 'Text-to-Speech', 'Works Offline', 'No Account Needed'],
     status: 'beta',
     version: 'v1.8.0-beta.1'
   },
@@ -71,12 +71,12 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-writer',
     name: 'Penko Writer',
-    description: 'Privacy-first word processor with 100+ features. Real-time P2P collaboration, 26 templates, 13 languages. A free alternative to Microsoft Word and Google Docs.',
+    description: 'A private word processor that runs in your browser and works offline. Write Word-style paged documents, open and save DOCX and PDF, and co-edit live over encrypted peer-to-peer links. No account needed.',
     category: ProductCategory.OFFICE,
     iconName: 'FileText',
     repoUrl: 'https://github.com/NA-Ag/penko-writer',
     liveUrl: 'https://writer.penkosoftware.org/',
-    features: ['P2P Collaboration', 'Offline Mode', 'DOCX/PDF Export', 'Code Highlighting', 'LaTeX Equations', 'Markdown Mode'],
+    features: ['DOCX Import/Export', 'PDF Export', 'Track Changes', 'LaTeX Equations', 'P2P Collaboration', 'Works Offline'],
     status: 'alpha',
     version: 'v1.0.0-alpha.1'
   },
@@ -85,13 +85,13 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-tune',
     name: 'Penko Tune',
-    description: 'Privacy-first music platform with 0% artist fees. WebTorrent/IPFS distribution, crypto payments, 10-band EQ, and 8 professional visualizers. A free alternative to Spotify.',
+    description: 'A private player for the music you own. Your library stays on your device with no account, and you can share tracks or listen together with friends over encrypted peer-to-peer links.',
     category: ProductCategory.MUSIC,
     iconName: 'Music',
     repoUrl: 'https://github.com/NA-Ag/penko-tune',
     liveUrl: 'https://tune.penkosoftware.org/',
-    features: ['0% Platform Fees', 'WebTorrent/IPFS', 'Crypto Payments', '10-Band Equalizer', '8 Visualizers', 'YouTube Streaming'],
-    status: 'alpha',
+    features: ['10-Band Equalizer', '8 Visualizers', 'Gapless & Crossfade', 'Synced Lyrics', 'Encrypted P2P Sharing', 'Listen Together'],
+    status: 'beta',
     version: 'v0.1.1'
   },
 
@@ -99,12 +99,12 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-typing',
     name: 'Penko Typing',
-    description: 'Retro arcade-style typing game for learning non-Latin keyboard layouts. Master Korean Hangul, Russian Cyrillic, Japanese Kana, and more.',
+    description: 'A retro arcade typing game for building muscle memory on 14 keyboard layouts, including Korean, Russian, Japanese Kana, Arabic and Hebrew.',
     category: ProductCategory.LANGUAGE,
     iconName: 'Keyboard',
     repoUrl: 'https://github.com/NA-Ag/penko-typing',
     liveUrl: 'https://typing.penkosoftware.org/',
-    features: ['14 Languages', 'Keyboard Layouts', 'Hand Position Guides', 'Leaderboards', 'Offline Mode', 'Touch Support'],
+    features: ['14 Keyboard Layouts', 'Finger Placement Guide', '3 Lesson Levels', 'Local High Scores', 'Works Offline', 'No Account Needed'],
     status: 'alpha',
     version: 'v0.1.0-alpha'
   },
@@ -113,14 +113,14 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-reader',
     name: 'Penko Reader',
-    description: 'Accessibility-focused reading tool designed to help users focus, read faster, and improve comprehension. Uses RSVP (Rapid Serial Visual Presentation) to display text one word at a time. Particularly effective for users with ADHD or dyslexia.',
+    description: 'An offline reading app for your own books: a paged reader with read-aloud and PDF notes, an RSVP word-by-word speed reader, and reading drills. No account, and nothing leaves your device.',
     category: ProductCategory.LANGUAGE,
     iconName: 'BookOpen',
     repoUrl: 'https://github.com/NA-Ag/penko-reader',
     liveUrl: 'https://reader.penkosoftware.org/',
-    features: ['RSVP Reading', 'Offline First', 'EPUB/PDF Support', 'OpenDyslexic Font', 'High Contrast', 'No Tracking'],
+    features: ['RSVP Speed Reading', 'EPUB, PDF & More', 'Read Aloud', 'OpenDyslexic Font', 'Reading Drills', 'Works Offline'],
     status: 'beta',
-    version: 'v2.0.13-beta',
+    version: 'v3.0.0-beta',
     isNew: true
   },
 
@@ -128,13 +128,13 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-soroban',
     name: 'Penko Soroban',
-    description: 'Digital Japanese abacus (Soroban) for mental math and calculation. Master the art of rapid calculation with this offline-first tool.',
+    description: 'A virtual soroban (Japanese abacus) with guided lessons, calculation drills and Flash Anzan mental-math exams from Kyu to Dan levels.',
     category: ProductCategory.LANGUAGE,
     iconName: 'Calculator',
     repoUrl: 'https://github.com/NA-Ag/penko-soroban',
     liveUrl: 'https://soroban.penkosoftware.org/',
-    features: ['Digital Soroban', 'Mental Math', 'Offline Mode', 'Touch Support', 'PWA', 'Tutorials'],
-    status: 'beta',
+    features: ['Virtual Soroban', 'Flash Anzan', 'Kyu/Dan Exams', 'Guided Lessons', 'Calculation Drills', 'Works Offline'],
+    status: 'alpha',
     version: 'v1.0.0'
   },
 

@@ -109,7 +109,7 @@ describe('Penko Plaza page', () => {
     await waitFor(() => expect(document.documentElement.lang).toBe('ja'));
     expect(localStorage.getItem('penko-language')).toBe('ja');
     // A feature label from the Japanese feature table is now shown
-    expect(screen.getByText('RSVP 読書')).toBeTruthy();
+    expect(screen.getByText('RSVP 速読')).toBeTruthy();
   });
 
   it('sandbox tabs work: abacus counts and typing test finishes', async () => {
