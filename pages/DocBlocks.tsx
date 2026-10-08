@@ -12,7 +12,7 @@ export const Linkified: React.FC<{ text: string }> = ({ text }) => (
       if (i % 2 === 0) return part;
       const href = part.includes('@') && !part.startsWith('http') ? `mailto:${part}` : part;
       return (
-        <a key={i} href={href} className="text-red-600 dark:text-amber-400 underline underline-offset-2 break-words" {...(href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}>
+        <a key={i} href={href} className="text-red-600 dark:text-amber-400 underline underline-offset-2 [overflow-wrap:anywhere]" {...(href.startsWith('http') ? { target: '_blank', rel: 'noreferrer' } : {})}>
           {part}
         </a>
       );

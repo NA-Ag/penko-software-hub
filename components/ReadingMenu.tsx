@@ -94,8 +94,10 @@ const ReadingMenu: React.FC<{ className?: string }> = ({ className = '' }) => {
       >
         <Type size={18} />
       </button>
+      {/* On phones the panel spans the screen under the header (anchored to the button it
+          would hang off the left edge) and scrolls if it is taller than the screen */}
       {open && (
-        <div role="dialog" aria-label={t.readingOptions} className="absolute right-0 mt-2 w-72 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700">
+        <div role="dialog" aria-label={t.readingOptions} className="fixed inset-x-4 top-[4.5rem] max-h-[calc(100dvh-5.5rem)] overflow-y-auto overscroll-contain lg:absolute lg:inset-x-auto lg:top-auto lg:right-0 lg:mt-2 lg:w-72 lg:max-h-[calc(100vh-6rem)] z-50 p-4 bg-white dark:bg-slate-900 rounded-xl shadow-xl border border-slate-200 dark:border-slate-700">
           <p className="font-bold text-slate-900 dark:text-white mb-3">{t.readingOptions}</p>
           <ReadingControls />
         </div>

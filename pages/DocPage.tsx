@@ -41,7 +41,7 @@ const DocPage: React.FC<DocPageProps> = ({ pageId, title, intro, sections, legal
         <ConfirmNotes id={`${pageId}/all`} />
       </header>
 
-      <div className="grid lg:grid-cols-[220px_minmax(0,1fr)] gap-10">
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[220px_minmax(0,1fr)] gap-10">
         <nav aria-label={common.onThisPage} className="hidden lg:block">
           <div className="sticky top-24">
             <p className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-3">{common.onThisPage}</p>

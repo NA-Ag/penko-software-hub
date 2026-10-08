@@ -164,7 +164,7 @@ const Navbar: React.FC<NavbarProps> = ({ area, brand, byline, brandHref, links }
             </button>
             <button
               onClick={() => setIsOpen(open => !open)}
-              className="text-slate-600 dark:text-slate-300"
+              className="p-2 -mr-2 text-slate-600 dark:text-slate-300"
               aria-label={t.navMenu}
               aria-expanded={isOpen}
             >
@@ -176,7 +176,7 @@ const Navbar: React.FC<NavbarProps> = ({ area, brand, byline, brandHref, links }
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
+        <div className="lg:hidden max-h-[calc(100dvh-4rem)] overflow-y-auto overscroll-contain bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-700">
           <div className="px-4 pt-3 pb-6 space-y-2">
             <SectionSwitch area={area} className="mb-3" onNavigate={() => setIsOpen(false)} />
             {links.map(link => (

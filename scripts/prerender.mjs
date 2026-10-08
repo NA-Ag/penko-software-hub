@@ -57,6 +57,9 @@ for (const [page, path] of Object.entries(PAGE_PATHS)) {
       // Server-rendered asset URLs are root-absolute; make them relative to this page
       .replace('<div id="root"></div>', `<div id="root">${html.replace(/(src|href)="\/(assets|media)\//g, `$1="${siteRoot}$2/`)}</div>`);
     if (!out.includes('data-lang=')) out = out.replace('<html', `<html data-lang="${lang}"`);
+    // Links and the service worker resolve from data-root, so a template without it would
+    // break every language folder (e.g. /es/ links pointing at /es/es/)
+    if (!out.includes('data-root=')) out = out.replace('<html', `<html data-root="${siteRoot}"`);
 
     const target = join(dist, lang === 'en' ? '' : lang, templateFile(path));
     mkdirSync(dirname(target), { recursive: true });

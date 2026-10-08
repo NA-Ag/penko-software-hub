@@ -41,7 +41,7 @@ const PressPage: React.FC = () => {
         <p className="text-lg leading-relaxed">{press.intro}</p>
       </header>
 
-      <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-8 items-start">
+      <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[minmax(0,1fr)_320px] gap-8 items-start">
         <div className="space-y-8">
           <section>
             <h2 className={h2Class}>{press.shortTitle}</h2>

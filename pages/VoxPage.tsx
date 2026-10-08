@@ -74,7 +74,7 @@ const VoxPage: React.FC = () => {
           className="relative max-w-6xl mx-auto px-4 md:px-8 pt-6"
           items={[{ label: t.navPaidApps, href: sitePath('products/') }, { label: t.voxJapaneseTitle }]}
         />
-        <div className="relative max-w-6xl mx-auto px-4 md:px-8 pt-8 pb-12 md:pb-20 grid lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
+        <div className="relative max-w-6xl mx-auto px-4 md:px-8 pt-8 pb-12 md:pb-20 grid grid-cols-[minmax(0,1fr)] lg:grid-cols-[1.1fr_1fr] gap-10 items-center">
           <img src={voxCapsuleUrl} alt={t.voxJapaneseTitle} width={1232} height={706} className="w-full h-auto rounded-2xl ring-1 ring-white/10 shadow-2xl" />
           <div className="flex flex-col">
             <div className="flex flex-wrap items-center gap-2 mb-5">
@@ -133,7 +133,7 @@ const VoxPage: React.FC = () => {
             <Rocket size={15} />
             {t.voxUpdateTitle}
           </h2>
-          <ul className="grid md:grid-cols-2 gap-x-8 gap-y-2">
+          <ul className="grid grid-cols-[minmax(0,1fr)] md:grid-cols-2 gap-x-8 gap-y-2">
             {updates.map(item => (
               <li key={item} className="flex items-start gap-2 text-slate-700 dark:text-slate-200">
                 <span className="mt-2 w-1.5 h-1.5 rounded-full bg-amber-500 shrink-0" />
@@ -189,7 +189,7 @@ const VoxPage: React.FC = () => {
 
       {/* Early Access plan */}
       <section className="bg-white dark:bg-[#0b0e14] border-y border-slate-200 dark:border-slate-900">
-        <div className={`${sectionClass} grid lg:grid-cols-2 gap-10`}>
+        <div className={`${sectionClass} grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-10`}>
           <div>
             <h2 className={h2Class}>{vox.earlyAccess.title}</h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">{vox.earlyAccess.why}</p>
@@ -216,7 +216,7 @@ const VoxPage: React.FC = () => {
         <h2 className={h2Class}>{vox.requirements.title}</h2>
         <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6 max-w-3xl">{vox.requirements.intro}</p>
         <ConfirmNotes id="vox/requirements" />
-        <div className="grid lg:grid-cols-2 gap-5">
+        <div className="grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-5">
           {([['Windows', vox.requirements.windows], ['SteamOS + Linux', vox.requirements.linux]] as const).map(([platform, sets]) => (
             <div key={platform} className={`${cardClass} overflow-hidden`}>
               <h3 className="px-5 py-3 font-bold text-slate-900 dark:text-white bg-slate-50 dark:bg-slate-900/60 border-b border-slate-200 dark:border-slate-800">{platform}</h3>
@@ -246,7 +246,7 @@ const VoxPage: React.FC = () => {
       </section>
 
       {/* Languages + AI disclosure */}
-      <section className={`${sectionClass} pt-0 grid lg:grid-cols-2 gap-10`}>
+      <section className={`${sectionClass} pt-0 grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-10`}>
         <div>
           <h2 className={h2Class}>{vox.languages.title}</h2>
           <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-5">{vox.languages.intro}</p>
@@ -322,7 +322,7 @@ const VoxPage: React.FC = () => {
 
       {/* Support + documents */}
       <section id="support" className="bg-white dark:bg-[#0b0e14] border-t border-slate-200 dark:border-slate-900">
-        <div className={`${sectionClass} grid lg:grid-cols-2 gap-10 items-start`}>
+        <div className={`${sectionClass} grid grid-cols-[minmax(0,1fr)] lg:grid-cols-2 gap-10 items-start`}>
           <div>
             <h2 className={h2Class}>{vox.support.title}</h2>
             <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">{vox.support.body}</p>

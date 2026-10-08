@@ -46,6 +46,7 @@ const ProductGrid: React.FC = () => {
   const [hoveredCategory, setHoveredCategory] = useState<ProductCategory | null>(null);
   const [clickedCategory, setClickedCategory] = useState<ProductCategory | null>(null);
   const jumpTimer = useRef<number | undefined>(undefined);
+  const detailsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => () => window.clearTimeout(jumpTimer.current), []);
 
@@ -59,6 +60,15 @@ const ProductGrid: React.FC = () => {
     setClickedCategory(cat);
     window.clearTimeout(jumpTimer.current);
     jumpTimer.current = window.setTimeout(() => setClickedCategory(null), 600);
+  };
+
+  // On narrow screens the details sit below the app list, so bring them into view on tap;
+  // otherwise tapping an app looks like it did nothing
+  const selectProduct = (p: Product) => {
+    setSelectedProduct(p);
+    if (window.matchMedia('(min-width: 1024px)').matches) return;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches || document.documentElement.classList.contains('a11y-reduce-motion');
+    requestAnimationFrame(() => detailsRef.current?.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' }));
   };
 
   const statusBadge = selectedProduct?.status && STATUS_BADGES[selectedProduct.status];
@@ -131,7 +141,7 @@ const ProductGrid: React.FC = () => {
               return (
                 <button
                   key={p.id}
-                  onClick={() => setSelectedProduct(p)}
+                  onClick={() => selectProduct(p)}
                   aria-pressed={isSelected}
                   className={`w-full text-left p-3.5 flex gap-3.5 items-center rounded-2xl transition-all duration-300 border
                     ${isSelected ? activeColor.soft : 'hover:bg-slate-100/60 dark:hover:bg-slate-800/30 border-transparent'}`}
@@ -159,7 +169,7 @@ const ProductGrid: React.FC = () => {
           </div>
 
           {/* Details Pane */}
-          <div className="flex-1 p-6 md:p-8 overflow-y-auto flex flex-col justify-between bg-slate-50/10 dark:bg-slate-900/5">
+          <div ref={detailsRef} className="flex-1 p-6 md:p-8 scroll-mt-20 overflow-y-auto flex flex-col justify-between bg-slate-50/10 dark:bg-slate-900/5">
             {selectedProduct && (
               <div key={selectedProduct.id} className="flex-1 flex flex-col justify-between h-full animate-[fadeIn_0.3s_ease-out]">
                 <div>
