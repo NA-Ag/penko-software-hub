@@ -49,7 +49,7 @@ export const ui: Translation = {
   descPenkoTune: 'Um player privado para as músicas que você já tem. Sua biblioteca fica no seu dispositivo, sem conta, e você pode compartilhar faixas ou ouvir junto com amigos por links P2P criptografados.',
   descPenkoTyping: 'Um jogo de digitação arcade retrô para criar memória muscular em 14 layouts de teclado, incluindo coreano, russo, kana japonês, árabe e hebraico.',
   descPenkoReader: 'Um app de leitura offline para seus próprios livros: leitor paginado com leitura em voz alta e anotações em PDF, leitor rápido RSVP palavra por palavra e exercícios de leitura. Sem conta, e nada sai do seu dispositivo.',
-  descPenkoSoroban: 'Um soroban (ábaco japonês) virtual com lições guiadas, exercícios de cálculo e exames de cálculo mental Flash Anzan do nível Kyu ao Dan.',
+  descPenkoSoroban: 'Aprenda o ábaco japonês passo a passo com o Penko como professor: 31 lições da primeira conta ao cálculo mental, além de exercícios, Flash Anzan e exames de Kyu a Dan. Funciona offline, sem conta.',
   descPenkoCalc: 'Aplicativo de planilhas com mais de 100 funções, suporte a células JavaScript e recursos offline. Uma alternativa gratuita ao Microsoft Excel e Google Sheets.',
   descPenkoNote: 'Aplicativo de notas avançado com organização inteligente, tags e busca. Seus pensamentos, organizados e acessíveis.',
   descPenkoSlide: 'Crie apresentações incríveis com modelos bonitos e transições suaves. Uma alternativa gratuita ao PowerPoint e Google Slides.',
@@ -99,7 +99,7 @@ export const ui: Translation = {
   statusComingSoon: 'Em Breve',
   newsUpdate1: 'Penko Vox: Japanese v2.1 chegou: o RPG Kotoba Islands, chamadas de voz e muito mais.',
   newsUpdate2: 'O Penko Reader 3.0 virou um app de leitura completo: biblioteca, leitor paginado, leitura em voz alta e RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 agora está em beta pública.',
+  newsUpdate3: 'Penko Soroban 2.0: um curso completo de ábaco, da primeira conta ao cálculo mental, em 16 idiomas.',
   newsUpdate4: 'O Penko Tune agora é um player privado para as suas músicas, com compartilhamento criptografado entre amigos.',
 
   // UI labels & support section
@@ -181,6 +181,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': 'Equalizador de 10 bandas',
   '100+ Functions': '100+ funções',
   '14 Keyboard Layouts': '14 layouts de teclado',
+  '16 Languages': '16 idiomas',
   '3 Lesson Levels': '3 níveis de lição',
   '60+ Languages': 'Mais de 60 idiomas',
   '8 Visualizers': '8 visualizadores',
@@ -191,7 +192,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Processamento em lote',
   'Beautiful Layouts': 'Layouts bonitos',
   'Beautiful Templates': 'Modelos bonitos',
-  'Calculation Drills': 'Exercícios de cálculo',
   'CEFR/JLPT/HSK Scenarios': 'Cenários QECR/JLPT/HSK',
   'Charts & Graphs': 'Gráficos e diagramas',
   'Cloud Sync': 'Sincronização em nuvem',

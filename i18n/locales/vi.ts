@@ -54,7 +54,7 @@ export const ui: Translation = {
   descPenkoTune: 'Trình phát nhạc riêng tư cho nhạc bạn đang có. Thư viện ở lại trên thiết bị của bạn, không cần tài khoản, và bạn có thể chia sẻ bài hát hoặc nghe cùng bạn bè qua liên kết ngang hàng được mã hóa.',
   descPenkoTyping: 'Game gõ phím arcade phong cách retro giúp luyện trí nhớ cơ bắp trên 14 bố cục bàn phím, gồm tiếng Hàn, tiếng Nga, Kana tiếng Nhật, tiếng Ả Rập và tiếng Do Thái.',
   descPenkoReader: 'Ứng dụng đọc ngoại tuyến cho sách của riêng bạn: trình đọc phân trang có đọc to và ghi chú PDF, trình đọc nhanh RSVP từng từ và bài luyện đọc. Không cần tài khoản, không gì rời khỏi thiết bị của bạn.',
-  descPenkoSoroban: 'Bàn tính soroban (bàn tính Nhật Bản) ảo với bài học có hướng dẫn, bài luyện tính và các bài thi tính nhẩm Flash Anzan từ cấp Kyu đến Dan.',
+  descPenkoSoroban: 'Học bàn tính Nhật Bản từng bước cùng thầy Penko: 31 bài học từ hạt đầu tiên đến tính nhẩm, cùng bài luyện, Flash Anzan và các kỳ thi từ Kyu đến Dan. Hoạt động ngoại tuyến, không cần tài khoản.',
   descPenkoCalc: 'Ứng dụng bảng tính với hơn 100 hàm, hỗ trợ ô tính bằng JavaScript và khả năng hoạt động ngoại tuyến. Một lựa chọn thay thế miễn phí cho Microsoft Excel và Google Sheets.',
   descPenkoNote: 'Ứng dụng ghi chú phong phú với khả năng sắp xếp thông minh, thẻ gắn nhãn và tìm kiếm. Những suy nghĩ của bạn, được tổ chức gọn gàng và dễ dàng truy cập.',
   descPenkoSlide: 'Tạo các bài thuyết trình ấn tượng với những mẫu đẹp mắt và hiệu ứng chuyển cảnh mượt mà. Một lựa chọn thay thế miễn phí cho PowerPoint và Google Slides.',
@@ -110,7 +110,7 @@ export const ui: Translation = {
   // News
   newsUpdate1: 'Penko Vox: Japanese v2.1 đã ra mắt: game RPG Kotoba Islands, gọi thoại và nhiều hơn nữa.',
   newsUpdate2: 'Penko Reader 3.0 nay là ứng dụng đọc hoàn chỉnh: thư viện, trình đọc phân trang, đọc to và RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 hiện đang trong giai đoạn beta công khai.',
+  newsUpdate3: 'Penko Soroban 2.0: khóa học bàn tính đầy đủ, từ hạt đầu tiên đến tính nhẩm, bằng 16 ngôn ngữ.',
   newsUpdate4: 'Penko Tune nay là trình phát riêng tư cho nhạc của bạn, có chia sẻ mã hóa giữa bạn bè.',
 
   // UI labels & support section
@@ -192,6 +192,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': 'Bộ cân bằng 10 dải tần',
   '100+ Functions': '100+ hàm',
   '14 Keyboard Layouts': '14 bố cục bàn phím',
+  '16 Languages': '16 ngôn ngữ',
   '3 Lesson Levels': '3 cấp độ bài học',
   '60+ Languages': 'Hơn 60 ngôn ngữ',
   '8 Visualizers': '8 bộ hiển thị hình ảnh',
@@ -202,7 +203,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Xử lý hàng loạt',
   'Beautiful Layouts': 'Bố cục đẹp mắt',
   'Beautiful Templates': 'Mẫu đẹp mắt',
-  'Calculation Drills': 'Bài luyện tính',
   'CEFR/JLPT/HSK Scenarios': 'Tình huống CEFR/JLPT/HSK',
   'Charts & Graphs': 'Biểu đồ & đồ thị',
   'Cloud Sync': 'Đồng bộ đám mây',

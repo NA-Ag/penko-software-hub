@@ -49,7 +49,7 @@ export const ui: Translation = {
   descPenkoTune: '为你自己的音乐打造的私密播放器。音乐库保存在你的设备上，无需账户；你还可以通过加密的点对点链接与朋友分享曲目或一起收听。',
   descPenkoTyping: '复古街机风格的打字游戏，帮助你在 14 种键盘布局上建立肌肉记忆，包括韩语、俄语、日语假名、阿拉伯语和希伯来语。',
   descPenkoReader: '为你自己的书打造的离线阅读应用：支持朗读和 PDF 批注的分页阅读器、逐词显示的 RSVP 速读器，以及阅读练习。无需账户，数据不会离开你的设备。',
-  descPenkoSoroban: '虚拟日式算盘（Soroban），提供引导课程、计算练习，以及从级（Kyu）到段（Dan）的 Flash Anzan 心算考试。',
+  descPenkoSoroban: '跟着 Penko 老师一步步学习日本算盘：从第一颗算珠到珠心算共 31 课，还有练习、闪电心算，以及从级到段的考级。可离线使用，无需账户。',
   descPenkoCalc: '电子表格应用，拥有100多项函数、JavaScript单元格支持和离线功能。Microsoft Excel和Google Sheets的免费替代品。',
   descPenkoNote: '功能丰富的笔记应用，具有智能整理、标签和搜索功能。让您的想法井然有序、随时可用。',
   descPenkoSlide: '使用精美模板和流畅过渡效果制作精彩演示文稿。PowerPoint和Google Slides的免费替代品。',
@@ -99,7 +99,7 @@ export const ui: Translation = {
   statusComingSoon: '即将推出',
   newsUpdate1: 'Penko Vox: Japanese v2.1 现已发布：Kotoba Islands RPG、语音通话等更多内容。',
   newsUpdate2: 'Penko Reader 3.0 成为完整的阅读应用：书库、分页阅读器、朗读和 RSVP。',
-  newsUpdate3: 'Penko Adventure v1.8.0 现已进入公开测试。',
+  newsUpdate3: 'Penko Soroban 2.0：从第一颗算珠到珠心算的完整算盘课程，支持 16 种语言。',
   newsUpdate4: 'Penko Tune 现在是你自己音乐的私密播放器，支持朋友间加密分享。',
 
   // UI labels & support section
@@ -181,6 +181,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10 段均衡器',
   '100+ Functions': '100+ 功能',
   '14 Keyboard Layouts': '14 种键盘布局',
+  '16 Languages': '16 种语言',
   '3 Lesson Levels': '3 个课程等级',
   '60+ Languages': '60 多种语言',
   '8 Visualizers': '8 种可视化效果',
@@ -191,7 +192,6 @@ export const features: Record<string, string> = {
   'Batch Processing': '批量处理',
   'Beautiful Layouts': '精美排版',
   'Beautiful Templates': '精美模板',
-  'Calculation Drills': '计算练习',
   'CEFR/JLPT/HSK Scenarios': 'CEFR/JLPT/HSK 场景',
   'Charts & Graphs': '图表与图形',
   'Cloud Sync': '云同步',

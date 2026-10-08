@@ -49,7 +49,7 @@ export const ui: Translation = {
   descPenkoTune: '手持ちの音楽のためのプライベートなプレーヤー。ライブラリはアカウントなしで端末内に保存され、暗号化された P2P リンクで友だちと曲を共有したり一緒に聴いたりできます。',
   descPenkoTyping: '14 種類のキーボード配列で指に覚えさせるレトロなアーケード風タイピングゲーム。韓国語、ロシア語、日本語かな、アラビア語、ヘブライ語などに対応。',
   descPenkoReader: '自分の本を読むためのオフライン読書アプリ。読み上げと PDF への書き込みができるページ型リーダー、1 語ずつ表示する RSVP 速読、読書トレーニングを搭載。アカウント不要で、データは端末の外に出ません。',
-  descPenkoSoroban: 'ガイド付きレッスン、計算ドリル、級から段までのフラッシュ暗算検定を備えたバーチャルそろばん。',
+  descPenkoSoroban: 'ペンコ先生と一緒に、そろばんを一歩ずつ学べます。最初の珠から暗算まで全31レッスンに加え、練習、フラッシュ暗算、級から段までの検定も。オフラインで使え、アカウントは不要です。',
   descPenkoCalc: '100以上の関数、JavaScriptセルサポート、オフライン機能を備えたスプレッドシートアプリ。Microsoft ExcelとGoogle Sheetsの無料代替品。',
   descPenkoNote: 'スマートな整理、タグ、検索機能を備えた高機能ノートアプリ。あなたの考えを整理整頓し、いつでもアクセス可能に。',
   descPenkoSlide: '美しいテンプレートとスムーズなトランジションで魅力的なプレゼンテーションを作成。PowerPointとGoogle Slidesの無料代替品。',
@@ -99,7 +99,7 @@ export const ui: Translation = {
   statusComingSoon: '近日公開',
   newsUpdate1: 'Penko Vox: Japanese v2.1 を公開しました：Kotoba Islands RPG、音声通話などを追加。',
   newsUpdate2: 'Penko Reader 3.0 で本格的な読書アプリに。ライブラリ、ページ型リーダー、読み上げ、RSVP を搭載。',
-  newsUpdate3: 'Penko Adventure v1.8.0 がパブリックベータになりました。',
+  newsUpdate3: 'Penko Soroban 2.0：最初の珠から暗算まで学べる、本格的なそろばん講座。16言語に対応。',
   newsUpdate4: 'Penko Tune は手持ちの音楽のためのプライベートなプレーヤーになり、友だちとの暗号化共有にも対応しました。',
 
   // UI labels & support section
@@ -181,6 +181,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10 バンドイコライザー',
   '100+ Functions': '100+ の機能',
   '14 Keyboard Layouts': '14 種類のキー配列',
+  '16 Languages': '16言語',
   '3 Lesson Levels': '3 段階のレッスン',
   '60+ Languages': '60 以上の言語',
   '8 Visualizers': '8 種のビジュアライザー',
@@ -191,7 +192,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'バッチ処理',
   'Beautiful Layouts': '美しいレイアウト',
   'Beautiful Templates': '美しいテンプレート',
-  'Calculation Drills': '計算ドリル',
   'CEFR/JLPT/HSK Scenarios': 'CEFR/JLPT/HSK シナリオ',
   'Charts & Graphs': 'チャートとグラフ',
   'Cloud Sync': 'クラウド同期',

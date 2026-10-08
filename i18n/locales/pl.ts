@@ -54,7 +54,7 @@ export const ui: Translation = {
   descPenkoTune: 'Prywatny odtwarzacz muzyki, którą już masz. Biblioteka zostaje na Twoim urządzeniu, bez konta, a utworami możesz dzielić się ze znajomymi lub słuchać razem przez szyfrowane łącza P2P.',
   descPenkoTyping: 'Retro gra zręcznościowa do nauki pisania, która buduje pamięć mięśniową na 14 układach klawiatury, m.in. koreańskim, rosyjskim, japońskim kana, arabskim i hebrajskim.',
   descPenkoReader: 'Aplikacja do czytania offline Twoich własnych książek: czytnik stron z czytaniem na głos i notatkami w PDF, szybkie czytanie RSVP słowo po słowie oraz ćwiczenia czytania. Bez konta, nic nie opuszcza urządzenia.',
-  descPenkoSoroban: 'Wirtualny soroban (japońskie liczydło) z lekcjami krok po kroku, ćwiczeniami rachunkowymi i egzaminami z liczenia w pamięci Flash Anzan od poziomu Kyu do Dan.',
+  descPenkoSoroban: 'Ucz się japońskiego liczydła krok po kroku z Penko jako nauczycielem: 31 lekcji od pierwszego koralika po liczenie w pamięci, a do tego ćwiczenia, Flash Anzan i egzaminy od Kyu do Dan. Działa offline, bez konta.',
   descPenkoCalc: 'Arkusz kalkulacyjny z ponad 100 funkcjami, obsługą komórek JavaScript i możliwością pracy offline. Darmowa alternatywa dla Microsoft Excel i Google Sheets.',
   descPenkoNote: 'Rozbudowana aplikacja do notatek z inteligentną organizacją, tagami i wyszukiwaniem. Twoje myśli, uporządkowane i dostępne.',
   descPenkoSlide: 'Twórz zjawiskowe prezentacje z pięknymi szablonami i płynnymi przejściami. Darmowa alternatywa dla PowerPoint i Google Slides.',
@@ -110,7 +110,7 @@ export const ui: Translation = {
   // News
   newsUpdate1: 'Penko Vox: Japanese v2.1 już jest: RPG Kotoba Islands, rozmowy głosowe i więcej.',
   newsUpdate2: 'Penko Reader 3.0 to pełna aplikacja do czytania: biblioteka, czytnik stron, czytanie na głos i RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 jest teraz w publicznej becie.',
+  newsUpdate3: 'Penko Soroban 2.0: pełny kurs liczydła, od pierwszego koralika po liczenie w pamięci, w 16 językach.',
   newsUpdate4: 'Penko Tune to teraz prywatny odtwarzacz Twojej muzyki z szyfrowanym udostępnianiem znajomym.',
 
   // UI labels & support section
@@ -192,6 +192,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10-pasmowy korektor',
   '100+ Functions': '100+ funkcji',
   '14 Keyboard Layouts': '14 układów klawiatury',
+  '16 Languages': '16 języków',
   '3 Lesson Levels': '3 poziomy lekcji',
   '60+ Languages': 'Ponad 60 języków',
   '8 Visualizers': '8 wizualizacji',
@@ -202,7 +203,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Przetwarzanie wsadowe',
   'Beautiful Layouts': 'Piękne układy',
   'Beautiful Templates': 'Piękne szablony',
-  'Calculation Drills': 'Ćwiczenia rachunkowe',
   'CEFR/JLPT/HSK Scenarios': 'Scenariusze CEFR/JLPT/HSK',
   'Charts & Graphs': 'Wykresy i grafy',
   'Cloud Sync': 'Synchronizacja w chmurze',

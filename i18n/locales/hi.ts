@@ -54,7 +54,7 @@ export const ui: Translation = {
   descPenkoTune: 'आपके अपने संगीत के लिए एक निजी प्लेयर। आपकी लाइब्रेरी बिना खाते के आपके डिवाइस पर रहती है, और आप एन्क्रिप्टेड पीयर-टू-पीयर लिंक से दोस्तों के साथ गाने साझा कर सकते हैं या साथ सुन सकते हैं।',
   descPenkoTyping: '14 कीबोर्ड लेआउट पर मसल मेमोरी बनाने के लिए एक रेट्रो आर्केड टाइपिंग गेम, जिनमें कोरियाई, रूसी, जापानी काना, अरबी और हिब्रू शामिल हैं।',
   descPenkoReader: 'आपकी अपनी किताबों के लिए एक ऑफ़लाइन रीडिंग ऐप: ज़ोर से पढ़ने और PDF नोट्स वाला पेज रीडर, शब्द-दर-शब्द RSVP स्पीड रीडर और पढ़ने के अभ्यास। कोई खाता नहीं, और कुछ भी आपके डिवाइस से बाहर नहीं जाता।',
-  descPenkoSoroban: 'एक वर्चुअल सोरोबन (जापानी अबेकस), जिसमें निर्देशित पाठ, गणना अभ्यास और Kyu से Dan स्तर तक Flash Anzan मानसिक गणित परीक्षाएँ हैं।',
+  descPenkoSoroban: 'पेंको को अपना शिक्षक बनाकर जापानी अबेकस कदम-दर-कदम सीखो: पहले मनके से मानसिक गणित तक 31 पाठ, साथ में अभ्यास, फ़्लैश अनज़ान और Kyu से Dan तक की परीक्षाएँ। ऑफ़लाइन चलता है, खाते की ज़रूरत नहीं।',
   descPenkoCalc: 'स्प्रेडशीट ऐप, 100+ फ़ंक्शन, JavaScript सेल सपोर्ट, और ऑफ़लाइन क्षमताओं के साथ। Microsoft Excel और Google Sheets का मुफ़्त विकल्प।',
   descPenkoNote: 'स्मार्ट ऑर्गनाइज़ेशन, टैग्स और सर्च के साथ रिच नोट्स ऐप। आपके विचार, व्यवस्थित और सुलभ।',
   descPenkoSlide: 'खूबसूरत टेम्पलेट्स और स्मूद ट्रांज़िशन के साथ शानदार प्रेज़ेंटेशन बनाएं। PowerPoint और Google Slides का मुफ़्त विकल्प।',
@@ -110,7 +110,7 @@ export const ui: Translation = {
   // News
   newsUpdate1: 'Penko Vox: Japanese v2.1 आ गया है: Kotoba Islands RPG, वॉइस कॉल और बहुत कुछ।',
   newsUpdate2: 'Penko Reader 3.0 अब एक पूरा रीडिंग ऐप है: लाइब्रेरी, पेज रीडर, ज़ोर से पढ़ना और RSVP।',
-  newsUpdate3: 'Penko Adventure v1.8.0 अब पब्लिक बीटा में है।',
+  newsUpdate3: 'Penko Soroban 2.0: पहले मनके से मानसिक गणित तक अबेकस का पूरा कोर्स, 16 भाषाओं में।',
   newsUpdate4: 'Penko Tune अब आपके अपने संगीत के लिए एक निजी प्लेयर है, दोस्तों के बीच एन्क्रिप्टेड शेयरिंग के साथ।',
 
   // UI labels & support section
@@ -192,6 +192,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10-बैंड इक्वलाइज़र',
   '100+ Functions': '100+ फ़ंक्शन',
   '14 Keyboard Layouts': '14 कीबोर्ड लेआउट',
+  '16 Languages': '16 भाषाएँ',
   '3 Lesson Levels': '3 पाठ स्तर',
   '60+ Languages': '60+ भाषाएँ',
   '8 Visualizers': '8 विज़ुअलाइज़र',
@@ -202,7 +203,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'बैच प्रोसेसिंग',
   'Beautiful Layouts': 'खूबसूरत लेआउट',
   'Beautiful Templates': 'खूबसूरत टेम्पलेट्स',
-  'Calculation Drills': 'गणना अभ्यास',
   'CEFR/JLPT/HSK Scenarios': 'CEFR/JLPT/HSK परिदृश्य',
   'Charts & Graphs': 'चार्ट और ग्राफ़',
   'Cloud Sync': 'क्लाउड सिंक',

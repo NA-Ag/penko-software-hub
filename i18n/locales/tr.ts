@@ -45,7 +45,7 @@ export const ui: Translation = {
   descPenkoTune: 'Sahip olduğun müzikler için gizlilik odaklı bir oynatıcı. Kütüphanen hesap olmadan cihazında kalır; şifreli eşler arası bağlantılarla arkadaşlarınla parça paylaşabilir ya da birlikte dinleyebilirsin.',
   descPenkoTyping: 'Korece, Rusça, Japonca Kana, Arapça ve İbranice dahil 14 klavye düzeninde kas hafızası geliştirmek için retro atari tarzı bir klavye oyunu.',
   descPenkoReader: 'Kendi kitapların için çevrimdışı bir okuma uygulaması: sesli okuma ve PDF notlarıyla sayfalı okuyucu, kelime kelime RSVP hızlı okuyucu ve okuma alıştırmaları. Hesap yok, hiçbir şey cihazından çıkmaz.',
-  descPenkoSoroban: 'Rehberli dersler, hesap alıştırmaları ve Kyu\'dan Dan seviyesine Flash Anzan zihinden hesap sınavları içeren sanal bir soroban (Japon abaküsü).',
+  descPenkoSoroban: 'Penko öğretmenliğinde Japon abaküsünü adım adım öğren: ilk boncuktan zihinden hesaba 31 ders, ayrıca alıştırmalar, Flash Anzan ve Kyu\'dan Dan\'a sınavlar. Çevrimdışı çalışır, hesap gerekmez.',
   descPenkoCalc: '100\'den fazla fonksiyona, JavaScript hücre desteğine ve çevrimdışı özelliklere sahip hesap tablosu uygulaması. Microsoft Excel ve Google Sheets\'e ücretsiz bir alternatif.',
   descPenkoNote: 'Akıllı düzenleme, etiketler ve arama özelliğine sahip zengin not uygulaması. Düşünceleriniz, düzenli ve erişilebilir.',
   descPenkoSlide: 'Güzel şablonlar ve akıcı geçişlerle çarpıcı sunumlar oluşturun. PowerPoint ve Google Slides\'a ücretsiz bir alternatif.',
@@ -91,7 +91,7 @@ export const ui: Translation = {
   statusComingSoon: 'Yakında',
   newsUpdate1: 'Penko Vox: Japanese v2.1 yayında: Kotoba Islands RPG, sesli aramalar ve daha fazlası.',
   newsUpdate2: 'Penko Reader 3.0 ile tam bir okuma uygulaması oldu: kütüphane, sayfalı okuyucu, sesli okuma ve RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 artık genel betada.',
+  newsUpdate3: 'Penko Soroban 2.0: ilk boncuktan zihinden hesaba eksiksiz bir abaküs kursu, 16 dilde.',
   newsUpdate4: 'Penko Tune artık kendi müziklerin için gizli bir oynatıcı; arkadaşlar arasında şifreli paylaşım da var.',
 
   // UI labels & support section
@@ -173,6 +173,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10 Bantlı Ekolayzer',
   '100+ Functions': '100+ Fonksiyon',
   '14 Keyboard Layouts': '14 klavye düzeni',
+  '16 Languages': '16 dil',
   '3 Lesson Levels': '3 ders seviyesi',
   '60+ Languages': '60\'tan fazla dil',
   '8 Visualizers': '8 Görselleştirici',
@@ -183,7 +184,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Toplu İşleme',
   'Beautiful Layouts': 'Şık Yerleşimler',
   'Beautiful Templates': 'Şık Şablonlar',
-  'Calculation Drills': 'Hesap alıştırmaları',
   'CEFR/JLPT/HSK Scenarios': 'CEFR/JLPT/HSK senaryoları',
   'Charts & Graphs': 'Çizelgeler ve Grafikler',
   'Cloud Sync': 'Bulut Senkronizasyonu',

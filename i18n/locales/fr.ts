@@ -45,7 +45,7 @@ export const ui: Translation = {
   descPenkoTune: 'Un lecteur privé pour la musique que vous possédez. Votre bibliothèque reste sur votre appareil, sans compte, et vous pouvez partager des morceaux ou écouter ensemble entre amis via des liens P2P chiffrés.',
   descPenkoTyping: 'Un jeu de dactylographie arcade rétro pour acquérir la mémoire musculaire sur 14 dispositions de clavier, dont le coréen, le russe, les kana japonais, l\'arabe et l\'hébreu.',
   descPenkoReader: 'Une app de lecture hors ligne pour vos propres livres : liseuse paginée avec lecture à voix haute et annotations PDF, lecteur rapide RSVP mot à mot et exercices de lecture. Sans compte, rien ne quitte votre appareil.',
-  descPenkoSoroban: 'Un soroban (boulier japonais) virtuel avec leçons guidées, exercices de calcul et examens de calcul mental Flash Anzan du niveau Kyu au niveau Dan.',
+  descPenkoSoroban: 'Apprends le boulier japonais pas à pas avec Penko comme prof : 31 leçons, de ta première boule au calcul mental, plus des exercices, le Flash Anzan et des examens du Kyu au Dan. Fonctionne hors ligne, sans compte.',
   descPenkoCalc: 'Application de feuille de calcul avec plus de 100 fonctions, support des cellules JavaScript et capacité hors ligne. Une alternative gratuite à Microsoft Excel et Google Sheets.',
   descPenkoNote: 'Application de notes enrichie avec organisation intelligente, balises et recherche. Vos pensées, organisées et accessibles.',
   descPenkoSlide: 'Créez des présentations époustouflantes avec de beaux modèles et des transitions fluides. Une alternative gratuite à PowerPoint et Google Slides.',
@@ -91,7 +91,7 @@ export const ui: Translation = {
   statusComingSoon: 'Bientôt',
   newsUpdate1: 'Penko Vox: Japanese v2.1 est disponible : le RPG Kotoba Islands, les appels vocaux et bien plus.',
   newsUpdate2: 'Penko Reader 3.0 devient une véritable app de lecture : bibliothèque, liseuse paginée, lecture à voix haute et RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 est maintenant en bêta publique.',
+  newsUpdate3: 'Penko Soroban 2.0 : un cours complet de boulier, de ta première boule au calcul mental, en 16 langues.',
   newsUpdate4: 'Penko Tune est désormais un lecteur privé pour votre propre musique, avec partage chiffré entre amis.',
 
   // UI labels & support section
@@ -173,6 +173,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': 'Égaliseur 10 bandes',
   '100+ Functions': '100+ fonctions',
   '14 Keyboard Layouts': '14 dispositions de clavier',
+  '16 Languages': '16 langues',
   '3 Lesson Levels': '3 niveaux de leçon',
   '60+ Languages': 'Plus de 60 langues',
   '8 Visualizers': '8 visualiseurs',
@@ -183,7 +184,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Traitement par lots',
   'Beautiful Layouts': 'Mises en page élégantes',
   'Beautiful Templates': 'Modèles élégants',
-  'Calculation Drills': 'Exercices de calcul',
   'CEFR/JLPT/HSK Scenarios': 'Scénarios CECRL/JLPT/HSK',
   'Charts & Graphs': 'Graphiques et diagrammes',
   'Cloud Sync': 'Synchronisation cloud',

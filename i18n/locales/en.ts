@@ -54,7 +54,7 @@ export const ui: Translation = {
   descPenkoTune: 'A private player for the music you own. Your library stays on your device with no account, and you can share tracks or listen together with friends over encrypted peer-to-peer links.',
   descPenkoTyping: 'A retro arcade typing game for building muscle memory on 14 keyboard layouts, including Korean, Russian, Japanese Kana, Arabic and Hebrew.',
   descPenkoReader: 'An offline reading app for your own books: a paged reader with read-aloud and PDF notes, an RSVP word-by-word speed reader, and reading drills. No account, and nothing leaves your device.',
-  descPenkoSoroban: 'A virtual soroban (Japanese abacus) with guided lessons, calculation drills and Flash Anzan mental-math exams from Kyu to Dan levels.',
+  descPenkoSoroban: 'Learn the Japanese abacus step by step with Penko as your teacher: 31 lessons from your first bead to mental math, plus drills, Flash Anzan and Kyu to Dan exams. Works offline, no account.',
   descPenkoCalc: 'Spreadsheet app with 100+ functions, JavaScript cell support, and offline capabilities. A free alternative to Microsoft Excel and Google Sheets.',
   descPenkoNote: 'Rich notes application with smart organization, tags, and search. Your thoughts, organized and accessible.',
   descPenkoSlide: 'Create stunning presentations with beautiful templates and smooth transitions. A free alternative to PowerPoint and Google Slides.',
@@ -110,7 +110,7 @@ export const ui: Translation = {
   // News
   newsUpdate1: 'Penko Vox: Japanese v2.1 is out: the Kotoba Islands RPG, voice calls and more.',
   newsUpdate2: 'Penko Reader 3.0 turns it into a full reading app: library, paged reader, read-aloud and RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 is now in public beta.',
+  newsUpdate3: 'Penko Soroban 2.0: a full abacus course from your first bead to mental math, in 16 languages.',
   newsUpdate4: 'Penko Tune is now a private player for your own music, with encrypted sharing between friends.',
 
   // UI labels & support section

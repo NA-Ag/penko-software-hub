@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, ArrowUpRight, BookOpen, Gamepad2, LucideIcon, Music, Sparkles } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, BookOpen, Calculator, LucideIcon, Music, Sparkles } from 'lucide-react';
 import { useApp } from '../AppContext';
 import { PRODUCTS } from '../constants';
 import { sitePath } from '../lib/sitePaths';
@@ -10,7 +10,7 @@ const liveUrl = (id: string) => PRODUCTS.find(p => p.id === id)?.liveUrl;
 
 const UPDATES: { text: keyof Translation; Icon: LucideIcon; href?: string }[] = [
   { text: 'newsUpdate2', Icon: BookOpen, href: liveUrl('penko-reader') },
-  { text: 'newsUpdate3', Icon: Gamepad2, href: liveUrl('penko-adventure') },
+  { text: 'newsUpdate3', Icon: Calculator, href: liveUrl('penko-soroban') },
   { text: 'newsUpdate4', Icon: Music, href: liveUrl('penko-tune') },
 ];
 

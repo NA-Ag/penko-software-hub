@@ -128,14 +128,14 @@ export const PRODUCTS: Product[] = [
   {
     id: 'penko-soroban',
     name: 'Penko Soroban',
-    description: 'A virtual soroban (Japanese abacus) with guided lessons, calculation drills and Flash Anzan mental-math exams from Kyu to Dan levels.',
+    description: 'Learn the Japanese abacus step by step with Penko as your teacher: 31 lessons from your first bead to mental math, plus drills, Flash Anzan and Kyu to Dan exams. Works offline, no account.',
     category: ProductCategory.LANGUAGE,
     iconName: 'Calculator',
     repoUrl: 'https://github.com/NA-Ag/penko-soroban',
     liveUrl: 'https://soroban.penkosoftware.org/',
-    features: ['Virtual Soroban', 'Flash Anzan', 'Kyu/Dan Exams', 'Guided Lessons', 'Calculation Drills', 'Works Offline'],
+    features: ['Guided Lessons', 'Virtual Soroban', 'Flash Anzan', 'Kyu/Dan Exams', '16 Languages', 'Works Offline'],
     status: 'alpha',
-    version: 'v1.0.0'
+    version: 'v2.0.0-alpha.1'
   },
 
   // ===== COMING SOON PROJECTS =====

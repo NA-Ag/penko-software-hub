@@ -49,7 +49,7 @@ export const ui: Translation = {
   descPenkoTune: '내가 가진 음악을 위한 비공개 플레이어. 라이브러리는 계정 없이 내 기기에 남아 있고, 암호화된 P2P 링크로 친구와 곡을 공유하거나 함께 들을 수 있습니다.',
   descPenkoTyping: '한국어, 러시아어, 일본어 가나, 아랍어, 히브리어를 포함한 14가지 키보드 배열로 손가락 감각을 익히는 레트로 아케이드 타자 게임.',
   descPenkoReader: '내 책을 위한 오프라인 독서 앱: 소리 내어 읽기와 PDF 메모를 지원하는 페이지 리더, 단어 단위 RSVP 속독기, 읽기 훈련. 계정이 필요 없고 기기 밖으로 아무것도 나가지 않습니다.',
-  descPenkoSoroban: '단계별 레슨, 계산 연습, 급부터 단까지의 플래시 암산 시험을 갖춘 가상 소로반(일본 주판).',
+  descPenkoSoroban: '펭코 선생님과 함께 일본식 주판을 한 걸음씩 배워요. 첫 주판알부터 암산까지 31개 레슨에, 연습, 플래시 암산, 급부터 단까지의 검정도 있어요. 오프라인으로 쓸 수 있고 계정이 필요 없어요.',
   descPenkoCalc: '100개 이상의 함수, JavaScript 셀 지원, 오프라인 기능을 갖춘 스프레드시트 앱. Microsoft Excel과 Google Sheets의 무료 대안.',
   descPenkoNote: '스마트 정리, 태그, 검색 기능을 갖춘 리치 노트 애플리케이션. 당신의 생각을 정리하고 언제든 찾아볼 수 있게.',
   descPenkoSlide: '아름다운 템플릿과 부드러운 전환 효과로 멋진 프레젠테이션을 만들어보세요. PowerPoint와 Google Slides의 무료 대안.',
@@ -100,7 +100,7 @@ export const ui: Translation = {
 
   newsUpdate1: 'Penko Vox: Japanese v2.1이 출시되었습니다: Kotoba Islands RPG, 음성 통화 등.',
   newsUpdate2: 'Penko Reader 3.0은 완전한 독서 앱이 되었습니다: 서재, 페이지 리더, 소리 내어 읽기, RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0이 퍼블릭 베타로 전환되었습니다.',
+  newsUpdate3: 'Penko Soroban 2.0: 첫 주판알부터 암산까지 배우는 완전한 주판 강좌, 16개 언어 지원.',
   newsUpdate4: 'Penko Tune이 내 음악을 위한 비공개 플레이어로 바뀌었고, 친구 간 암호화 공유도 지원합니다.',
 
   // UI labels & support section
@@ -182,6 +182,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': '10밴드 이퀄라이저',
   '100+ Functions': '100개 이상의 함수',
   '14 Keyboard Layouts': '14가지 키보드 배열',
+  '16 Languages': '16개 언어',
   '3 Lesson Levels': '3단계 레슨',
   '60+ Languages': '60개 이상 언어',
   '8 Visualizers': '비주얼라이저 8종',
@@ -192,7 +193,6 @@ export const features: Record<string, string> = {
   'Batch Processing': '일괄 처리',
   'Beautiful Layouts': '아름다운 레이아웃',
   'Beautiful Templates': '아름다운 템플릿',
-  'Calculation Drills': '계산 연습',
   'CEFR/JLPT/HSK Scenarios': 'CEFR/JLPT/HSK 시나리오',
   'Charts & Graphs': '차트 및 그래프',
   'Cloud Sync': '클라우드 동기화',

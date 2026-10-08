@@ -46,7 +46,7 @@ export const ui: Translation = {
   descPenkoTune: 'Pemutar privat untuk musik milikmu sendiri. Pustakamu tetap di perangkatmu tanpa akun, dan kamu bisa berbagi lagu atau mendengarkan bersama teman lewat tautan P2P terenkripsi.',
   descPenkoTyping: 'Game mengetik arkade retro untuk membangun memori otot pada 14 tata letak keyboard, termasuk Korea, Rusia, Kana Jepang, Arab, dan Ibrani.',
   descPenkoReader: 'Aplikasi baca offline untuk bukumu sendiri: pembaca berhalaman dengan baca nyaring dan catatan PDF, pembaca cepat RSVP kata demi kata, dan latihan membaca. Tanpa akun, dan tidak ada yang keluar dari perangkatmu.',
-  descPenkoSoroban: 'Soroban (sempoa Jepang) virtual dengan pelajaran terpandu, latihan hitung, dan ujian aritmatika mental Flash Anzan dari tingkat Kyu hingga Dan.',
+  descPenkoSoroban: 'Belajar sempoa Jepang langkah demi langkah dengan Penko sebagai guru: 31 pelajaran dari manik pertama hingga hitung mental, plus latihan, Flash Anzan, dan ujian dari Kyu hingga Dan. Bisa offline, tanpa akun.',
   descPenkoCalc: 'Aplikasi spreadsheet dengan 100+ fungsi, dukungan sel JavaScript, dan kemampuan offline. Alternatif gratis untuk Microsoft Excel dan Google Sheets.',
   descPenkoNote: 'Aplikasi catatan lengkap dengan pengorganisasian cerdas, tag, dan pencarian. Pikiranmu, terorganisir dan mudah diakses.',
   descPenkoSlide: 'Buat presentasi memukau dengan templat indah dan transisi yang mulus. Alternatif gratis untuk PowerPoint dan Google Slides.',
@@ -92,7 +92,7 @@ export const ui: Translation = {
   statusComingSoon: 'Segera Hadir',
   newsUpdate1: 'Penko Vox: Japanese v2.1 telah rilis: RPG Kotoba Islands, panggilan suara, dan lainnya.',
   newsUpdate2: 'Penko Reader 3.0 kini menjadi aplikasi baca lengkap: pustaka, pembaca berhalaman, baca nyaring, dan RSVP.',
-  newsUpdate3: 'Penko Adventure v1.8.0 kini memasuki beta publik.',
+  newsUpdate3: 'Penko Soroban 2.0: kursus sempoa lengkap dari manik pertama hingga hitung mental, dalam 16 bahasa.',
   newsUpdate4: 'Penko Tune kini menjadi pemutar privat untuk musikmu sendiri, dengan berbagi terenkripsi antarteman.',
 
   // UI labels & support section
@@ -174,6 +174,7 @@ export const features: Record<string, string> = {
   '10-Band Equalizer': 'Equalizer 10-Band',
   '100+ Functions': '100+ Fungsi',
   '14 Keyboard Layouts': '14 tata letak keyboard',
+  '16 Languages': '16 bahasa',
   '3 Lesson Levels': '3 tingkat pelajaran',
   '60+ Languages': '60+ bahasa',
   '8 Visualizers': '8 Visualizer',
@@ -184,7 +185,6 @@ export const features: Record<string, string> = {
   'Batch Processing': 'Pemrosesan Batch',
   'Beautiful Layouts': 'Tata Letak Indah',
   'Beautiful Templates': 'Templat Indah',
-  'Calculation Drills': 'Latihan hitung',
   'CEFR/JLPT/HSK Scenarios': 'Skenario CEFR/JLPT/HSK',
   'Charts & Graphs': 'Bagan & Grafik',
   'Cloud Sync': 'Sinkronisasi Cloud',
